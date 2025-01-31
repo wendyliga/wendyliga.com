@@ -1,0 +1,4 @@
+baseURL = 'https://blog.wendyliga.org/'
+languageCode = 'en-us'
+title = 'My Blog'
+theme = 'typo'
