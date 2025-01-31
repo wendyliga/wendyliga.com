@@ -1,4 +1,59 @@
 baseURL = 'https://blog.wendyliga.org/'
 languageCode = 'en-us'
-title = 'My Blog'
+title = 'blog.wendyliga.com'
 theme = 'typo'
+
+[params]
+subtitle = 'blog.wendyliga.com'
+description = 'A blog about technology, programming, and life.'
+
+# Appearance settings
+theme = 'light'
+colorPalette = 'default'
+hideHeader = false
+showFooter = false
+footerContent = "Your **custom** md `footer`"
+
+# Intro on main page, content is markdown
+homeIntroTitle = 'Hello World'
+homeIntroContent = """
+Welcome to my blog. I write about technology, programming, and life. Enjoy!
+"""
+
+# Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = true
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+[params.contact]
+email = 'me@wendyliga.com'
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/wendy-liga/"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/wendy.liga"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
