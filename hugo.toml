@@ -60,4 +60,4 @@ url = "/posts"
 
 [[params.menu]]
 name = "故事练习"
-url = "/learn_chinese"
+url = "/chinese"
