@@ -1,0 +1,120 @@
+{
+  "name": "Chinese Story Learning AI Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 19
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -340,
+        -40
+      ],
+      "id": "48ecba6a-1473-4728-900f-f88cef803296",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "write me a short story written in Chinese to help me with my Chinese practice. Include hanzi, then a pinyin version, then the English translation\n\nexample output: \n``` \n## 汉字\n\n## Pin yin Version\n\n## English Translation\n```"
+      },
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.5,
+      "position": [
+        -80,
+        -40
+      ],
+      "id": "57d97c7d-e85d-40cc-a16e-2c76ccdc7db5",
+      "name": "Basic LLM Chain",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "model": "deepseek-r1:14b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmOllama",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        180
+      ],
+      "id": "9f36fa5b-3737-441f-8d35-ec7266dfbb1b",
+      "name": "Ollama Model",
+      "credentials": {
+        "ollamaApi": {
+          "id": "x8C9evDEloM37G2p",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "function removeTextBetween(input, startString, endString) {\n  const regex = new RegExp(`${startString}.*?${endString}`, 'gs');\n  return input.replace(regex, '');\n}\nconst withoutTag = removeTextBetween($input.first().json.text, \"<think>\", \"</think>\")\nconst final = withoutTag.replace(/\\n/g, '');\n\nreturn {\n  json: { \n    \"text\": withoutTag\n  }\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        280,
+        -40
+      ],
+      "id": "dde79256-7901-4847-b9f8-1dc1d1bdb108",
+      "name": "remove thinking",
+      "executeOnce": true
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "remove thinking",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "fd2ed2f4-8cc8-4ea6-98cd-255505372a36",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "305dc60762ab7bc9df854fd0b2b0a420d4f6be4a4d05df6f613b66c3b6028042"
+  },
+  "id": "wmr5e4fn9Mb0WTMC",
+  "tags": []
+}

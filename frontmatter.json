@@ -7,52 +7,94 @@
       "previewPath": null,
       "fields": [
         {
-          "title": "Title",
+          "title": "title",
           "name": "title",
           "type": "string"
         },
         {
-          "title": "Description",
+          "title": "description",
           "name": "description",
           "type": "string"
         },
         {
-          "title": "Publishing date",
+          "title": "date",
           "name": "date",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
+          "type": "datetime"
         },
         {
-          "title": "Content preview",
-          "name": "preview",
-          "type": "image"
-        },
-        {
-          "title": "Is in draft",
+          "title": "draft",
           "name": "draft",
           "type": "draft"
         },
         {
-          "title": "Tags",
+          "title": "tags",
           "name": "tags",
           "type": "tags"
         },
         {
-          "title": "Categories",
+          "title": "categories",
           "name": "categories",
           "type": "categories"
+        },
+        {
+          "title": "keywords",
+          "name": "keywords",
+          "type": "choice",
+          "choices": [
+            "ai",
+            "deepseek",
+            "llm",
+            "agent"
+          ]
+        },
+        {
+          "title": "readTime",
+          "name": "readTime",
+          "type": "boolean"
+        },
+        {
+          "title": "autonumber",
+          "name": "autonumber",
+          "type": "boolean"
+        },
+        {
+          "title": "toc",
+          "name": "toc",
+          "type": "boolean"
+        },
+        {
+          "title": "math",
+          "name": "math",
+          "type": "boolean"
+        },
+        {
+          "title": "summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "preview",
+          "name": "preview",
+          "type": "string"
         }
       ]
     }
   ],
   "frontMatter.framework.id": "hugo",
   "frontMatter.content.publicFolder": "static",
-  "frontMatter.preview.host": "http://localhost:1313",
+  "frontMatter.preview.host": "http://localhost:1313/posts",
   "frontMatter.content.pageFolders": [
     {
       "title": "content",
-      "path": "[[workspace]]/content"
+      "path": "[[workspace]]/content/posts"
+    },
+    {
+      "title": "build-an-ai-agent-using-local-deepseek-without-coding",
+      "path": "[[workspace]]/content/posts/build-an-ai-agent-using-local-deepseek-without-coding"
+    },
+    {
+      "title": "how-to-turn-on-tpm-on-msi-b550-tomahawk",
+      "path": "[[workspace]]/content/posts/how-to-turn-on-tpm-on-msi-b550-tomahawk"
     }
   ]
 }
