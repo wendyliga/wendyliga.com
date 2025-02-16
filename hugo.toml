@@ -25,7 +25,7 @@ homeCollectionTitle = 'Posts'
 homeCollection = 'posts'
 
 # Lists parameters
-paginationSize = 100
+paginationSize = 10
 listSummaries = true
 listDateFormat = '2 Jan 2006'
 
@@ -47,7 +47,7 @@ url = "https://www.linkedin.com/in/wendy-liga/"
 
 [[params.social]]
 name = "github"
-url = "https://github.com/wendy.liga"
+url = "https://github.com/wendyliga"
 
 # Main menu pages
 [[params.menu]]
