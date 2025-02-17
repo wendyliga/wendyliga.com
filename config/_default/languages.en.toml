@@ -1,0 +1,24 @@
+languageCode = "en"
+languageDirection = "ltr"
+weight = 1
+
+title = "Wendy Liga"
+copyright = "&copy; 2025 Wendy Liga"
+
+[params]
+  dateFormat = "2 January 2006"
+
+  mainSections = ["blog"]
+  description = "A powerful, lightweight theme for Hugo built with Tailwind CSS."
+
+[params.author]
+  name = "Wendy Liga"
+  image = "images/avatar.jpg"
+  headline = "Your ordinary developer"
+  bio = "iOS Developer at [Tokopedia](https://www.tokopedia.com) • [WWDC20 Scholar Winner](https://www.wwdcscholars.com/s/130CBC3A-A4A0-48FB-AA81-674A41E5C309) • Learning Driven Life • Exploring Swift and Anything that Sounds Fun • Open Source Enthusiast"
+  links = [
+    { email = "mailto:me@wendyliga.com" },
+    { github = "https://github.com/wendyliga" },
+    { x-twitter = "https://twitter.com/wendyliga" },
+    { linkedin = "https://www.linkedin.com/in/wendy-liga/" }, 
+  ]

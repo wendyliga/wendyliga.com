@@ -1,15 +1,18 @@
-+++
-date = '2021-07-08T00:00:00+07:00'
-draft = false
-title = 'How to Turn On TPM on MSI B550 Tomahawk'
+---
+date: '2021-07-08T00:00:00+07:00'
+draft: false
 
-summary = "Enable TPM on MSI B550 Tomahawk for Windows 11"
-description = "Enable TPM on MSI B550 Tomahawk for Windows 11"
-readTime = true
-autonumber = false
-toc = true
-math = false
-+++
+title: 'How to Turn On TPM on MSI B550 Tomahawk'
+summary: "Enable TPM on MSI B550 Tomahawk for Windows 11"
+description: "Enable TPM on MSI B550 Tomahawk for Windows 11"
+
+preview: /images/1.webp
+thumbnail: /images/1.webp
+
+readTime: true
+toc: true
+math: false
+---
 
 ## Introduction
 Trusted Platform Module is required for the next Windows 11

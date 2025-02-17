@@ -1,9 +1,10 @@
 ---
+date: 2025-02-16T15:26:53.302Z
 title: Build an AI Agent Using Local Deepseek Without Coding
 description: This post walks you through setting up a local AI agent using Ollama to host the LLM and n8n to automate workflows.
 summary: This post walks you through setting up a local AI agent using Ollama to host the LLM and n8n to automate workflows.
-date: 2025-02-16T15:26:53.302Z
 preview: /images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg
+thumbnail: /images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg
 draft: false
 tags: []
 categories:
@@ -14,15 +15,13 @@ keywords:
     - llm
     - agent
 readTime: true
-autonumber: false
 toc: true
 math: false
 ---
 
 Unless you’ve been living under a rock, you’ve probably heard of ChatGPT or AI. In early 2025, a new player entered the scene—Deepseek. Not only is Deepseek a powerful model comparable to OpenAI’s, but it’s also open-source. In this post, I’ll show you how to build a local AI agent using Deepseek—no coding required!
 
-![AI](/images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg)
-*Photo by <a href="https://unsplash.com/@omilaev?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Igor Omilaev</a> on <a href="https://unsplash.com/photos/a-computer-chip-with-the-letter-a-on-top-of-it-eGGFZ5X2LnA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>*
+![AI](/images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg "Photo by [Igor Omilaev](https://unsplash.com/@omilaev?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/a-computer-chip-with-the-letter-a-on-top-of-it-eGGFZ5X2LnA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)")
 
 ## What You’ll Need
 ### Ollama
@@ -99,7 +98,7 @@ from your n8n dashboard, click on the `Create workflow` button to create a new w
 This workflow will automatically run everyday at 9PM. After that it will trigger the AI agent to generate a chinese learning story.
 
 This is the prompt i used to generate the story:
-```
+```bash
 write me a short story written in Chinese to help me with my Chinese practice. Include hanzi, then a pinyin version, then the English translation
 
 example output: 
@@ -114,7 +113,7 @@ Since Deepseek is a **thinking model**, its response may include a reasoning pro
 
 This is the result of the workflow:
 
-```
+```bash
 ## 汉字  
 一天，一个小女孩穿着红色的围巾走在街上。她看到一位老人在公园门口摔倒了。小女孩立刻跑过去，扶起了老人。  
 
@@ -138,4 +137,4 @@ The possibilities are endless!
 
 This is actually my **personal AI agent**, and I use it to generate stories for my **Chinese practice**. I hope you find it useful too!
 
-You can check out my workflow’s output here [👉 blog.wendyliga.com/chineses](https://blog.wendyliga.com/chinese/)
+You can check out my workflow’s output here [👉 wendyliga.com/chinese](https://wendyliga.com/chinese/)
