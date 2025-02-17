@@ -5,6 +5,7 @@ description: This post walks you through setting up a local AI agent using Ollam
 summary: This post walks you through setting up a local AI agent using Ollama to host the LLM and n8n to automate workflows.
 preview: /images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg
 thumbnail: /images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg
+cover: /images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg
 draft: false
 tags: []
 categories:
@@ -14,9 +15,17 @@ keywords:
     - deepseek
     - llm
     - agent
-readTime: true
-toc: true
-math: false
+showSummary: true
+showComments: false
+showWordCount: true
+showTableOfContents: true
+showTaxonomies: true
+showReadingTime: true
+showPagination: true
+showDate: true
+showBreadcrumbs: true
+showAuthor: true
+fmContentType: default
 ---
 
 Unless you’ve been living under a rock, you’ve probably heard of ChatGPT or AI. In early 2025, a new player entered the scene—Deepseek. Not only is Deepseek a powerful model comparable to OpenAI’s, but it’s also open-source. In this post, I’ll show you how to build a local AI agent using Deepseek—no coding required!
