@@ -5,7 +5,7 @@ description: This post walks you through setting up a local AI agent using Ollam
 summary: This post walks you through setting up a local AI agent using Ollama to host the LLM and n8n to automate workflows.
 preview: /images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg
 thumbnail: /images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg
-cover: /images/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg
+cover: 
 draft: false
 tags: []
 categories:
