@@ -9,7 +9,7 @@ copyright = "&copy; 2025 Wendy Liga"
   dateFormat = "2 January 2006"
 
   mainSections = ["blog"]
-  description = "A powerful, lightweight theme for Hugo built with Tailwind CSS."
+  description = "A blog about technology, programming, and life."
 
 [params.author]
   name = "Wendy Liga"

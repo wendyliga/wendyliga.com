@@ -10,3 +10,5 @@ summaryLength = 0
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+taxonomies = ["tags", "categories", "keywords"]
