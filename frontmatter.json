@@ -85,16 +85,8 @@
   "frontMatter.preview.host": "http://localhost:1313",
   "frontMatter.content.pageFolders": [
     {
-      "title": "content",
-      "path": "[[workspace]]/content/posts"
-    },
-    {
-      "title": "build-an-ai-agent-using-local-deepseek-without-coding",
-      "path": "[[workspace]]/content/posts/build-an-ai-agent-using-local-deepseek-without-coding"
-    },
-    {
-      "title": "how-to-turn-on-tpm-on-msi-b550-tomahawk",
-      "path": "[[workspace]]/content/posts/how-to-turn-on-tpm-on-msi-b550-tomahawk"
+      "title": "blog",
+      "path": "[[workspace]]/content/blog"
     }
   ]
 }
