@@ -1,26 +1,17 @@
 [[main]]
   name = "About"
   pageRef = "about"
-  weight = 9
+  weight = 10
 
   [[main]]
   name = "Blog"
   pageRef = "blog"
-  weight = 10
+  weight = 20
 
 [[main]]
   name = "练习故事"
   pageRef = "chinese"
-  weight = 20
-
-[[main]]
-  name = "GitHub"
-  url = "https://github.com/wendyliga/wendyliga.com"
   weight = 30
-  [main.params]
-    icon = "github"
-    showName = false
-    target = "_blank"
 
 [[main]]
   identifier = "search"
