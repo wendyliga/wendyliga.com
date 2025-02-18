@@ -1,10 +1,7 @@
 ---
 date: 2025-02-16T15:26:53.302Z
 title: About
-description: 
-summary: 
-preview: 
-thumbnail: 
+layout: simple
 draft: true
 showSummary: false
 showComments: false

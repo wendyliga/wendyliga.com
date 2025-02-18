@@ -3,7 +3,7 @@
   pageRef = "about"
   weight = 10
 
-  [[main]]
+[[main]]
   name = "Blog"
   pageRef = "blog"
   weight = 20
