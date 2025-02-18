@@ -38,8 +38,5 @@ I’m also passionate about **Chinese language and culture**. I’m currently le
 
 Other places you can find me:
 - {{< icon "steam" >}} [Steam](https://steamcommunity.com/id/GrabThisRice) – Where my gaming adventures unfold.
-- 📚 [Goodreads](https://www.goodreads.com/user/show/117039996-wendy-liga) – See what I’m reading.
-- 🦉 [Duolingo](https://www.duolingo.com/profile/wendyliga?via=share_profile_qr) – Tracking my language-learning journey.
-
-
-
+- 📚[Goodreads](https://www.goodreads.com/user/show/117039996-wendy-liga) – See what I’m reading.
+- 🦉[Duolingo](https://www.duolingo.com/profile/wendyliga?via=share_profile_qr) – Tracking my language-learning journey.
