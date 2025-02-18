@@ -10,6 +10,7 @@ draft: false
 tags: []
 categories:
     - automation
+    - AI Agent
 keywords:
     - ai
     - deepseek
