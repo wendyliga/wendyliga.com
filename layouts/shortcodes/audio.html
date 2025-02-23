@@ -1,0 +1,10 @@
+{{ $src := .Get "src" }}
+{{ $url := printf "%s%s" .Page.RelPermalink $src | relURL }}
+
+<figure {{ with .Get "class" }}class="{{ . }}"{{ end }}>
+    <audio controls preload="{{ .Get "preload" | default "metadata" }}">
+    <source src="{{ $url }}" type="audio/mpeg">
+    {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+    Your browser does not support the audio element.
+    </audio>
+</figure>
