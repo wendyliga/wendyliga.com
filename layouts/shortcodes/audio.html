@@ -1,4 +1,6 @@
-{{ $url := .Get "src" | relURL }}
+{{ $src := .Get "src" }}
+{{ $url := printf "%s%s" (path.Dir .Page.RelPermalink) $src | relURL }}
+
 
 <figure {{ with .Get "class" }}class="{{ . }}"{{ end }}>
     <audio controls preload="{{ .Get "preload" | default "metadata" }}">
