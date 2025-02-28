@@ -1,7 +1,10 @@
 # wendyliga.com
 Codebase for [wendyliga.com](https://www.wendyliga.com/)
 
-# License
+# License 
+This license only applied to all the codebase except **content** directory.
+
+
 ```
 MIT License
 
