@@ -9,13 +9,13 @@
   weight = 2
 
 [[main]]
-  name = "练习故事"
-  pageRef = "chinese"
-  weight = 3
-
-[[main]]
   name = "Playlists"
   pageRef = "playlists"
+  weight = 3
+  
+[[main]]
+  name = "练习故事"
+  pageRef = "chinese"
   weight = 4
 
 [[main]]
