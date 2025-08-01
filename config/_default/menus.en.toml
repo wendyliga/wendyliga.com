@@ -9,8 +9,8 @@
   weight = 2
 
 [[main]]
-  name = "Playlists"
-  pageRef = "playlists"
+  name = "Playlist"
+  pageRef = "playlist"
   weight = 3
   
 [[main]]
