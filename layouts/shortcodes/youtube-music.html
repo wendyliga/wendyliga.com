@@ -1,0 +1,83 @@
+{{- $title := .Get "title" -}}
+{{- $image := .Get "image" -}}
+{{- $link := .Get "link" -}}
+{{- $domain := "" -}}
+
+{{- if $link -}}
+  {{- $url := urls.Parse $link -}}
+  {{- $domain = $url.Host -}}
+{{- end -}}
+
+<div class="youtube-playlist-card">
+  <a href="{{ $link }}" target="_blank" rel="noopener noreferrer" class="youtube-playlist-link">
+    <div class="youtube-playlist-content">
+      <div class="youtube-playlist-image">
+        <img src="{{ $image }}" alt="{{ $title }}" loading="lazy">
+      </div>
+      <div class="youtube-playlist-info">
+        <h3 class="youtube-playlist-title">{{ $title }}</h3>
+        {{- if $domain -}}
+        <span class="youtube-playlist-domain">{{ $domain }}</span>
+        {{- end -}}
+      </div>
+    </div>
+  </a>
+</div>
+
+<style>
+  .youtube-playlist-card {
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .youtube-playlist-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    pointer-events: auto;
+  }
+
+  .youtube-playlist-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .youtube-playlist-content {
+    display: flex;
+    align-items: center;
+    padding-top: 0.1rem 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .youtube-playlist-image {
+    flex: 0 0 auto;
+    margin-right: 1rem;
+    max-height: auto;
+    width: 110px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .youtube-playlist-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .youtube-playlist-info {
+    flex: 1;
+  }
+  
+  .youtube-playlist-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .youtube-playlist-domain {
+    color: #666;
+    font-size: 1rem;
+  }
+</style>
