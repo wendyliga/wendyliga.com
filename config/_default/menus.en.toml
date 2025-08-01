@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Playlist"
-  pageRef = "fooo"
+  pageRef = "playlist"
   weight = 3
   
 [[main]]

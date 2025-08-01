@@ -1,6 +1,6 @@
 ---
-date: 2025-08-01T21:26:53.302Z
-title: Playlists
+date: 2025-07-31T21:26:53.302Z
+title: Playlist
 layout: simple
 draft: false
 showSummary: false
