@@ -23,7 +23,7 @@ This is my personal collection of playlists that I use for working out and codin
 |---|---|----|
 |{{< youtube-music 
     title="Gym Bang #1" 
-    image="https://i.ytimg.com/pl_c/PLpGaNdzqnyo4TYpiWxWxp8thoKx-2P9vR/generated_thumbnail.jpg?sqp=CPqhs8QG-oaymwEUCKAEEKAEIABIWvqriqkDBBoCCAGi85f_AwYI8ZawtAY&rs=AMzJL3lmPGJ_bEGCpxRmdZcFTgM_8Px-zw" 
+    image="https://i.ytimg.com/pl_c/PLpGaNdzqnyo4TYpiWxWxp8thoKx-2P9vR/generated_thumbnail.jpg?sqp=CLiIw8QG-oaymwEUCKAEEKAEIABIWvqriqkDBBoCCAGi85f_AwYI8ZawtAY&rs=AMzJL3n7yx862KZjgtf_Gzk5OdTCKreY3g" 
     link="https://music.youtube.com/playlist?list=PLpGaNdzqnyo4TYpiWxWxp8thoKx-2P9vR" 
 >}}|{{< youtube-music 
     title="Gym Bang #1.5" 
