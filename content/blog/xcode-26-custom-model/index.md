@@ -1,5 +1,5 @@
 ---
-date: 2025-08-17T13:26:53.302Z
+date: 2025-08-17T20:26:53.302+07:00
 title: Use Custom Models in the New Xcode 26 Intelligence
 description: Use Claude Sonnet, Qwen3, OpenAI GPT-5, or other local models in the new Xcode 26 Intelligence "Agent Mode".
 summary: Use Claude Sonnet, Qwen3, OpenAI GPT-5, or other local models in the new Xcode 26 Intelligence "Agent Mode".
