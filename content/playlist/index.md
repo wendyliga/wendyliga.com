@@ -68,6 +68,10 @@ This is my personal collection of playlists that I use for working out and codin
     title="Gym Bang #10" 
     image="images/gym_bang/10.jpg"
     link="https://music.youtube.com/playlist?list=PLpGaNdzqnyo5RPjMjNokzPJKzYTQw3Ix6" 
+>}}|{{< youtube-music 
+    title="Gym Bang #11" 
+    image="images/gym_bang/11.jpg"
+    link="https://music.youtube.com/playlist?list=PLpGaNdzqnyo4_fnv9u8gJn_KWjgMpJrx2&si=6ZG7cVz3Phhsd8Gn" 
 >}}|
 
 ## Punk Rock Workout Playlists
