@@ -19,8 +19,13 @@
   weight = 4
 
 [[main]]
-  identifier = "search"
+  name = "Watermark"
+  url = "https://watermark.wendyliga.com"
   weight = 5
+
+[[main]]
+  identifier = "search"
+  weight = 6
   [main.params]
     action = "search"
     icon = "search"
