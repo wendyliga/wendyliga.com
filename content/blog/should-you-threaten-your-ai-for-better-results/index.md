@@ -32,7 +32,13 @@ fmContentType: default
 
 ![Should You Threaten Your AI?](images/thumbnail.jpg)
 
-A few weeks ago, Andrej Karpathy stood on stage at [Sequoia Capital's annual AI event](https://www.youtube.com/watch?v=96jN2OCOfLs) and said something that made the room pause. Karpathy, if you don't know, is about as credible as it gets in this space: former head of AI at Tesla, founding member of OpenAI, and someone who actually understands these models from the inside out. He pointed out that Sergey Brin, Google's co-founder, had gone on record saying **AI models perform better when you threaten them with physical violence in your prompts.** Karpathy laughed about it, but then got serious. The real takeaway, he said, is that this just shows how little we understand about what's happening inside these things.
+A few weeks ago, Andrej Karpathy stood on stage at [Sequoia Capital's annual AI event](https://www.youtube.com/watch?v=96jN2OCOfLs) and said something that made the room pause. 
+
+{{< youtube 96jN2OCOfLs >}}
+
+Karpathy, if you don't know, is about as credible as it gets in this space: former head of AI at Tesla, founding member of OpenAI, and someone who actually understands these models from the inside out. He pointed out that Sergey Brin, Google's co-founder, had gone on record saying **AI models perform better when you threaten them with physical violence in your prompts.** Karpathy laughed about it, but then got serious. The real takeaway, he said, is that this just shows how little we understand about what's happening inside these things.
+
+{{< youtube 8g7a0IWKDRE >}}
 
 Brin's original comment happened during a **May 2025 taping of the** [**All-In Podcast**](https://youtu.be/8g7a0IWKDRE?t=495) in Miami. Jason Calacanis, one of the hosts, joked about getting "sassy" with AI to make it do what you want. Brin didn't laugh it off. He leaned in:
 
