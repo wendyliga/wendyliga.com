@@ -19,8 +19,8 @@
   weight = 4
 
 [[main]]
-  name = "Watermark"
-  url = "https://watermark.wendyliga.com"
+  name = "Tools"
+  pageRef = "tools"
   weight = 5
 
 [[main]]
