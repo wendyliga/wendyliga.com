@@ -29,4 +29,5 @@ This is a collection of small tools and games I use and share publicly.
 
 | Name | Link | Description |
 |---|---|---|
+| Midnight Midway | [midnight-midway.wendyliga.com](https://midnight-midway.wendyliga.com/) | Carnival-style games after dark. |
 | Spacedoku | [spacedoku.wendyliga.com](https://spacedoku.wendyliga.com) | Number puzzles from outer space. |
