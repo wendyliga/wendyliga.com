@@ -80,6 +80,15 @@ The built-in skills include:
 
 These skills help the built-in agent understand specific Apple development tasks, such as SwiftUI work, accessibility, testing modernization, device interaction, translation, UIKit modernization, and security settings.
 
+If you want to go further and extend or customize this built-in agentic experience yourself, Apple has a dedicated guide:
+
+{{< link-preview
+  title="Extending and customizing agents"
+  description="Expand agent capabilities for your specific needs and application domain."
+  image="https://docs.developer.apple.com/tutorials/developer-og.jpg"
+  link="https://developer.apple.com/documentation/xcode/extending-and-customizing-agents/"
+>}}
+
 Apple also has WWDC sessions that explain this direction in more detail:
 
 {{< link-preview
