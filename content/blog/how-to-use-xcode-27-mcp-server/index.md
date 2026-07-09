@@ -34,9 +34,11 @@ showAuthor: true
 fmContentType: default
 ---
 
-![Xcode 27](images/xcode_27.png "Xcode 27")
+{{< figure src="images/xcode_27.png" alt="Xcode 27" >}}
 
+{{< lead >}}
 Xcode 27 is a major step for developers who want to work with AI agents without leaving Apple's development environment. Instead of treating AI as a separate chat window beside the editor, Xcode now brings agentic coding directly into the IDE, with support for tools like Codex and Claude Code built into the development workflow.
+{{< /lead >}}
 
 At the time of writing, I am using Xcode 27 beta 3. In this version, agentic development feels much closer to a first-class Xcode feature: the agent can understand the project context, help reason about code, and support development tasks from inside Xcode itself.
 
@@ -48,17 +50,19 @@ In this post, we will discuss the Xcode 27 MCP server in detail: what it is, why
 
 Before discussing the MCP server, it is worth understanding the new built-in agentic development feature in Xcode 27. Xcode can now install coding agents directly inside the IDE.
 
-![Install agent in Xcode](images/xcode_install_agent.png)
+{{< figure src="images/xcode_install_agent.png" alt="Install agent in Xcode" caption="Installing an agent from inside Xcode 27." >}}
 
 At the time of writing, Xcode 27 beta 3 supports **Codex**, **Claude Code**, and **Gemini** as installable agents. To use them, you still need a valid account, subscription, or API key for the provider you choose.
 
 The important detail is how Xcode runs these agents. Xcode downloads the agent binary and places it inside its own sandbox. Then Xcode controls the agent call, proxies the interaction to that external agent, and parses the output back into the Xcode interface.
 
-This means Xcode does not use the Codex or Claude Code CLI tool that you already installed on your machine. The agent binary used by Xcode is managed by Xcode itself.
+{{< alert >}}
+Xcode does not use the Codex or Claude Code CLI tool that you already have installed on your machine. The agent binary used by Xcode is downloaded and managed by Xcode itself, inside its own sandbox.
+{{< /alert >}}
 
 Xcode 27 also includes built-in skills to guide agentic development inside the IDE.
 
-![Xcode built-in skills](images/xcode_built_in_skills.png)
+{{< figure src="images/xcode_built_in_skills.png" alt="Xcode built-in skills" caption="Xcode 27's built-in skills for agentic development." >}}
 
 The built-in skills include:
 
@@ -78,8 +82,19 @@ These skills help the built-in agent understand specific Apple development tasks
 
 Apple also has WWDC sessions that explain this direction in more detail:
 
-- [What's new in Xcode 27](https://developer.apple.com/videos/play/wwdc2026/258/)
-- [Xcode, agents, and you](https://developer.apple.com/videos/play/wwdc2026/259/)
+{{< link-preview
+  title="What's new in Xcode 27"
+  description="Discover the latest productivity enhancements in Xcode 27. Accelerate your development workflow through customization, coding agents, and..."
+  image="https://devimages-cdn.apple.com/wwdc-services/images/9B2E82C5-4DDF-4B9A-9459-328D8E297696/10781/10781_wide_250x141_2x.jpg"
+  link="https://developer.apple.com/videos/play/wwdc2026/258/"
+>}}
+
+{{< link-preview
+  title="Xcode, agents, and you"
+  description="Learn how you can use coding agents in Xcode in your development process. We'll explore multiple ways of working with agents with tips to..."
+  image="https://devimages-cdn.apple.com/wwdc-services/images/9B2E82C5-4DDF-4B9A-9459-328D8E297696/10782/10782_wide_250x141_2x.jpg"
+  link="https://developer.apple.com/videos/play/wwdc2026/259/"
+>}}
 
 ## Enable the Xcode MCP server
 
@@ -87,7 +102,7 @@ Before Codex, Claude Code, or another external agent can access Xcode, you need 
 
 Open **Xcode 27**, then go to **Settings > Intelligence > Model Context Protocol**. Enable **Allow external agents to use Xcode tools**.
 
-![Allow external agents to use Xcode tools](images/allow_external_agent.png)
+{{< figure src="images/allow_external_agent.png" alt="Allow external agents to use Xcode tools" caption="Enable external agent access to Xcode's MCP server." >}}
 
 After this option is enabled, Xcode can expose its tools through the MCP server. External agents can then connect to Xcode and use those tools after you approve the required permission prompts.
 
@@ -123,13 +138,13 @@ Before an external agent can communicate with the Xcode MCP server, you need to 
 
 When the external agent tries to use Xcode tools for the first time, Xcode shows a permission popup. The popup tells you which external agent is requesting access to the MCP server.
 
-![Allow MCP access](images/allow_mcp_access.png)
+{{< figure src="images/allow_mcp_access.png" alt="Allow MCP access" caption="Xcode prompts for permission before an external agent can connect." >}}
 
 If you trust the agent, approve the request. You can also enable **Don't ask again for this agent binary until Xcode restarts** to reduce repeated permission prompts during the same Xcode session.
 
 Once approved, you can see the agent access in Xcode's agent activity view.
 
-![Agent activity](images/agent_activity.png)
+{{< figure src="images/agent_activity.png" alt="Agent activity" caption="Xcode's agent activity view shows connected external agents." >}}
 
 ## Xcode MCP server capabilities
 
@@ -150,6 +165,18 @@ At a high level, the Xcode MCP server can help with these workflows:
 
 This means the external agent can do more than edit Swift files. It can ask Xcode what project is open, choose the right scheme, build the app, inspect the compiler error, update the file, rebuild, run the app, and check the result in the simulator. That makes the workflow closer to real agentic development because the agent can use Xcode as the source of truth instead of guessing from the file system alone.
 
+To help an agent use these capabilities correctly instead of guessing, I use a dedicated Xcode skill as a guide for my agent. It documents the available MCP capabilities and common workflows, such as discovering the active Xcode workspace, checking schemes and run destinations, building, testing, reading logs, rendering previews, running the app, and interacting with the simulator. You can find it here:
+
+https://github.com/wendyliga/skills/tree/main/skills/xcode
+
+To install it, run:
+
+```bash
+npx skills add wendyliga/skills --skill xcode
+```
+
+The MCP server provides the tools, and the skill gives the agent a practical map for using those tools correctly.
+
 ## Usecase
 
 With the Xcode 27 MCP server, end-to-end development with agents like Codex or Claude Code becomes possible. The agent is no longer limited to editing files and waiting for you to manually verify the result in Xcode.
@@ -167,24 +194,6 @@ For example, you can ask the agent to:
 7. Iterate on the code if the result is wrong.
 
 This is the important shift: the agent can verify its own work inside the actual Xcode runtime environment. For UI changes, it can navigate to the affected screen and inspect the result. For logic changes, it can run the app, check logs, trigger flows, and confirm behavior. The development loop becomes edit, build, run, inspect, and fix, all driven through Xcode.
-
-## Skills
-
-In my workflow, I use a dedicated Xcode skill that explains the Xcode MCP functionality and gives the agent guidance on how to use the Xcode 27 MCP server.
-
-You can find it here:
-
-https://github.com/wendyliga/skills/tree/main/skills/xcode
-
-To install it, run:
-
-```bash
-npx skills add wendyliga/skills --skill xcode
-```
-
-The skill documents the available MCP capabilities and common workflows, such as discovering the active Xcode workspace, checking schemes and run destinations, building, testing, reading logs, rendering previews, running the app, and interacting with the simulator.
-
-This helps the agent choose the right Xcode MCP tool for each step instead of guessing. The MCP server provides the tools, and the skill gives the agent a practical map for using those tools correctly.
 
 ## Extracting internal Xcode skills
 
@@ -204,7 +213,7 @@ npx skills add wendyliga/skills --skill extract-xcode-skills
 
 The extracted skills will look like this:
 
-![Extract Xcode internal skills](images/extract_xcode_internal_skills.png)
+{{< figure src="images/extract_xcode_internal_skills.png" alt="Extract Xcode internal skills" caption="Xcode's internal skills extracted for use by external agents." >}}
 
 After extracting the skills, you can make them available to your external agent workflow. This gives Codex, Claude Code, or another agent more of the same task-specific guidance that Xcode's built-in agent uses internally.
 
@@ -216,7 +225,7 @@ With Xcode 27, the gap is much thinner. I tried developing fully with Xcode's bu
 
 However, external agents like Codex and Claude Code still offer a better overall experience for my workflow. They give more control over the model, better options for goal-oriented loops such as `/goal`, more flexible automation, remote access, and a broader agent environment outside Xcode.
 
-The MCP server is what connects these two worlds. With Xcode 27 MCP and the Xcode skill described in the previous section, I can use the built-in agentic capabilities of Xcode from an external agent. I still get Xcode context, builds, simulator access, previews, logs, and project state, but I can keep using the external agent workflow that gives me more control.
+The MCP server is what connects these two worlds. With Xcode 27 MCP and the Xcode skill described earlier, I can use the built-in agentic capabilities of Xcode from an external agent. I still get Xcode context, builds, simulator access, previews, logs, and project state, but I can keep using the external agent workflow that gives me more control.
 
 ## Summary
 
