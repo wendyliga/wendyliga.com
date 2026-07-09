@@ -18,6 +18,21 @@
 - `youtube-music`: renders a YouTube/playlist-style card. Use `title`, `image`, and `link`; the shortcode derives and displays the link domain.
 - `link-preview`: renders a generic link preview card. Use `title`, `link`, optional `image`, and optional `description`; the shortcode derives and displays the link domain.
 
+## Congo Native Shortcodes
+- Before adding a new custom shortcode or raw HTML, check `themes/congo/layouts/_shortcodes/` — Congo ships several that already cover common post-formatting needs:
+  - `{{< figure src="..." alt="..." caption="..." attr="..." attrlink="..." >}}`: preferred over raw `![]()` Markdown images for any image inside a page bundle. Gives responsive/webp/lazy-loaded output via Congo's picture pipeline plus a visible caption. Use `attr` (Markdown-rendered) and optional `attrlink` for photo credit/attribution instead of stuffing it into the image `title` attribute or a manual footer paragraph.
+  - `{{< lead >}}...{{< /lead >}}`: styles a paragraph as a larger "lede". Use once, right after the hero image, wrapping the post's opening/summary paragraph.
+  - `{{< alert >}}...{{< /alert >}}`: callout box with a warning icon. Reserve for gotchas or easy-to-miss caveats, not routine notes — overusing it dilutes the signal.
+  - `{{< badge >}}...{{< /badge >}}`: inline pill/badge styling for short labels.
+  - Also available if a post needs them: `button`, `chart`, `gist`, `icon`, `katex`, `mermaid`, `profile`, `screenshot`.
+
+## Post Formatting & Emphasis
+- Use **bold**, *italic*, and underline to help readers scan and grasp a section quickly — apply them deliberately, not decoratively. A post with emphasis on every line is as hard to scan as one with none.
+  - **Bold**: at most one key phrase per paragraph, marking that paragraph's takeaway or thesis. Skip paragraphs that don't need it — bullet lists with their own bold labels, transitional sentences, and agenda/scope lines usually don't.
+  - *Italic*: personal asides/opinions, a contrasting phrase, or a short closing line that caps a section with a maxim-like summary.
+  - Underline: Markdown has no native syntax for it; use raw `<u>...</u>` HTML (allowed since `goldmark.renderer.unsafe = true` in `config/_default/markup.toml`). Reserve for at most one sentence in the entire post — the single most load-bearing definition or fact a reader must not miss.
+  - Don't stack bold, italic, and underline on the same phrase — pick one emphasis per point.
+
 ## Build, Test, and Development Commands
 - `make setup`: install Hugo and initialize the theme submodule.
 - `make start`: start local dev server with future posts enabled (`hugo server --buildFuture`), default URL `http://localhost:1313`.
