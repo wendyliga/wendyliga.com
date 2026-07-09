@@ -3,8 +3,8 @@ date: 2026-07-09T16:22:51+07:00
 title: How to use Xcode 27 MCP Server
 description: Use the Xcode 27 MCP server with Codex, Claude Code, and other external agents for end-to-end agentic development.
 summary: Learn how to enable the Xcode 27 MCP server, connect Codex or Claude Code, use Xcode tools from external agents, and extract Xcode skills for better agentic development.
-preview: images/xcode_27.png
-thumbnail: images/xcode_27.png
+preview: images/thumbnail.png
+thumbnail: images/thumbnail.png
 cover:
 draft: false
 tags: []
@@ -234,3 +234,7 @@ Xcode 27 makes agentic development much more practical than before. The built-in
 The bigger change is the Xcode MCP server. By enabling external agent access and registering `xcrun mcpbridge`, external agents can use Xcode tools from outside the app. They can inspect workspace state, build the project, run tests, read logs, render previews, install the app into the simulator, interact with the UI, and verify changes in a real Xcode runtime workflow.
 
 For my workflow, external agents still provide more control: model choice, loop-based engineering, remote access, and broader automation. With Xcode MCP, the Xcode skill, and extracted internal Xcode skills, I can keep that external-agent workflow while still using Xcode as the source of truth for Apple development.
+
+---
+
+*Thumbnail background photo by [Bernd 📷 Dittrich](https://unsplash.com/@hdbernd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/a-pixelated-orange-character-with-a-hat-GPPbPWwTHdg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText), modified for this post's thumbnail.*
