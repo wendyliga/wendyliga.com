@@ -11,6 +11,13 @@
 - This site uses the Congo Hugo theme. Use https://jpanther.github.io/congo/ as the reference for supported Congo formatting, front matter, shortcodes, layout options, and theme conventions before adding new presentation patterns.
 - Prefer existing local patterns first, then Congo-supported patterns from the docs when the repo does not already show the needed format.
 
+## Custom UI With Shortcodes
+- Hugo supports custom views and reusable UI through shortcodes in `layouts/shortcodes/`. Prefer existing shortcodes over raw HTML in Markdown when a post needs embedded media, revealable answers, or link cards.
+- `audio`: embeds a page-bundle MP3 with an HTML audio player. Use `src` for the media filename/path relative to the current page bundle, optional `caption`, optional `class`, and optional `preload` (defaults to `metadata`).
+- `answers`: creates a collapsible answer block with `<details>`. Use optional `title` for the summary text; the inner Markdown becomes the hidden answer content.
+- `youtube-music`: renders a YouTube/playlist-style card. Use `title`, `image`, and `link`; the shortcode derives and displays the link domain.
+- `link-preview`: renders a generic link preview card. Use `title`, `link`, optional `image`, and optional `description`; the shortcode derives and displays the link domain.
+
 ## Build, Test, and Development Commands
 - `make setup`: install Hugo and initialize the theme submodule.
 - `make start`: start local dev server with future posts enabled (`hugo server --buildFuture`), default URL `http://localhost:1313`.
