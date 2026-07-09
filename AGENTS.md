@@ -22,6 +22,8 @@
 - Set `draft: false` only when content is ready to publish.
 - Use lowercase, hyphenated slugs for blog folders (example: `content/blog/pihole-doh-cloudflare/`).
 - For Chinese content, preserve the dated path + UUID pattern; keep media filenames stable (`audio.mp3`, `thumbnail.png`).
+- Post thumbnails must use a 4:3 aspect ratio.
+- Use ImageMagick for image editing tasks such as resizing, cropping, format conversion, and thumbnail preparation.
 - Reuse existing shortcode patterns instead of introducing new markup styles for similar blocks.
 
 ## Testing Guidelines
