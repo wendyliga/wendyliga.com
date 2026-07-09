@@ -7,6 +7,10 @@
 - `config/_default/*.toml` holds site configuration. The theme is a Git submodule at `themes/congo`.
 - `static/` ships files as-is; `assets/` is for Hugo-processed assets.
 
+## Theme Reference
+- This site uses the Congo Hugo theme. Use https://jpanther.github.io/congo/ as the reference for supported Congo formatting, front matter, shortcodes, layout options, and theme conventions before adding new presentation patterns.
+- Prefer existing local patterns first, then Congo-supported patterns from the docs when the repo does not already show the needed format.
+
 ## Build, Test, and Development Commands
 - `make setup`: install Hugo and initialize the theme submodule.
 - `make start`: start local dev server with future posts enabled (`hugo server --buildFuture`), default URL `http://localhost:1313`.
