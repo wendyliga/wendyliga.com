@@ -42,7 +42,7 @@ Xcode 27 is a major step for developers who want to work with AI agents without 
 
 At the time of writing, I am using Xcode 27 beta 3. In this version, agentic development feels much closer to a **first-class Xcode feature**: the agent can understand the project context, help reason about code, and support development tasks from inside Xcode itself.
 
-Xcode 27 also introduces an **MCP server**. This is important because MCP is not limited to the built-in Xcode experience. <u>External agents can connect to Xcode from outside the app</u>, inspect project state, and use Xcode as part of a broader agentic development workflow.
+~~Xcode 27 also introduces an **MCP server**.~~ MCP server support was already available in Xcode 26.3. This is important because MCP is not limited to the built-in Xcode experience. <u>External agents can connect to Xcode from outside the app</u>, inspect project state, and use Xcode as part of a broader agentic development workflow.
 
 In this post, we will discuss the Xcode 27 MCP server in detail: what it is, why it matters, how Codex or Claude Code can connect to it, and how it changes day-to-day iOS and macOS development.
 
