@@ -1,0 +1,140 @@
+{{- $audioID := .Get "audio" -}}
+{{- $timingsPath := .Get "timings" -}}
+{{- if not $audioID -}}
+  {{- errorf "read-along shortcode in %q requires an audio parameter" .Page.Path -}}
+{{- end -}}
+{{- if not $timingsPath -}}
+  {{- errorf "read-along shortcode in %q requires a timings parameter" .Page.Path -}}
+{{- end -}}
+
+{{/* The audio parameter is the only link that is wired up at runtime rather than
+     at build time, so a missing id="..." on the audio shortcode would otherwise
+     fail silently in the browser. Catch it here instead. */}}
+{{- $rawContent := .Page.RawContent -}}
+{{- if not (or (in $rawContent (printf "id=\"%s\"" $audioID)) (in $rawContent (printf "id='%s'" $audioID))) -}}
+  {{- errorf "read-along shortcode in %q targets audio id %q, but no audio shortcode on the page sets id=%q; add it to the {{< audio >}} call" .Page.Path $audioID $audioID -}}
+{{- end -}}
+
+{{- $paragraphs := slice -}}
+{{- $paragraph := slice -}}
+{{- range split (replace .Inner "\r\n" "\n") "\n" -}}
+  {{- $sentence := strings.TrimSpace . -}}
+  {{- if $sentence -}}
+    {{- $paragraph = $paragraph | append $sentence -}}
+  {{- else if gt (len $paragraph) 0 -}}
+    {{- $paragraphs = $paragraphs | append (dict "sentences" $paragraph) -}}
+    {{- $paragraph = slice -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt (len $paragraph) 0 -}}
+  {{- $paragraphs = $paragraphs | append (dict "sentences" $paragraph) -}}
+{{- end -}}
+
+{{- $sentenceCount := 0 -}}
+{{- range $paragraphs -}}
+  {{- $sentenceCount = add $sentenceCount (len .sentences) -}}
+{{- end -}}
+{{- if eq $sentenceCount 0 -}}
+  {{- errorf "read-along shortcode in %q must contain at least one sentence" .Page.Path -}}
+{{- end -}}
+
+{{- $timingsFilename := strings.TrimPrefix "/" $timingsPath -}}
+{{- $timingsResource := .Page.Resources.Get $timingsFilename -}}
+{{- if not $timingsResource -}}
+  {{- errorf "read-along shortcode in %q could not find timing resource %q" .Page.Path $timingsFilename -}}
+{{- end -}}
+{{- $timingData := transform.Unmarshal $timingsResource -}}
+{{- $timingsFile := $timingsResource.Name -}}
+{{- if not (isset $timingData "version") -}}
+  {{- errorf "read-along timing file %q must declare a version" $timingsFile -}}
+{{- end -}}
+{{- $version := int $timingData.version -}}
+{{- $starts := slice -}}
+{{- $pinyin := slice -}}
+{{- $english := slice -}}
+{{- $hasAids := false -}}
+{{- if eq $version 1 -}}
+  {{- if or (not (isset $timingData "starts")) (not (reflect.IsSlice $timingData.starts)) -}}
+    {{- errorf "read-along version 1 timing file %q must contain a starts array" $timingsFile -}}
+  {{- end -}}
+  {{- $starts = $timingData.starts -}}
+{{- else if eq $version 2 -}}
+  {{- if or (not (isset $timingData "sentences")) (not (reflect.IsSlice $timingData.sentences)) -}}
+    {{- errorf "read-along version 2 timing file %q must contain a sentences array" $timingsFile -}}
+  {{- end -}}
+  {{- range $index, $entry := $timingData.sentences -}}
+    {{- if or (not (isset $entry "start")) (not (isset $entry "pinyin")) (not (isset $entry "english")) -}}
+      {{- errorf "read-along timing file %q sentence %d must contain start, pinyin, and english" $timingsFile $index -}}
+    {{- end -}}
+    {{- $pinyinText := strings.TrimSpace $entry.pinyin -}}
+    {{- $englishText := strings.TrimSpace $entry.english -}}
+    {{- if or (not $pinyinText) (not $englishText) -}}
+      {{- errorf "read-along timing file %q sentence %d must have non-empty pinyin and english" $timingsFile $index -}}
+    {{- end -}}
+    {{- $starts = $starts | append $entry.start -}}
+    {{- $pinyin = $pinyin | append $pinyinText -}}
+    {{- $english = $english | append $englishText -}}
+  {{- end -}}
+  {{- $hasAids = true -}}
+{{- else -}}
+  {{- errorf "read-along timing file %q uses unsupported version %d" $timingsFile $version -}}
+{{- end -}}
+{{- if ne (len $starts) $sentenceCount -}}
+  {{- errorf "read-along timing file %q has %d timestamps but the shortcode contains %d sentences" $timingsFile (len $starts) $sentenceCount -}}
+{{- end -}}
+{{- $previousStart := 0.0 -}}
+{{- range $index, $start := $starts -}}
+  {{- if lt $start 0.0 -}}
+    {{- errorf "read-along timing file %q has a negative timestamp at index %d" $timingsFile $index -}}
+  {{- end -}}
+  {{- if and (gt $index 0) (le $start $previousStart) -}}
+    {{- errorf "read-along timing file %q timestamps must be strictly increasing (index %d)" $timingsFile $index -}}
+  {{- end -}}
+  {{- $previousStart = $start -}}
+{{- end -}}
+
+<div
+  class="read-along"
+  data-read-along
+  data-audio-id="{{ $audioID }}"
+  data-starts="{{ $starts | jsonify }}"
+  {{ if $hasAids -}}
+    data-pinyin="{{ $pinyin | jsonify }}"
+    data-english="{{ $english | jsonify }}"
+  {{- end }}
+>
+  {{- if $hasAids }}
+    <div class="read-along__toggles" role="group" aria-label="Reading aids" hidden>
+      <button type="button" class="read-along__toggle" data-read-along-toggle="pinyin" aria-pressed="false">Pinyin</button>
+      <button type="button" class="read-along__toggle" data-read-along-toggle="english" aria-pressed="false">English</button>
+    </div>
+  {{- end }}
+  {{- $sentenceIndex := 0 -}}
+  {{- range $paragraphs }}
+    <p class="read-along__paragraph">
+      {{- range .sentences -}}
+        <span class="read-along__sentence" data-read-along-index="{{ $sentenceIndex }}">{{ . }}</span>
+        {{- $sentenceIndex = add $sentenceIndex 1 -}}
+      {{- end -}}
+    </p>
+  {{- end }}
+  {{- if $hasAids }}
+    <span
+      id="{{ $audioID }}-annotation"
+      class="read-along__annotation"
+      data-read-along-annotation
+      role="note"
+      aria-atomic="true"
+      hidden
+    >
+      <span class="read-along__aid" data-read-along-aid="pinyin" hidden>
+        <span class="read-along__aid-label">Pinyin</span>
+        <span class="read-along__aid-text" data-read-along-aid-text></span>
+      </span>
+      <span class="read-along__aid" data-read-along-aid="english" hidden>
+        <span class="read-along__aid-label">English</span>
+        <span class="read-along__aid-text" data-read-along-aid-text></span>
+      </span>
+    </span>
+  {{- end }}
+</div>

@@ -1,0 +1,11 @@
+{{ if .Page.HasShortcode "audio" }}
+  {{ $algorithm := .Site.Params.fingerprintAlgorithm | default "sha256" }}
+  {{ $audioPlayer := resources.Get "js/audio-player.js" | resources.Minify | resources.Fingerprint $algorithm }}
+  <script defer src="{{ $audioPlayer.Permalink }}" integrity="{{ $audioPlayer.Data.Integrity }}"></script>
+{{ end }}
+
+{{ if .Page.HasShortcode "read-along" }}
+  {{ $algorithm := .Site.Params.fingerprintAlgorithm | default "sha256" }}
+  {{ $readAlong := resources.Get "js/read-along.js" | resources.Minify | resources.Fingerprint $algorithm }}
+  <script defer src="{{ $readAlong.Permalink }}" integrity="{{ $readAlong.Data.Integrity }}"></script>
+{{ end }}
