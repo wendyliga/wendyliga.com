@@ -1,5 +1,5 @@
-languageCode = "en"
-languageDirection = "ltr"
+locale = "en"
+direction = "ltr"
 weight = 1
 
 title = "Wendy Liga"
