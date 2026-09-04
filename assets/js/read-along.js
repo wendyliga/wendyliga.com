@@ -78,6 +78,7 @@
     let hasPosition = false;
     let shownSignature = "";
     let focusedSentence = null;
+    let annotationFrame = 0;
     const enabledAids = readAidPreference();
 
     const hasEnabledAid = () => enabledAids.pinyin || enabledAids.english;
@@ -87,6 +88,15 @@
       if (aidsAvailable && hasEnabledAid() && focusedSentence) {
         focusedSentence.setAttribute("aria-describedby", annotation.id);
       }
+    };
+
+    const scheduleAnnotationPosition = () => {
+      if (!aidsAvailable || annotation.hidden || annotationFrame) return;
+
+      annotationFrame = window.requestAnimationFrame(() => {
+        annotationFrame = 0;
+        renderAnnotation();
+      });
     };
 
     const positionAnnotation = (index) => {
@@ -101,19 +111,41 @@
 
       const fragments =
         typeof sentence.getClientRects === "function" ? sentence.getClientRects() : [];
-      const anchor = fragments.length
+      const firstAnchor = fragments.length
+        ? fragments[0]
+        : sentence.getBoundingClientRect();
+      const lastAnchor = fragments.length
         ? fragments[fragments.length - 1]
         : sentence.getBoundingClientRect();
       const container = readAlong.getBoundingClientRect();
       const gutter = 8;
+      const gap = 6;
       const width = annotation.offsetWidth;
-      if (!Number.isFinite(width) || width <= 0) return;
+      const height = annotation.offsetHeight;
+      if (!Number.isFinite(width) || width <= 0 || !Number.isFinite(height) || height <= 0) return;
 
-      const centeredLeft = anchor.left - container.left + anchor.width / 2 - width / 2;
+      const centeredLeft = lastAnchor.left - container.left + lastAnchor.width / 2 - width / 2;
       const maximumLeft = Math.max(gutter, container.width - width - gutter);
+      const player = audio.closest("[data-audio-player]")?.querySelector("[data-audio-controls]");
+      const viewportBottom = window.innerHeight;
+      const playerTop =
+        player instanceof HTMLElement && window.getComputedStyle(player).position === "fixed"
+          ? player.getBoundingClientRect().top
+          : viewportBottom;
+      const availableBottom = Math.min(viewportBottom, playerTop) - gutter;
+      const belowTop = lastAnchor.bottom - container.top + gap;
+      const aboveTop = firstAnchor.top - container.top - gap - height;
+      const belowBottom = container.top + belowTop + height;
+      const minimumTop = gutter - container.top;
+      const maximumTop = availableBottom - container.top - height;
+      let top = belowTop;
+
+      if (belowBottom > availableBottom) {
+        top = Math.max(minimumTop, Math.min(aboveTop, maximumTop));
+      }
 
       annotation.style.left = `${Math.min(Math.max(centeredLeft, gutter), maximumLeft)}px`;
-      annotation.style.top = `${anchor.bottom - container.top + 6}px`;
+      annotation.style.top = `${top}px`;
     };
 
     const renderAnnotation = () => {
@@ -261,7 +293,10 @@
       setActive(-1);
     });
     if (typeof window !== "undefined") {
-      window.addEventListener("resize", renderAnnotation);
+      window.addEventListener("scroll", scheduleAnnotationPosition, { passive: true });
+      window.addEventListener("resize", scheduleAnnotationPosition);
+      window.visualViewport?.addEventListener("scroll", scheduleAnnotationPosition, { passive: true });
+      window.visualViewport?.addEventListener("resize", scheduleAnnotationPosition);
     }
 
     readAlong.classList.add("read-along--ready");

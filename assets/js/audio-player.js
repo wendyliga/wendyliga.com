@@ -16,6 +16,7 @@
     const pauseIcon = player.querySelector('[data-audio-icon="pause"]');
     const progress = player.querySelector("[data-audio-progress]");
     const time = player.querySelector("[data-audio-time]");
+    const sources = Array.from(audio?.querySelectorAll("source") || []);
 
     if (
       !(audio instanceof HTMLAudioElement) ||
@@ -30,6 +31,7 @@
     }
 
     let isScrubbing = false;
+    let hasError = false;
 
     // `duration` stays NaN until metadata loads, so formatTime can render --:--
     // instead of advertising a zero-length track (notably with preload="none").
@@ -45,7 +47,12 @@
       const known = Number.isFinite(duration) && duration > 0;
 
       progress.max = String(known ? duration : 0);
-      progress.disabled = !known;
+      progress.disabled = hasError || !known;
+
+      if (hasError) {
+        time.value = "Audio unavailable";
+        return;
+      }
 
       // While the user drags, the slider is the source of truth; letting
       // timeupdate write back would yank the thumb out from under the pointer.
@@ -57,11 +64,37 @@
     };
 
     const updatePlayback = () => {
+      if (hasError) {
+        playButton.disabled = true;
+        playButton.setAttribute("aria-label", "Audio unavailable");
+        playButton.dataset.state = "error";
+        playIcon.hidden = false;
+        pauseIcon.hidden = true;
+        return;
+      }
+
+      playButton.disabled = false;
       const isPlaying = !audio.paused && !audio.ended;
       playButton.setAttribute("aria-label", isPlaying ? "Pause story" : "Play story");
       playButton.dataset.state = isPlaying ? "playing" : "paused";
       playIcon.toggleAttribute("hidden", isPlaying);
       pauseIcon.toggleAttribute("hidden", !isPlaying);
+    };
+
+    const markUnavailable = () => {
+      hasError = true;
+      audio.pause();
+      player.classList.add("story-audio--error");
+      updateProgress();
+      updatePlayback();
+    };
+
+    const clearUnavailable = () => {
+      if (!hasError) return;
+      hasError = false;
+      player.classList.remove("story-audio--error");
+      updateProgress();
+      updatePlayback();
     };
 
     playButton.addEventListener("click", () => {
@@ -71,7 +104,10 @@
       }
 
       if (audio.ended) audio.currentTime = 0;
-      audio.play().catch(() => updatePlayback());
+      audio.play().catch(() => {
+        if (audio.error) markUnavailable();
+        else updatePlayback();
+      });
     });
 
     const beginScrub = () => {
@@ -98,9 +134,15 @@
       progress.addEventListener(eventName, endScrub);
     }
 
-    for (const eventName of ["loadedmetadata", "durationchange", "timeupdate", "seeking", "seeked", "ended"]) {
+    for (const eventName of ["durationchange", "timeupdate", "seeking", "seeked", "ended"]) {
       audio.addEventListener(eventName, updateProgress);
     }
+    audio.addEventListener("loadedmetadata", () => {
+      clearUnavailable();
+      updateProgress();
+    });
+    audio.addEventListener("error", markUnavailable);
+    sources.forEach((source) => source.addEventListener("error", markUnavailable));
     for (const eventName of ["play", "pause", "ended"]) {
       audio.addEventListener(eventName, updatePlayback);
     }
@@ -109,8 +151,11 @@
     audio.hidden = true;
     controls.hidden = false;
     player.classList.add("story-audio--ready");
-    updateProgress();
-    updatePlayback();
+    if (audio.error) markUnavailable();
+    else {
+      updateProgress();
+      updatePlayback();
+    }
     return true;
   };
 
