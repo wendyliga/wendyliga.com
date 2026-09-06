@@ -1,0 +1,100 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.0,
+      "pinyin": "Jiàoshī jié kuài dào le.",
+      "english": "The Teacher's Day is coming soon."
+    },
+    {
+      "start": 2.0,
+      "pinyin": "Lìlì duì Xiǎomíng shuō: \"Zài guò jǐ tiān jiùshì jiàoshī jié le, wǒmen gěi Wáng lǎoshī zhǔnbèi yī fèn lǐwù ba!\"",
+      "english": "Lili said to Xiaoming, \"In a few days, it will be Teacher's Day. Let's prepare a gift for Teacher Wang!\""
+    },
+    {
+      "start": 8.75,
+      "pinyin": "Xiǎomíng shuō: \"Hǎo zhǔyì! Kěshì sòng shénme hǎo ne?\"",
+      "english": "Xiaoming said, \"Good idea! But what should we give?\""
+    },
+    {
+      "start": 11.75,
+      "pinyin": "Lìlì xiǎngle xiǎng, shuō: \"Wǒmen kěyǐ zìjǐ zuò yī zhāng kǎpiàn, zài cóng huāyuán lǐ zhāi yīxiē xīnxiān de huā.\"",
+      "english": "Lili thought for a moment and said, \"We can make a card ourselves and pick some fresh flowers from the garden.\""
+    },
+    {
+      "start": 17.25,
+      "pinyin": "Xiǎomíng gāoxìng de shuō: \"Tài hǎo le! Wǒ zuì xǐhuān Wáng lǎoshī le, tā jiāo wǒmen Hànyǔ, duì wǒmen zhēn hǎo.\"",
+      "english": "Xiaoming said happily, \"Great! I like Teacher Wang the most. She teaches us Chinese and is very kind to us.\""
+    },
+    {
+      "start": 22.75,
+      "pinyin": "Xiàwǔ, liǎng gè háizi kāishǐ zuò kǎpiàn.",
+      "english": "In the afternoon, the two children started making the card."
+    },
+    {
+      "start": 25.75,
+      "pinyin": "Lìlì bāng Xiǎomíng zài kǎpiàn shàng xiězì: \"Lǎoshī, xièxie nín! Zhù nín jiàoshī jié kuàilè!\"",
+      "english": "Lili helped Xiaoming write on the card: \"Teacher, thank you! Wishing you a happy Teacher's Day!\""
+    },
+    {
+      "start": 30.0,
+      "pinyin": "Xiě wán yǐhòu, tāmen yīqǐ qù huāyuán zhāi huā.",
+      "english": "After writing, they went to the garden to pick flowers together."
+    },
+    {
+      "start": 33.0,
+      "pinyin": "Huāyuán lǐ de huā yòu hóng yòu bái, piàoliang jí le.",
+      "english": "The flowers in the garden were red and white, extremely beautiful."
+    },
+    {
+      "start": 36.0,
+      "pinyin": "Xiǎomíng xiǎoxīn de zhāile shí duǒ huā, Lìlì bǎ tāmen fàng zài yīqǐ.",
+      "english": "Xiaoming carefully picked ten flowers, and Lili put them together."
+    },
+    {
+      "start": 40.25,
+      "pinyin": "Jiàoshī jié nàtiān zǎoshang, tāmen zǎozǎo de láidào xuéxiào.",
+      "english": "On the morning of Teacher's Day, they arrived at school early."
+    },
+    {
+      "start": 43.25,
+      "pinyin": "Kàndào Wáng lǎoshī, liǎng gè rén yīqǐ shuō: \"Lǎoshī, zhù nín jiérì kuàilè! Zhè shì wǒmen zìjǐ zuò de kǎpiàn, háiyǒu gāng cóng huāyuán lǐ zhāi de huā.\"",
+      "english": "Seeing Teacher Wang, the two said together, \"Teacher, wishing you a happy holiday! This is a card we made ourselves, and also flowers just picked from the garden.\""
+    },
+    {
+      "start": 51.25,
+      "pinyin": "Wáng lǎoshī jiēguò lǐwù, xiào le.",
+      "english": "Teacher Wang accepted the gift and smiled."
+    },
+    {
+      "start": 53.0,
+      "pinyin": "Tā xiàozhe shuō: \"Xièxie nǐmen! Qíshí, duì lǎoshī lái shuō, zuì hǎo de lǐwù jiùshì kànzhe xuéshēngmen xuéxí hé zhǎngdà. Nǐmen yuè lái yuè nǔlì, lǎoshī jiù yuè kāixīn.\"",
+      "english": "She smiled and said, \"Thank you! Actually, for a teacher, the best gift is to see students learning and growing up. The harder you work, the happier the teacher will be.\""
+    },
+    {
+      "start": 63.5,
+      "pinyin": "Tīngle lǎoshī de huà, Xiǎomíng hé Lìlì juéde hěn jiāo'ào.",
+      "english": "After hearing the teacher's words, Xiaoming and Lili felt very proud."
+    },
+    {
+      "start": 67.75,
+      "pinyin": "Tāmen juédìng yǐhòu yào gèng rènzhēn de xuéxí.",
+      "english": "They decided to study more seriously in the future."
+    },
+    {
+      "start": 70.75,
+      "pinyin": "Xiǎomíng shuō: \"Wǒ yǐhòu měitiān dōu yào fùxí shēngcí!\"",
+      "english": "Xiaoming said, \"I will review new words every day from now on!\""
+    },
+    {
+      "start": 73.75,
+      "pinyin": "Lìlì yě xiàozhe shuō: \"Wǒ yěshì! Ràng wǒmen yīqǐ jiāyóu ba!\"",
+      "english": "Lili also smiled and said, \"Me too! Let's work hard together!\""
+    },
+    {
+      "start": 78.0,
+      "pinyin": "Cóng nà yǐhòu, liǎng gè háizi tiāntiān rènzhēn xuéxí, Wáng lǎoshī měitiān dōu hěn kāixīn.",
+      "english": "From then on, the two children studied hard every day, and Teacher Wang was happy every day."
+    }
+  ]
+}
