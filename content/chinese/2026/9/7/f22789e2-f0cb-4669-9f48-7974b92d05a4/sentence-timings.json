@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.000,
+      "pinyin": "Jiàoshījié kuài dào le.",
+      "english": "Teacher's Day is approaching."
+    },
+    {
+      "start": 0.410,
+      "pinyin": "Xiǎomíng xiǎng gěi zuì xǐhuān de Wáng lǎoshī zuò yī zhāng kǎpiàn, kěshì tā juédé zìjǐ xiě de zì bù hǎokàn.",
+      "english": "Xiaoming wanted to make a card for his favorite teacher, Teacher Wang, but he thought his handwriting wasn't good."
+    },
+    {
+      "start": 4.220,
+      "pinyin": "Jiějie Lìlì zhīdào le, duì tā shuō: \"Bié dānxīn, wǒ lái bāng nǐ xiě hànzì. Nǐ xiǎng duì lǎoshī shuō shénme ne?\"",
+      "english": "His sister Lili found out and said to him, \"Don't worry, I'll help you write the Chinese characters. What do you want to say to the teacher?\""
+    },
+    {
+      "start": 8.770,
+      "pinyin": "Xiǎomíng shuō: \"Wǒ xiǎng xiě: Lǎoshī, xièxie nín! Nín jiāo wǒmen Zhōngwén, wǒmen dōu xǐhuān nín.\"",
+      "english": "Xiaoming said, \"I want to write: Teacher, thank you! You teach us Chinese, and we all like you.\""
+    },
+    {
+      "start": 13.780,
+      "pinyin": "Lìlì xiào le xiào, bāng tā zài kǎpiàn shàng xiě hǎo le jǐ ge piàoliang de hànzì.",
+      "english": "Lili smiled and helped him write a few beautiful Chinese characters on the card."
+    },
+    {
+      "start": 16.890,
+      "pinyin": "Ránhòu, tāmen yīqǐ lái dào huāyuán, xuǎn le yīxiē hěn hǎokàn de huā'ér.",
+      "english": "Then, they went to the garden together and picked some very nice-looking flowers."
+    },
+    {
+      "start": 19.980,
+      "pinyin": "Dì-èrtiān zǎoshang, Xiǎomíng dàizhe kǎpiàn hé huā'ér lái dào xuéxiào.",
+      "english": "The next morning, Xiaoming brought the card and flowers to school."
+    },
+    {
+      "start": 23.230,
+      "pinyin": "Shàngkè yǐqián, Xiǎomíng yǒudiǎnr jǐnzhāng.",
+      "english": "Before class, Xiaoming was a little nervous."
+    },
+    {
+      "start": 25.040,
+      "pinyin": "Tā xiǎoshēng de duì Wáng lǎoshī shuō: \"Lǎoshī, Jiàoshījié kuàilè! Zhè shì wǒ hé jiějie sòng gěi nín de.\"",
+      "english": "He quietly said to Teacher Wang, \"Teacher, Happy Teacher's Day! This is from my sister and me to you.\""
+    },
+    {
+      "start": 30.220,
+      "pinyin": "Wáng lǎoshī kàn le kàn kǎpiàn hé huā'ér, gāoxìng de xiào le: \"Xièxie nǐ, Xiǎomíng! Kǎpiàn shàng de zì xiě de zhēn hǎokàn, huā'ér yě hěn piàoliang. Wǒ hěn xǐhuān.\"",
+      "english": "Teacher Wang looked at the card and flowers and smiled happily, \"Thank you, Xiaoming! The writing on the card is so beautiful, and the flowers are also very pretty. I like them very much.\""
+    },
+    {
+      "start": 38.280,
+      "pinyin": "Tīng le lǎoshī de huà, Xiǎomíng gāoxìng jí le.",
+      "english": "Hearing the teacher's words, Xiaoming was overjoyed."
+    },
+    {
+      "start": 40.160,
+      "pinyin": "Tā xiǎng: Yǐhòu wǒ yào gèng nǔlì xuéxí, ràng lǎoshī tiāntiān dōu gāoxìng.",
+      "english": "He thought: From now on, I will study harder to make the teacher happy every day."
+    }
+  ]
+}
