@@ -1,0 +1,90 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.15,
+      "pinyin": "Jiàoshījié kuài dào le, fàngxué yǐhòu, Xiǎomíng hé Lìlì yīqǐ huíjiā.",
+      "english": "Teacher's Day was approaching, and after school, Xiaoming and Lili walked home together."
+    },
+    {
+      "start": 6.95,
+      "pinyin": "Lùshang, Xiǎomíng duì Lìlì shuō: \"Wǒ xiǎng sòng lǎoshī yī fèn lǐwù, nǐ juéde sòng shénme hǎo?\"",
+      "english": "On the way, Xiaoming said to Lili, \"I want to give our teacher a gift. What do you think would be good?\""
+    },
+    {
+      "start": 14.85,
+      "pinyin": "Lìlì xiǎngle xiǎng, shuō: \"Wǒ tīngshuō lǎoshī zuì xǐhuan huā. Nǐ kàn, lùbiān yǒu hěn duō yěhuā, wǒmen zhāi yīxiē ba.\"",
+      "english": "Lili thought for a moment and said, \"I heard that teacher likes flowers the most. Look, there are many wildflowers by the roadside, let's pick some.\""
+    },
+    {
+      "start": 25.15,
+      "pinyin": "Xiǎomíng gāoxìng de shuō: \"Hǎo zhǔyi! Wǒ hái yào zuò yī zhāng kǎpiàn, xiě shang 'Lǎoshī xièxie nín'.\"",
+      "english": "Xiaoming said happily, \"Good idea! I also want to make a card and write 'Thank you, Teacher' on it.\""
+    },
+    {
+      "start": 33.85,
+      "pinyin": "Lìlì xiàozhe shuō: \"Tài hǎo le! Wǒ huì huàhuà, wǒ kěyǐ bāng nǐ huà jǐ duǒ xiǎohuā, ràng kǎpiàn gèng piàoliang.\"",
+      "english": "Lili smiled and said, \"Great! I know how to draw, so I can help you draw a few little flowers to make the card even prettier.\""
+    },
+    {
+      "start": 43.15,
+      "pinyin": "Tāmen yībiān zǒu, yībiān zhāi huā, hěn kuài jiù zhāile yī dà bǎ.",
+      "english": "As they walked, they picked flowers, and soon they had gathered a large bunch."
+    },
+    {
+      "start": 48.72,
+      "pinyin": "Huí dào jiā yǐhòu, liǎng gè rén kāishǐ zuò kǎpiàn.",
+      "english": "After arriving home, the two of them started making the card."
+    },
+    {
+      "start": 53.05,
+      "pinyin": "Lìlì xiān zài kǎpiàn shang huàle jǐ duǒ xiǎohuā, hái xiě shangle \"Jiàoshījié kuàilè\".",
+      "english": "First, Lili drew a few little flowers on the card and also wrote \"Happy Teacher's Day\"."
+    },
+    {
+      "start": 59.35,
+      "pinyin": "Xiǎomíng xiǎng zài kǎpiàn shang xiě \"Lǎoshī xièxie nín\" wǔ gè zì, kěshì tā xiěle liǎng cì, dōu juéde zì bù tài hǎokàn.",
+      "english": "Xiaoming wanted to write the five characters \"Thank you, Teacher\" on the card, but he wrote it twice and felt the handwriting didn't look very nice both times."
+    },
+    {
+      "start": 68.22,
+      "pinyin": "Lìlì duì tā shuō: \"Bié zhāojí, nǐ duō liànxí jǐ cì, yīdìng huì xiě de yuè lái yuè hǎo.\"",
+      "english": "Lili said to him, \"Don't worry, practice a few more times and you will definitely write better and better.\""
+    },
+    {
+      "start": 76.05,
+      "pinyin": "Xiǎomíng tīngle Lìlì de huà, yòu rènzhēn de liànle hěn duō cì.",
+      "english": "Listening to Lili's words, Xiaoming earnestly practiced many more times."
+    },
+    {
+      "start": 81.12,
+      "pinyin": "Xiě wán yǐhòu, tā kànle kàn, gāoxìng de shuō: \"Zhè cì xiě de yòu zhěngqí yòu piàoliang!\"",
+      "english": "After finishing, he looked at it and said happily, \"This time it is written both neatly and beautifully!\""
+    },
+    {
+      "start": 89.85,
+      "pinyin": "Jiàoshījié nà tiān zǎoshang, tāmen hěn zǎo jiù dào le xuéxiào, bǎ yěhuā hé kǎpiàn yīqǐ sòng gěi le lǎoshī.",
+      "english": "On the morning of Teacher's Day, they arrived at school very early and presented the wildflowers and the card together to their teacher."
+    },
+    {
+      "start": 98.15,
+      "pinyin": "Lǎoshī kànle kǎpiàn, fēicháng gǎndòng.",
+      "english": "The teacher looked at the card and was deeply moved."
+    },
+    {
+      "start": 102.15,
+      "pinyin": "Tā xiàozhe shuō: \"Xièxie nǐmen! Nǐmen zhēn yòngxīn, zhè shì wǒ shōudào de zuì hǎo de lǐwù!\"",
+      "english": "She smiled and said, \"Thank you! You are so thoughtful; this is the best gift I have received!\""
+    },
+    {
+      "start": 111.45,
+      "pinyin": "Xiǎomíng hé Lìlì tīngle, dōu gāoxìng de xiào le.",
+      "english": "Xiaoming and Lili smiled happily upon hearing this."
+    },
+    {
+      "start": 115.82,
+      "pinyin": "Huíjiā de lùshang, tāmen yībiān zǒu yībiān shuō, juéde jīntiān zhēn shì kuàilè de yī tiān.",
+      "english": "On the way home, they chatted as they walked, feeling that today was truly a happy day."
+    }
+  ]
+}
