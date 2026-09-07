@@ -1,0 +1,131 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.16,
+      "hanzi": "教师节以后，老师给全班同学写了一封感谢信。",
+      "pinyin": "Jiàoshījié yǐhòu, lǎoshī gěi quánbān tóngxué xiě le yī fēng gǎnxiè xìn.",
+      "english": "After Teacher's Day, the teacher wrote a thank-you letter to the whole class."
+    },
+    {
+      "start": 8.48,
+      "hanzi": "信里说：“你们送的礼物很好，但是对我最好的礼物，是看到你们努力学习。”",
+      "pinyin": "Xìn li shuō: \"Nǐmen sòng de lǐwù hěn hǎo, dànshì duì wǒ zuì hǎo de lǐwù, shì kàndào nǐmen nǔlì xuéxí.\"",
+      "english": "The letter said: \"The gifts you gave are very nice, but the best gift for me is seeing you study hard.\""
+    },
+    {
+      "start": 18,
+      "hanzi": "小明看了信，心里很感动。",
+      "pinyin": "Xiǎomíng kàn le xìn, xīnli hěn gǎndòng.",
+      "english": "When Xiaoming read the letter, he was deeply moved."
+    },
+    {
+      "start": 22.24,
+      "hanzi": "他对丽丽说：“老师这么爱我们，我们应该送给她一个真正的礼物。”",
+      "pinyin": "Tā duì Lìlì shuō: \"Lǎoshī zhème ài wǒmen, wǒmen yīnggāi sòng gěi tā yī gè zhēnzhèng de lǐwù.\"",
+      "english": "He said to Lili: \"The teacher loves us so much; we should give her a real gift.\""
+    },
+    {
+      "start": 31.24,
+      "hanzi": "丽丽想了想，说：“好！我们一起努力学习，用好的成绩送给她。”",
+      "pinyin": "Lìlì xiǎng le xiǎng, shuō: \"Hǎo! Wǒmen yīqǐ nǔlì xuéxí, yòng hǎo de chéngjì sòng gěi tā.\"",
+      "english": "Lili thought for a moment and said: \"Okay! Let's study hard together and give her good grades as a gift.\""
+    },
+    {
+      "start": 39.48,
+      "hanzi": "于是，两个人一起商量了一个学习计划。",
+      "pinyin": "Yúshì, liǎng gè rén yīqǐ shāngliang le yī gè xuéxí jìhuà.",
+      "english": "So the two of them worked out a study plan together."
+    },
+    {
+      "start": 44.6,
+      "hanzi": "他们决定每天放学以后，一起学习两个小时。",
+      "pinyin": "Tāmen juédìng měitiān fàngxué yǐhòu, yīqǐ xuéxí liǎng gè xiǎoshí.",
+      "english": "They decided to study together for two hours every day after school."
+    },
+    {
+      "start": 49.24,
+      "hanzi": "可是，学习计划开始以后，小明遇到了一个问题。",
+      "pinyin": "Kěshì, xuéxí jìhuà kāishǐ yǐhòu, Xiǎomíng yùdào le yī gè wèntí.",
+      "english": "But after the study plan started, Xiaoming ran into a problem."
+    },
+    {
+      "start": 55.01,
+      "hanzi": "他的数学作业太难了，怎么想也想不明白。",
+      "pinyin": "Tā de shùxué zuòyè tài nán le, zěnme xiǎng yě xiǎng bu míngbai.",
+      "english": "His math homework was too difficult; no matter how he thought about it, he just couldn't understand it."
+    },
+    {
+      "start": 60.13,
+      "hanzi": "他难过地对丽丽说：“数学太难了，我不想学了。”",
+      "pinyin": "Tā nánguò de duì Lìlì shuō: \"Shùxué tài nán le, wǒ bù xiǎng xué le.\"",
+      "english": "He said sadly to Lili: \"Math is too hard; I don't want to study it anymore.\""
+    },
+    {
+      "start": 65.73,
+      "hanzi": "丽丽笑着对他说：“别着急，我来帮助你。只要每天认真练习，你一定会进步。”",
+      "pinyin": "Lìlì xiàozhe duì tā shuō: \"Bié zháojí, wǒ lái bāngzhù nǐ. Zhǐyào měitiān rènzhēn liànxí, nǐ yīdìng huì jìnbù.\"",
+      "english": "Lili said to him with a smile: \"Don't worry, I'll help you. As long as you practice seriously every day, you will definitely improve.\""
+    },
+    {
+      "start": 74.72,
+      "hanzi": "从那天起，每天晚上，丽丽都耐心地教小明数学。",
+      "pinyin": "Cóng nà tiān qǐ, měitiān wǎnshang, Lìlì dōu nàixīn de jiāo Xiǎomíng shùxué.",
+      "english": "From that day on, every evening, Lili patiently taught Xiaoming math."
+    },
+    {
+      "start": 81.36,
+      "hanzi": "她一点儿也不觉得累，一道题一道题地给他讲。",
+      "pinyin": "Tā yīdiǎnr yě bù juéde lèi, yī dào tí yī dào tí de gěi tā jiǎng.",
+      "english": "She didn't feel tired at all, explaining the problems to him one by one."
+    },
+    {
+      "start": 86.64,
+      "hanzi": "慢慢地，小明都听懂了。",
+      "pinyin": "Mànmàn de, Xiǎomíng dōu tīngdǒng le.",
+      "english": "Slowly, Xiaoming came to understand it all."
+    },
+    {
+      "start": 89.76,
+      "hanzi": "一个星期以后，考试的时候，有一道很难的题。",
+      "pinyin": "Yī gè xīngqī yǐhòu, kǎoshì de shíhou, yǒu yī dào hěn nán de tí.",
+      "english": "A week later, during the exam, there was a very difficult problem."
+    },
+    {
+      "start": 95.11,
+      "hanzi": "小明想了很久，忽然明白了，他自己解决了这道难题！",
+      "pinyin": "Xiǎomíng xiǎng le hěn jiǔ, hūrán míngbai le, tā zìjǐ jiějué le zhè dào nántí!",
+      "english": "Xiaoming thought for a long time, then suddenly it clicked—he had solved the difficult problem all by himself!"
+    },
+    {
+      "start": 101.67,
+      "hanzi": "他高兴地对丽丽说：“我自己做出来了！这是我第一次解决这么难的问题！”",
+      "pinyin": "Tā gāoxìng de duì Lìlì shuō: \"Wǒ zìjǐ zuò chūlai le! Zhè shì wǒ dì yī cì jiějué zhème nán de wèntí!\"",
+      "english": "He happily said to Lili: \"I figured it out by myself! This is the first time I've ever solved such a hard problem!\""
+    },
+    {
+      "start": 109.67,
+      "hanzi": "丽丽也为他高兴：“你看，你的努力有了进步。”",
+      "pinyin": "Lìlì yě wèi tā gāoxìng: \"Nǐ kàn, nǐ de nǔlì yǒu le jìnbù.\"",
+      "english": "Lili was happy for him too: \"You see, your hard work has paid off.\""
+    },
+    {
+      "start": 115.43,
+      "hanzi": "后来，小明的数学越来越好。",
+      "pinyin": "Hòulái, Xiǎomíng de shùxué yuè lái yuè hǎo.",
+      "english": "Later on, Xiaoming's math got better and better."
+    },
+    {
+      "start": 118.82,
+      "hanzi": "他们把这个好消息告诉了老师。",
+      "pinyin": "Tāmen bǎ zhège hǎo xiāoxi gàosu le lǎoshī.",
+      "english": "They told the teacher the good news."
+    },
+    {
+      "start": 123.22,
+      "hanzi": "老师笑着说：“这才是送给我最好的礼物。”",
+      "pinyin": "Lǎoshī xiàozhe shuō: \"Zhè cái shì sòng gěi wǒ zuì hǎo de lǐwù.\"",
+      "english": "The teacher said with a smile: \"This is truly the best gift you could give me.\""
+    }
+  ]
+}
