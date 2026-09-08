@@ -1,0 +1,83 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.16,
+      "hanzi": "教师节还有两天就到了。",
+      "pinyin": "Jiàoshījié hái yǒu liǎng tiān jiù dào le.",
+      "english": "Teacher's Day was only two days away."
+    },
+    {
+      "start": 3.28,
+      "hanzi": "小明和丽丽是兄妹，他们决定给老师准备一份特别的礼物。",
+      "pinyin": "Xiǎomíng hé Lìlì shì xiōngmèi, tāmen juédìng gěi lǎoshī zhǔnbèi yī fèn tèbié de lǐwù.",
+      "english": "Xiaoming and Lili are brother and sister, and they decided to prepare a special gift for their teacher."
+    },
+    {
+      "start": 9.68,
+      "hanzi": "小明对丽丽说：“我们给老师画一幅画，好不好？”",
+      "pinyin": "Xiǎomíng duì Lìlì shuō: \"Wǒmen gěi lǎoshī huà yī fú huà, hǎo bù hǎo?\"",
+      "english": "Xiaoming said to Lili, \"Let's draw a picture for our teacher, okay?\""
+    },
+    {
+      "start": 16.16,
+      "hanzi": "丽丽高兴地回答：“好主意！我要给老师写一张感谢卡。”",
+      "pinyin": "Lìlì gāoxìng de huídá: \"Hǎo zhǔyì! Wǒ yào gěi lǎoshī xiě yī zhāng gǎnxiè kǎ.\"",
+      "english": "Lili happily replied, \"Good idea! I'm going to write a thank-you card for our teacher.\""
+    },
+    {
+      "start": 22.07,
+      "hanzi": "于是，小明认真地画了一幅教室的画。",
+      "pinyin": "Yúshì, Xiǎomíng rènzhēn de huàle yī fú jiàoshì de huà.",
+      "english": "So Xiaoming carefully drew a picture of the classroom."
+    },
+    {
+      "start": 26.31,
+      "hanzi": "丽丽在卡片上写了很多感谢老师的话。",
+      "pinyin": "Lìlì zài kǎpiàn shàng xiěle hěn duō gǎnxiè lǎoshī de huà.",
+      "english": "Lili wrote many words of thanks to the teacher on the card."
+    },
+    {
+      "start": 30.63,
+      "hanzi": "教师节那天早上，他们很早就起床了。",
+      "pinyin": "Jiàoshījié nà tiān zǎoshang, tāmen hěn zǎo jiù qǐchuáng le.",
+      "english": "On the morning of Teacher's Day, they got up very early."
+    },
+    {
+      "start": 35.19,
+      "hanzi": "他们从花园里摘了一些新鲜的花，带到了学校。",
+      "pinyin": "Tāmen cóng huāyuán lǐ zhāile yīxiē xīnxiān de huā, dài dàole xuéxiào.",
+      "english": "They picked some fresh flowers from the garden and brought them to school."
+    },
+    {
+      "start": 40.47,
+      "hanzi": "上课的时候，他们把花和礼物送给了老师。",
+      "pinyin": "Shàngkè de shíhou, tāmen bǎ huā hé lǐwù sòng gěile lǎoshī.",
+      "english": "During class, they gave the flowers and gifts to the teacher."
+    },
+    {
+      "start": 45.33,
+      "hanzi": "老师看了画和卡片，非常感动。",
+      "pinyin": "Lǎoshī kànle huà hé kǎpiàn, fēicháng gǎndòng.",
+      "english": "When the teacher looked at the picture and the card, she was deeply touched."
+    },
+    {
+      "start": 49.33,
+      "hanzi": "老师对他们说：“你们的关心就是最好的礼物，谢谢你们！”",
+      "pinyin": "Lǎoshī duì tāmen shuō: \"Nǐmen de guānxīn jiùshì zuì hǎo de lǐwù, xièxie nǐmen!\"",
+      "english": "The teacher said to them, \"Your thoughtfulness is the best gift. Thank you!\""
+    },
+    {
+      "start": 55.17,
+      "hanzi": "小明和丽丽听了，觉得很骄傲，也很开心。",
+      "pinyin": "Xiǎomíng hé Lìlì tīngle, juéde hěn jiāo'ào, yě hěn kāixīn.",
+      "english": "Hearing this, Xiaoming and Lili felt very proud and very happy."
+    },
+    {
+      "start": 60.21,
+      "hanzi": "从那天起，他们学习更努力了，因为他们想让老师更高兴。",
+      "pinyin": "Cóng nà tiān qǐ, tāmen xuéxí gèng nǔlì le, yīnwèi tāmen xiǎng ràng lǎoshī gèng gāoxìng.",
+      "english": "From that day on, they studied even harder, because they wanted to make their teacher happier."
+    }
+  ]
+}
