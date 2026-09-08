@@ -1,0 +1,113 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.64,
+      "hanzi": "开学第一天。",
+      "pinyin": "Kāixué dì yī tiān.",
+      "english": "The first day of school."
+    },
+    {
+      "start": 2.56,
+      "hanzi": "小明和丽丽一起整理书包。",
+      "pinyin": "Xiǎomíng hé Lìlì yīqǐ zhěnglǐ shūbāo.",
+      "english": "Xiaoming and Lili packed their schoolbags together."
+    },
+    {
+      "start": 6.32,
+      "hanzi": "小明把书放进书包里。",
+      "pinyin": "Xiǎomíng bǎ shū fàngjìn shūbāo lǐ.",
+      "english": "Xiaoming put the books into his schoolbag."
+    },
+    {
+      "start": 9.44,
+      "hanzi": "丽丽把铅笔放进铅笔盒里。",
+      "pinyin": "Lìlì bǎ qiānbǐ fàngjìn qiānbǐhé lǐ.",
+      "english": "Lili put the pencil into the pencil case."
+    },
+    {
+      "start": 12.88,
+      "hanzi": "小明发现他的铅笔盒不见了。",
+      "pinyin": "Xiǎomíng fāxiàn tā de qiānbǐhé bù jiàn le.",
+      "english": "Xiaoming discovered that his pencil case was missing."
+    },
+    {
+      "start": 16.24,
+      "hanzi": "他问丽丽：“你看见我的铅笔盒了吗？”",
+      "pinyin": "Tā wèn Lìlì: \"Nǐ kànjiàn wǒ de qiānbǐhé le ma?\"",
+      "english": "He asked Lili, \"Did you see my pencil case?\""
+    },
+    {
+      "start": 20.32,
+      "hanzi": "丽丽说：“我没有看见。你的铅笔盒是什么颜色的？”",
+      "pinyin": "Lìlì shuō: \"Wǒ méiyǒu kànjiàn. Nǐ de qiānbǐhé shì shénme yánsè de?\"",
+      "english": "Lili said, \"I didn't see it. What color is your pencil case?\""
+    },
+    {
+      "start": 26.22,
+      "hanzi": "小明说：“我的铅笔盒是蓝色的，上面有一只小狗。”",
+      "pinyin": "Xiǎomíng shuō: \"Wǒ de qiānbǐhé shì lánsè de, shàngmiàn yǒu yī zhī xiǎogǒu.\"",
+      "english": "Xiaoming said, \"My pencil case is blue, and there is a little dog on it.\""
+    },
+    {
+      "start": 31.98,
+      "hanzi": "丽丽说：“我们一起找一找吧。”",
+      "pinyin": "Lìlì shuō: \"Wǒmen yīqǐ zhǎo yī zhǎo ba.\"",
+      "english": "Lili said, \"Let's look for it together.\""
+    },
+    {
+      "start": 35.26,
+      "hanzi": "他们先看了看桌子上，又看了看椅子上，都没有找到。",
+      "pinyin": "Tāmen xiān kàn le kàn zhuōzi shàng, yòu kàn le kàn yǐzi shàng, dōu méiyǒu zhǎodào.",
+      "english": "They first looked on the table and then on the chair, but they didn't find it."
+    },
+    {
+      "start": 41.34,
+      "hanzi": "小明很着急。",
+      "pinyin": "Xiǎomíng hěn zháojí.",
+      "english": "Xiaoming was very worried."
+    },
+    {
+      "start": 43.1,
+      "hanzi": "丽丽说：“别着急，我们再找一找。”",
+      "pinyin": "Lìlì shuō: \"Bié zháojí, wǒmen zài zhǎo yī zhǎo.\"",
+      "english": "Lili said, \"Don't worry, let's look again.\""
+    },
+    {
+      "start": 47.18,
+      "hanzi": "他们走到沙发旁边。",
+      "pinyin": "Tāmen zǒudào shāfā pángbiān.",
+      "english": "They walked over to the side of the sofa."
+    },
+    {
+      "start": 49.87,
+      "hanzi": "小明看了看沙发下面，看见一个蓝色的东西。",
+      "pinyin": "Xiǎomíng kàn le kàn shāfā xiàmiàn, kànjiàn yī gè lánsè de dōngxi.",
+      "english": "Xiaoming looked under the sofa and saw a blue thing."
+    },
+    {
+      "start": 54.83,
+      "hanzi": "他高兴地说：“找到了！铅笔盒在沙发下面。”",
+      "pinyin": "Tā gāoxìng de shuō: \"Zhǎodào le! Qiānbǐhé zài shāfā xiàmiàn.\"",
+      "english": "He said happily, \"Found it! The pencil case is under the sofa.\""
+    },
+    {
+      "start": 59.79,
+      "hanzi": "丽丽也笑了。",
+      "pinyin": "Lìlì yě xiào le.",
+      "english": "Lili smiled too."
+    },
+    {
+      "start": 61.39,
+      "hanzi": "小明把铅笔盒放进书包里。",
+      "pinyin": "Xiǎomíng bǎ qiānbǐhé fàngjìn shūbāo lǐ.",
+      "english": "Xiaoming put the pencil case into his schoolbag."
+    },
+    {
+      "start": 64.59,
+      "hanzi": "他们拿起书包，开开心心地去上学了。",
+      "pinyin": "Tāmen náqǐ shūbāo, kāikāixīnxīn de qù shàngxué le.",
+      "english": "They picked up their schoolbags and happily went to school."
+    }
+  ]
+}
