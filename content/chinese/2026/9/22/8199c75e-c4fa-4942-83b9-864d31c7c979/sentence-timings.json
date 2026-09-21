@@ -1,0 +1,167 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.24,
+      "hanzi": "中秋节快到了，小明和丽丽都很高兴。",
+      "pinyin": "Zhōngqiūjié kuài dào le, Xiǎomíng hé Lìlì dōu hěn gāoxìng.",
+      "english": "The Mid-Autumn Festival was approaching, and Xiaoming and Lili were both very happy."
+    },
+    {
+      "start": 5.2,
+      "hanzi": "爸爸说：“我们一起来做月饼吧。”",
+      "pinyin": "Bàba shuō: \"Wǒmen yīqǐ lái zuò yuèbǐng ba.\"",
+      "english": "Dad said, \"Let's make mooncakes together.\""
+    },
+    {
+      "start": 9.52,
+      "hanzi": "小明说：“我来帮你，爸爸。”",
+      "pinyin": "Xiǎomíng shuō: \"Wǒ lái bāng nǐ, bàba.\"",
+      "english": "Xiaoming said, \"I'll help you, Dad.\""
+    },
+    {
+      "start": 12.88,
+      "hanzi": "丽丽说：“我也来帮忙，我可以做兔子灯笼。”",
+      "pinyin": "Lìlì shuō: \"Wǒ yě lái bāngmáng, wǒ kěyǐ zuò tùzi dēnglóng.\"",
+      "english": "Lili said, \"I'll help too. I can make a rabbit lantern.\""
+    },
+    {
+      "start": 18.16,
+      "hanzi": "妈妈拿出面粉、糖和鸡蛋。",
+      "pinyin": "Māma ná chū miànfěn, táng hé jīdàn.",
+      "english": "Mom took out flour, sugar, and eggs."
+    },
+    {
+      "start": 21.52,
+      "hanzi": "小明洗手后，和爸爸一起做月饼。",
+      "pinyin": "Xiǎomíng xǐshǒu hòu, hé bàba yīqǐ zuò yuèbǐng.",
+      "english": "After washing his hands, Xiaoming made mooncakes with Dad."
+    },
+    {
+      "start": 25.51,
+      "hanzi": "丽丽拿来彩纸，做了一只白色的兔子灯笼。",
+      "pinyin": "Lìlì ná lái cǎizhǐ, zuò le yī zhī báisè de tùzi dēnglóng.",
+      "english": "Lili brought colored paper and made a white rabbit lantern."
+    },
+    {
+      "start": 31.03,
+      "hanzi": "兔子灯笼很漂亮，丽丽很开心。",
+      "pinyin": "Tùzi dēnglóng hěn piàoliang, Lìlì hěn kāixīn.",
+      "english": "The rabbit lantern was very beautiful, and Lili was very happy."
+    },
+    {
+      "start": 34.63,
+      "hanzi": "晚上，月亮又大又圆。",
+      "pinyin": "Wǎnshang, yuèliang yòu dà yòu yuán.",
+      "english": "That evening, the moon was big and round."
+    },
+    {
+      "start": 38.07,
+      "hanzi": "一家人坐在外面，吃月饼，看月亮。",
+      "pinyin": "Yī jiā rén zuò zài wàimiàn, chī yuèbǐng, kàn yuèliang.",
+      "english": "The whole family sat outside, eating mooncakes and looking at the moon."
+    },
+    {
+      "start": 42.63,
+      "hanzi": "小明问：“妈妈，为什么中秋节的月亮这么圆？”",
+      "pinyin": "Xiǎomíng wèn: \"Māma, wèishénme Zhōngqiūjié de yuèliang zhème yuán?\"",
+      "english": "Xiaoming asked, \"Mom, why is the moon so round at the Mid-Autumn Festival?\""
+    },
+    {
+      "start": 48.23,
+      "hanzi": "妈妈说：“因为中秋节是团圆的日子。”",
+      "pinyin": "Māma shuō: \"Yīnwèi Zhōngqiūjié shì tuányuán de rìzi.\"",
+      "english": "Mom said, \"Because the Mid-Autumn Festival is a day for family reunion.\""
+    },
+    {
+      "start": 52.73,
+      "hanzi": "丽丽说：“奶奶，您给我们讲嫦娥的故事吧。”",
+      "pinyin": "Lìlì shuō: \"Nǎinai, nín gěi wǒmen jiǎng Cháng'é de gùshi ba.\"",
+      "english": "Lili said, \"Grandma, please tell us the story of Chang'e.\""
+    },
+    {
+      "start": 58.33,
+      "hanzi": "奶奶笑着说：“好，我来讲。”",
+      "pinyin": "Nǎinai xiào zhe shuō: \"Hǎo, wǒ lái jiǎng.\"",
+      "english": "Grandma said with a smile, \"Alright, I'll tell it.\""
+    },
+    {
+      "start": 62.41,
+      "hanzi": "很久以前，天上有十个太阳。",
+      "pinyin": "Hěn jiǔ yǐqián, tiānshàng yǒu shí gè tàiyáng.",
+      "english": "Long ago, there were ten suns in the sky."
+    },
+    {
+      "start": 65.93,
+      "hanzi": "人们生活得很辛苦。",
+      "pinyin": "Rénmen shēnghuó de hěn xīnkǔ.",
+      "english": "People lived very hard lives."
+    },
+    {
+      "start": 68.65,
+      "hanzi": "一个叫后羿的人，用弓箭射下了九个太阳。",
+      "pinyin": "Yī gè jiào Hòuyì de rén, yòng gōngjiàn shè xià le jiǔ gè tàiyáng.",
+      "english": "A man named Houyi used his bow and arrows to shoot down nine of the suns."
+    },
+    {
+      "start": 73.85,
+      "hanzi": "他得到了一颗特别的药。",
+      "pinyin": "Tā dédào le yī kē tèbié de yào.",
+      "english": "He obtained a special medicine."
+    },
+    {
+      "start": 76.43,
+      "hanzi": "有一天，后羿的妻子嫦娥吃了那颗药。",
+      "pinyin": "Yǒu yī tiān, Hòuyì de qīzi Cháng'é chī le nà kē yào.",
+      "english": "One day, Houyi's wife Chang'e ate that medicine."
+    },
+    {
+      "start": 80.67,
+      "hanzi": "她飞到了月亮上。",
+      "pinyin": "Tā fēi dào le yuèliang shàng.",
+      "english": "She flew to the moon."
+    },
+    {
+      "start": 82.59,
+      "hanzi": "后羿很想念她。",
+      "pinyin": "Hòuyì hěn xiǎngniàn tā.",
+      "english": "Houyi missed her very much."
+    },
+    {
+      "start": 84.43,
+      "hanzi": "每年的八月十五，他都会看着月亮。",
+      "pinyin": "Měi nián de bā yuè shíwǔ, tā dōu huì kàn zhe yuèliang.",
+      "english": "On the fifteenth day of the eighth month every year, he would look at the moon."
+    },
+    {
+      "start": 88.51,
+      "hanzi": "从此，人们在中秋节赏月、吃月饼，想念家人。",
+      "pinyin": "Cóngcǐ, rénmen zài Zhōngqiūjié shǎngyuè, chī yuèbǐng, xiǎngniàn jiārén.",
+      "english": "From then on, people admired the moon, ate mooncakes, and missed their families at the Mid-Autumn Festival."
+    },
+    {
+      "start": 95.31,
+      "hanzi": "小明说：“嫦娥一个人在月亮上，会想家吗？”",
+      "pinyin": "Xiǎomíng shuō: \"Cháng'é yī gè rén zài yuèliang shàng, huì xiǎng jiā ma?\"",
+      "english": "Xiaoming said, \"Chang'e is alone on the moon. Will she miss home?\""
+    },
+    {
+      "start": 100.61,
+      "hanzi": "丽丽说：“她一定很想家，所以我们一家人要在一起。”",
+      "pinyin": "Lìlì shuō: \"Tā yīdìng hěn xiǎng jiā, suǒyǐ wǒmen yī jiā rén yào zài yīqǐ.\"",
+      "english": "Lili said, \"She must miss home very much, so our family should stay together.\""
+    },
+    {
+      "start": 107.73,
+      "hanzi": "大家都笑了。",
+      "pinyin": "Dàjiā dōu xiào le.",
+      "english": "Everyone laughed."
+    },
+    {
+      "start": 109.89,
+      "hanzi": "这个中秋节，小明和丽丽过得非常开心。",
+      "pinyin": "Zhège Zhōngqiūjié, Xiǎomíng hé Lìlì guò de fēicháng kāixīn.",
+      "english": "Xiaoming and Lili had a very happy Mid-Autumn Festival."
+    }
+  ]
+}
