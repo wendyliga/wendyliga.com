@@ -1,0 +1,197 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.08,
+      "hanzi": "星期六的下午，丽丽和小明一起整理家里的旧书架。",
+      "pinyin": "Xīngqīliù de xiàwǔ, Lìlì hé Xiǎomíng yīqǐ zhěnglǐ jiā lǐ de jiù shūjià.",
+      "english": "On Saturday afternoon, Lili and Xiaoming tidied up the old bookshelf at home together."
+    },
+    {
+      "start": 8.32,
+      "hanzi": "书架上有好多旧书和旧本子。",
+      "pinyin": "Shūjià shàng yǒu hǎoduō jiù shū hé jiù běnzi.",
+      "english": "There were many old books and old notebooks on the bookshelf."
+    },
+    {
+      "start": 12.16,
+      "hanzi": "忽然，小明发现了一本很旧的笔记本。",
+      "pinyin": "Hūrán, Xiǎomíng fāxiàn le yī běn hěn jiù de bǐjìběn.",
+      "english": "Suddenly, Xiaoming found a very old notebook."
+    },
+    {
+      "start": 16.8,
+      "hanzi": "“姐姐，你看，这是什么？”",
+      "pinyin": "\"Jiějie, nǐ kàn, zhè shì shénme?\"",
+      "english": "\"Sister, look, what is this?\""
+    },
+    {
+      "start": 20,
+      "hanzi": "丽丽拿过来一看，说：“这是爷爷年轻时的笔记本！”",
+      "pinyin": "Lìlì ná guòlái yī kàn, shuō: \"Zhè shì yéye niánqīng shí de bǐjìběn!\"",
+      "english": "Lili took it and looked, saying, \"This is Grandpa's notebook from when he was young!\""
+    },
+    {
+      "start": 25.46,
+      "hanzi": "小明开心地说：“真的吗？我们快看看吧！”",
+      "pinyin": "Xiǎomíng kāixīn de shuō: \"Zhēn de ma? Wǒmen kuài kànkan ba!\"",
+      "english": "Xiaoming said happily, \"Really? Let's take a look quickly!\""
+    },
+    {
+      "start": 31.06,
+      "hanzi": "他们一页一页地翻看。",
+      "pinyin": "Tāmen yī yè yī yè de fānkàn.",
+      "english": "They turned the pages one by one."
+    },
+    {
+      "start": 34.26,
+      "hanzi": "笔记本里有很多爷爷写的古诗。",
+      "pinyin": "Bǐjìběn lǐ yǒu hěn duō yéye xiě de gǔshī.",
+      "english": "In the notebook were many classical poems written by Grandpa."
+    },
+    {
+      "start": 37.94,
+      "hanzi": "有的诗写的是山，有的诗写的是水。",
+      "pinyin": "Yǒu de shī xiě de shì shān, yǒu de shī xiě de shì shuǐ.",
+      "english": "Some poems were about mountains, and some poems were about water."
+    },
+    {
+      "start": 42.02,
+      "hanzi": "旁边还有爷爷画的山水画。",
+      "pinyin": "Pángbiān hái yǒu yéye huà de shānshuǐhuà.",
+      "english": "Beside them were landscape paintings drawn by Grandpa."
+    },
+    {
+      "start": 45.22,
+      "hanzi": "山高高的，水清清的，画得真好看。",
+      "pinyin": "Shān gāogāo de, shuǐ qīngqīng de, huà de zhēn hǎokàn.",
+      "english": "The mountains were tall, the water was clear, and they were painted so beautifully."
+    },
+    {
+      "start": 49.55,
+      "hanzi": "丽丽说：“爷爷的字真漂亮！”",
+      "pinyin": "Lìlì shuō: \"Yéye de zì zhēn piàoliang!\"",
+      "english": "Lili said, \"Grandpa's handwriting is really beautiful!\""
+    },
+    {
+      "start": 53.23,
+      "hanzi": "小明也说：“这些画也很美！”",
+      "pinyin": "Xiǎomíng yě shuō: \"Zhèxiē huà yě hěn měi!\"",
+      "english": "Xiaoming also said, \"These paintings are also very beautiful!\""
+    },
+    {
+      "start": 56.91,
+      "hanzi": "他们看了很久，都很喜欢这本笔记本。",
+      "pinyin": "Tāmen kàn le hěn jiǔ, dōu hěn xǐhuan zhè běn bǐjìběn.",
+      "english": "They looked at it for a long time and both really liked this notebook."
+    },
+    {
+      "start": 60.75,
+      "hanzi": "下个星期二是教师节。",
+      "pinyin": "Xià gè xīngqī'èr shì Jiàoshījié.",
+      "english": "Next Tuesday is Teacher's Day."
+    },
+    {
+      "start": 63.63,
+      "hanzi": "丽丽说：“我们把这本笔记本送给语文老师吧！”",
+      "pinyin": "Lìlì shuō: \"Wǒmen bǎ zhè běn bǐjìběn sòng gěi yǔwén lǎoshī ba!\"",
+      "english": "Lili said, \"Let's give this notebook to our Chinese teacher!\""
+    },
+    {
+      "start": 68.83,
+      "hanzi": "小明说：“好主意！老师一定很喜欢。”",
+      "pinyin": "Xiǎomíng shuō: \"Hǎo zhǔyi! Lǎoshī yīdìng hěn xǐhuan.\"",
+      "english": "Xiaoming said, \"Great idea! The teacher will definitely like it very much.\""
+    },
+    {
+      "start": 73.24,
+      "hanzi": "他们还亲手写了一张感谢卡。",
+      "pinyin": "Tāmen hái qīnshǒu xiě le yī zhāng gǎnxiè kǎ.",
+      "english": "They also personally wrote a thank-you card."
+    },
+    {
+      "start": 76.68,
+      "hanzi": "丽丽在卡片上写：“老师，谢谢您教我们读书和写字。”",
+      "pinyin": "Lìlì zài kǎpiàn shàng xiě: \"Lǎoshī, xièxie nín jiāo wǒmen dúshū hé xiězì.\"",
+      "english": "Lili wrote on the card: \"Teacher, thank you for teaching us to read and write.\""
+    },
+    {
+      "start": 83.24,
+      "hanzi": "小明也写：“祝您教师节快乐！”",
+      "pinyin": "Xiǎomíng yě xiě: \"Zhù nín Jiàoshījié kuàilè!\"",
+      "english": "Xiaoming also wrote: \"Happy Teacher's Day!\""
+    },
+    {
+      "start": 87.32,
+      "hanzi": "爸爸和妈妈看见了，都很高兴。",
+      "pinyin": "Bàba hé māma kànjiàn le, dōu hěn gāoxìng.",
+      "english": "Dad and Mom saw this and were both very happy."
+    },
+    {
+      "start": 90.76,
+      "hanzi": "爸爸说：“你们真懂事。”",
+      "pinyin": "Bàba shuō: \"Nǐmen zhēn dǒngshì.\"",
+      "english": "Dad said, \"You are really thoughtful.\""
+    },
+    {
+      "start": 93.82,
+      "hanzi": "妈妈说：“老师帮助你们很多，你们要记得感谢老师。”",
+      "pinyin": "Māma shuō: \"Lǎoshī bāngzhù nǐmen hěn duō, nǐmen yào jìde gǎnxiè lǎoshī.\"",
+      "english": "Mom said, \"The teacher has helped you a lot, so you should remember to thank the teacher.\""
+    },
+    {
+      "start": 100.06,
+      "hanzi": "全家人坐在沙发上，一起说老师对他们的帮助。",
+      "pinyin": "Quán jiā rén zuò zài shāfā shàng, yīqǐ shuō lǎoshī duì tāmen de bāngzhù.",
+      "english": "The whole family sat on the sofa and talked together about the teacher's help to them."
+    },
+    {
+      "start": 105.34,
+      "hanzi": "爸爸说：“语文老师很耐心，教你们读古诗。”",
+      "pinyin": "Bàba shuō: \"Yǔwén lǎoshī hěn nàixīn, jiāo nǐmen dú gǔshī.\"",
+      "english": "Dad said, \"The Chinese teacher is very patient and teaches you to read classical poems.\""
+    },
+    {
+      "start": 110.38,
+      "hanzi": "妈妈说：“她还常常鼓励你们好好学习。”",
+      "pinyin": "Māma shuō: \"Tā hái chángcháng gǔlì nǐmen hǎohǎo xuéxí.\"",
+      "english": "Mom said, \"She also often encourages you to study hard.\""
+    },
+    {
+      "start": 114.86,
+      "hanzi": "丽丽说：“对，有一次我写不好字，老师一直帮我。”",
+      "pinyin": "Lìlì shuō: \"Duì, yǒu yī cì wǒ xiě bù hǎo zì, lǎoshī yīzhí bāng wǒ.\"",
+      "english": "Lili said, \"Right, once I couldn't write characters well, and the teacher kept helping me.\""
+    },
+    {
+      "start": 120.78,
+      "hanzi": "小明也说：“老师还说我读书读得越来越好了。”",
+      "pinyin": "Xiǎomíng yě shuō: \"Lǎoshī hái shuō wǒ dúshū dú de yuè lái yuè hǎo le.\"",
+      "english": "Xiaoming also said, \"The teacher also said that my reading is getting better and better.\""
+    },
+    {
+      "start": 126.22,
+      "hanzi": "大家说着说着，都笑了。",
+      "pinyin": "Dàjiā shuō zhe shuō zhe, dōu xiào le.",
+      "english": "As everyone talked and talked, they all laughed."
+    },
+    {
+      "start": 128.94,
+      "hanzi": "这个下午，家里很温馨。",
+      "pinyin": "Zhège xiàwǔ, jiā lǐ hěn wēnxīn.",
+      "english": "That afternoon, the home was very warm and cozy."
+    },
+    {
+      "start": 132.22,
+      "hanzi": "他们决定，教师节那天把礼物和卡片一起送给老师。",
+      "pinyin": "Tāmen juédìng, Jiàoshījié nà tiān bǎ lǐwù hé kǎpiàn yīqǐ sòng gěi lǎoshī.",
+      "english": "They decided to give the gift and the card to the teacher together on Teacher's Day."
+    },
+    {
+      "start": 138.6,
+      "hanzi": "丽丽和小明觉得，这真是一件很有意义的事。",
+      "pinyin": "Lìlì hé Xiǎomíng juéde, zhè zhēn shì yī jiàn hěn yǒu yìyì de shì.",
+      "english": "Lili and Xiaoming felt that this was truly a very meaningful thing."
+    }
+  ]
+}
