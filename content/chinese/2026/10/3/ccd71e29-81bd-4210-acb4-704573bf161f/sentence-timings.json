@@ -1,0 +1,119 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.08,
+      "hanzi": "国庆假期，小明和丽丽陪爷爷去公园看花展。",
+      "pinyin": "Guóqìng jiàqī, Xiǎomíng hé Lìlì péi yéye qù gōngyuán kàn huāzhǎn.",
+      "english": "During the National Day holiday, Xiaoming and Lili accompanied Grandpa to the park to see a flower exhibition."
+    },
+    {
+      "start": 6.8,
+      "hanzi": "公园里有很多美丽的花，特别是菊花，颜色多极了。",
+      "pinyin": "Gōngyuán lǐ yǒu hěn duō měilì de huā, tèbié shì júhuā, yánsè duō jí le.",
+      "english": "There were many beautiful flowers in the park, especially chrysanthemums, with a great variety of colors."
+    },
+    {
+      "start": 12.64,
+      "hanzi": "有红的、黄的、白的，还有紫色的菊花，真好看。",
+      "pinyin": "Yǒu hóng de, huáng de, bái de, hái yǒu zǐsè de júhuā, zhēn hǎokàn.",
+      "english": "There were red, yellow, white, and also purple chrysanthemums. They were really beautiful."
+    },
+    {
+      "start": 18.32,
+      "hanzi": "爷爷笑着说：“这些菊花真漂亮，我要多拍几张照片。”",
+      "pinyin": "Yéye xiào zhe shuō: \"Zhèxiē júhuā zhēn piàoliang, wǒ yào duō pāi jǐ zhāng zhàopiàn.\"",
+      "english": "Grandpa said with a smile, \"These chrysanthemums are so beautiful. I want to take a few more photos.\""
+    },
+    {
+      "start": 24.46,
+      "hanzi": "小明拿出手机，对丽丽说：“我来给爷爷和菊花一起拍张照吧。”",
+      "pinyin": "Xiǎomíng ná chū shǒujī, duì Lìlì shuō: \"Wǒ lái gěi yéye hé júhuā yīqǐ pāi zhāng zhào ba.\"",
+      "english": "Xiaoming took out his phone and said to Lili, \"Let me take a photo of Grandpa together with the chrysanthemums.\""
+    },
+    {
+      "start": 31.66,
+      "hanzi": "丽丽说：“好啊，我也要用手机拍一些花的照片。”",
+      "pinyin": "Lìlì shuō: \"Hǎo a, wǒ yě yào yòng shǒujī pāi yīxiē huā de zhàopiàn.\"",
+      "english": "Lili said, \"Sure! I also want to use my phone to take some photos of the flowers.\""
+    },
+    {
+      "start": 37.34,
+      "hanzi": "他们三个人在公园里走走停停，看到了很多不同样子的菊花。",
+      "pinyin": "Tāmen sān gè rén zài gōngyuán lǐ zǒuzǒu tíngtíng, kàn dào le hěn duō bùtóng yàngzi de júhuā.",
+      "english": "The three of them walked and paused here and there in the park, seeing many chrysanthemums of different shapes."
+    },
+    {
+      "start": 44.86,
+      "hanzi": "有的菊花很大，像一个小球；有的菊花很小，但是非常多。",
+      "pinyin": "Yǒu de júhuā hěn dà, xiàng yī gè xiǎo qiú; yǒu de júhuā hěn xiǎo, dànshì fēicháng duō.",
+      "english": "Some chrysanthemums were very big, like a small ball; some were very small, but there were very many of them."
+    },
+    {
+      "start": 52.34,
+      "hanzi": "小明对丽丽说：“你看，这些花真特别，我想把它们都拍下来。”",
+      "pinyin": "Xiǎomíng duì Lìlì shuō: \"Nǐ kàn, zhèxiē huā zhēn tèbié, wǒ xiǎng bǎ tāmen dōu pāi xiàlái.\"",
+      "english": "Xiaoming said to Lili, \"Look, these flowers are really special. I want to photograph them all.\""
+    },
+    {
+      "start": 59.7,
+      "hanzi": "丽丽说：“是呀，我们多拍一些，回家以后可以慢慢看。”",
+      "pinyin": "Lìlì shuō: \"Shì ya, wǒmen duō pāi yīxiē, huíjiā yǐhòu kěyǐ mànmàn kàn.\"",
+      "english": "Lili said, \"Yes. Let's take more photos so we can look at them slowly after we get home.\""
+    },
+    {
+      "start": 66.42,
+      "hanzi": "爷爷听了很高兴，他说：“你们真孝顺，今天爷爷很开心。”",
+      "pinyin": "Yéye tīng le hěn gāoxìng, tā shuō: \"Nǐmen zhēn xiàoshùn, jīntiān yéye hěn kāixīn.\"",
+      "english": "Grandpa was very happy to hear this. He said, \"You are so filial. Grandpa is very happy today.\""
+    },
+    {
+      "start": 73.54,
+      "hanzi": "回家的路上，他们一起讨论怎样把这些照片做成一本家庭相册。",
+      "pinyin": "Huíjiā de lùshang, tāmen yīqǐ tǎolùn zěnyàng bǎ zhèxiē zhàopiàn zuò chéng yī běn jiātíng xiàngcè.",
+      "english": "On the way home, they discussed together how to make these photos into a family album."
+    },
+    {
+      "start": 81.22,
+      "hanzi": "小明说：“丽丽，你觉得我们应该选哪些照片放进相册里呢？”",
+      "pinyin": "Xiǎomíng shuō: \"Lìlì, nǐ juéde wǒmen yīnggāi xuǎn nǎxiē zhàopiàn fàng jìn xiàngcè lǐ ne?\"",
+      "english": "Xiaoming said, \"Lili, which photos do you think we should choose to put in the album?\""
+    },
+    {
+      "start": 88.18,
+      "hanzi": "丽丽回答：“我觉得先选爷爷和菊花的合照，再选一些最美的菊花照片。”",
+      "pinyin": "Lìlì huídá: \"Wǒ juéde xiān xuǎn yéye hé júhuā de hézhào, zài xuǎn yīxiē zuì měi de júhuā zhàopiàn.\"",
+      "english": "Lili answered, \"I think we should first choose the photos of Grandpa with the chrysanthemums, and then choose some of the most beautiful chrysanthemum photos.\""
+    },
+    {
+      "start": 96.09,
+      "hanzi": "小明说：“这个主意不错，我们还可以在每张照片下面写一句话。”",
+      "pinyin": "Xiǎomíng shuō: \"Zhège zhǔyi bùcuò, wǒmen hái kěyǐ zài měi zhāng zhàopiàn xiàmiàn xiě yī jù huà.\"",
+      "english": "Xiaoming said, \"That's a good idea. We can also write a sentence under each photo.\""
+    },
+    {
+      "start": 102.97,
+      "hanzi": "丽丽笑着说：“对，比如写上‘国庆节和爷爷看花展’，这样以后看相册就知道是哪一天了。”",
+      "pinyin": "Lìlì xiào zhe shuō: \"Duì, bǐrú xiě shàng 'Guóqìngjié hé yéye kàn huāzhǎn', zhèyàng yǐhòu kàn xiàngcè jiù zhīdào shì nǎ yī tiān le.\"",
+      "english": "Lili said with a smile, \"Right. For example, we could write 'National Day holiday, seeing the flower exhibition with Grandpa.' That way, when we look at the album later, we will know which day it was.\""
+    },
+    {
+      "start": 112.57,
+      "hanzi": "爷爷点点头说：“你们想得真周到，这本相册一定会很珍贵。”",
+      "pinyin": "Yéye diǎndiǎn tóu shuō: \"Nǐmen xiǎng de zhēn zhōudào, zhè běn xiàngcè yīdìng huì hěn zhēnguì.\"",
+      "english": "Grandpa nodded and said, \"You have thought it through so carefully. This album will definitely be very precious.\""
+    },
+    {
+      "start": 119.46,
+      "hanzi": "他们商量好了，回到家以后，先整理照片，再一起做相册。",
+      "pinyin": "Tāmen shāngliáng hǎo le, huí dào jiā yǐhòu, xiān zhěnglǐ zhàopiàn, zài yīqǐ zuò xiàngcè.",
+      "english": "After they finished discussing, they decided that once they got home, they would first organize the photos and then make the album together."
+    },
+    {
+      "start": 126.1,
+      "hanzi": "这个国庆假期，他们不仅看了美丽的花展，还留下了很多美好的回忆。",
+      "pinyin": "Zhège Guóqìng jiàqī, tāmen bùjǐn kàn le měilì de huāzhǎn, hái liúxià le hěn duō měihǎo de huíyì.",
+      "english": "During this National Day holiday, they not only saw a beautiful flower exhibition but also created many wonderful memories."
+    }
+  ]
+}
