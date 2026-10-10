@@ -4,6 +4,9 @@
 # This site has no go.mod / package.json: Hugo is installed as a binary in CI
 # and the Congo theme is a Git submodule. The only real dependencies are the
 # actions used by .github/workflows and the theme submodule.
+#
+# Hugo itself is pinned in .hugo-version, which no Dependabot ecosystem reads.
+# .github/workflows/hugo-release.yaml watches for new Hugo releases instead.
 
 version: 2
 updates:

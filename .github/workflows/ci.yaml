@@ -26,7 +26,8 @@ jobs:
     timeout-minutes: 10
     # Keep in step with the build job in hugo.yaml, so a green check here means
     # the deploy build passes too. Dart Sass is left out: nothing in the site or
-    # the theme compiles Sass.
+    # the theme compiles Sass. hugo-release.yaml copies the install, cache, and
+    # build steps from here to try a newer Hugo; change them there too.
     env:
       HUGO_ENVIRONMENT: production
       TZ: America/Los_Angeles
