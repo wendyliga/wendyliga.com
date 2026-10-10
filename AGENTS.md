@@ -13,7 +13,7 @@
 
 ## Custom UI With Shortcodes
 - Hugo supports custom views and reusable UI through shortcodes in `layouts/shortcodes/`. Prefer existing shortcodes over raw HTML in Markdown when a post needs embedded media, revealable answers, or link cards.
-- `audio`: embeds a page-bundle MP3 with an HTML audio player. Use `src` for the media filename/path relative to the current page bundle, optional `caption`, optional `class`, and optional `preload` (defaults to `metadata`).
+- `audio`: embeds a page-bundle MP3 with an HTML audio player. Use `src` for the media filename/path relative to the current page bundle, optional `caption`, optional `class`, and optional `preload` (defaults to `metadata`). `src` is resolved as a page resource, so `make build` fails if the file is not in the page's media folder.
 - `answers`: creates a collapsible answer block with `<details>`. Use optional `title` for the summary text; the inner Markdown becomes the hidden answer content.
 - `youtube-music`: renders a YouTube/playlist-style card. Use `title`, `image`, and `link`; the shortcode derives and displays the link domain.
 - `link-preview`: renders a generic link preview card. Use `title`, `link`, optional `image`, and optional `description`; the shortcode derives and displays the link domain.
@@ -58,8 +58,9 @@
 - The `read-along` `audio` parameter must match an `id` set on the page's `{{< audio >}}` call (the pilot uses `story-audio`). `make build` fails if it does not, because the two are only wired together at runtime and a mismatch would otherwise degrade silently to plain text.
 - The docked mobile player is a read-along affordance: `audio-player.js` only adds `has-story-audio-player` to `<body>` on pages that also contain a `[data-read-along]`. Story pages with a plain `{{< audio >}}` keep the inline card at every width.
 - The `read-along-aids` session cookie stores `both`, `pinyin`, `english`, or `none` with `Path=/`. Remove that cookie when testing first-visit defaults; otherwise reloads should preserve the selected buttons.
-- Test play, pause, seeking, ended state, mouse hover, sentence click, Enter/Space activation, and a long wrapped sentence. The tooltip should follow the active or focused sentence without changing paragraph height.
-- Check desktop and a 390×844 mobile viewport in light and dark appearances. Verify that the player chips wrap, the tooltip stays inside the content column, both aid rows wrap, and neither the component nor page gains horizontal scrolling.
+- The speed chip and mute button belong to the `audio` shortcode, so every story player has them, read-along or not. The `story-audio-rate` session cookie stores `0.5`, `0.75`, `1`, `1.25`, or `1.5` with `Path=/`; remove it when testing first-visit defaults. Mute is deliberately not remembered. There is no volume slider because iOS Safari ignores `audio.volume`.
+- Test play, pause, seeking, ended state, each playback speed, mute, mouse hover, sentence click, Enter/Space activation, and a long wrapped sentence. The highlight must stay on the spoken sentence at every speed. The tooltip should follow the active or focused sentence without changing paragraph height.
+- Check desktop and a 390×844 mobile viewport in light and dark appearances. Verify that the aid and settings chips share one row down to a 320px viewport and wrap below that, the tooltip stays inside the content column, both aid rows wrap, and neither the component nor page gains horizontal scrolling.
 
 ## Coding Style & Naming Conventions
 - Write content in Markdown with YAML front matter (`---`) and lowercase keys.
@@ -74,7 +75,9 @@
 - There is no separate unit-test suite in this repo; verification is build + manual page checks.
 - Before opening a PR, run `make build` and ensure it exits cleanly.
 - Every pull request runs the `CI / Build site` check from `.github/workflows/ci.yaml`: the same `hugo --gc --minify` as `make build`, on Linux with the Hugo version from `.hugo-version`. It never deploys; `hugo.yaml` deploys on pushes to `main`. Keep the build steps in `ci.yaml`, `hugo.yaml`, and `hugo-release.yaml` in step when changing any of them.
+- The `Claude Code Review / Review` check from `.github/workflows/claude-code-review.yml` reviews a pull request on every push, posting new findings as inline comments and keeping one summary comment up to date. It never blocks a merge. It runs only for the repository owner's pushes to branches in this repository; forks, Dependabot, other accounts, and drafts show the check as skipped. The workflow cannot review the pull request that changes it: the action skips itself until that file matches `main`. It authenticates with the `CLAUDE_CODE_OAUTH_TOKEN` repository secret, a one-year token from `claude setup-token`; an authentication failure in that check usually means the token needs replacing.
 - Preview with `make start` and validate changed pages: images load, shortcodes render, and audio embeds play.
+- Cloudflare Pages (project `wendyliga-com`) builds and deploys every pushed commit as a preview, pull-request branches included. Once the `Cloudflare Pages` check passes, the bot comment on the PR links two URLs: `https://<deployment-id>.wendyliga-com.pages.dev` for that exact commit and `https://<branch>.wendyliga-com.pages.dev` for the branch's latest. The deploy takes a few minutes because of the site's size, and each new push starts another one, so wait for the check before opening the preview. Then validate the changed pages there too: it is the real Linux build with every media file uploaded, so it catches what `make start` cannot.
 
 ## Commit & Pull Request Guidelines
 - Follow the repository’s concise commit style seen in history: action-first subjects such as `new story: ...`, `thumbnail: ...`, `update audio: ...`.
