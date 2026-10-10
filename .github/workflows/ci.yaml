@@ -1,6 +1,7 @@
 # Builds the site for every pull request so template, shortcode, and content
 # errors surface before merge, checks the result for broken internal links, and
 # lints the workflows and shell scripts. Deployment stays in hugo.yaml.
+# Pull requests from forks are skipped.
 name: CI
 
 on:
@@ -23,6 +24,10 @@ defaults:
 jobs:
   build:
     name: Build site
+    # Branches of this repository only: nothing runs for a pull request from a
+    # fork. A fork can edit this file and drop the condition, so the gate that
+    # holds is the repository setting that makes fork runs wait for approval.
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 10
     # Keep in step with the build job in hugo.yaml, so a green check here means
@@ -69,6 +74,8 @@ jobs:
   # Locally this is `make lint`.
   lint:
     name: Lint
+    # The same guard as the build job.
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 5
     # actionlint is not on the runner image. The checksum is the one published
