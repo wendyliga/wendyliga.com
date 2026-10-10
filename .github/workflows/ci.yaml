@@ -1,0 +1,51 @@
+# Builds the site for every pull request so template, shortcode, and content
+# errors surface before merge. Deployment stays in hugo.yaml.
+name: CI
+
+on:
+  pull_request:
+
+# Read-only: this workflow runs code from the pull request and never deploys.
+permissions:
+  contents: read
+
+# A newer push to the same pull request replaces the build still in progress.
+concurrency:
+  group: ci-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # Keep in step with the build job in hugo.yaml, so a green check here means
+    # the deploy build passes too. Dart Sass is left out: nothing in the site or
+    # the theme compiles Sass.
+    env:
+      HUGO_ENVIRONMENT: production
+      TZ: America/Los_Angeles
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+          persist-credentials: false
+      - name: Read Hugo version
+        run: |
+          set -euo pipefail
+          test -f .hugo-version || { echo "::error::.hugo-version is missing"; exit 1; }
+          version="$(tr -d '[:space:]' < .hugo-version)"
+          test -n "$version" || { echo "::error::.hugo-version is empty"; exit 1; }
+          echo "HUGO_VERSION=$version" >> "$GITHUB_ENV"
+      - name: Install Hugo CLI
+        run: |
+          wget -O "${{ runner.temp }}/hugo.deb" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i "${{ runner.temp }}/hugo.deb"
+      - name: Build with Hugo
+        run: hugo --gc --minify

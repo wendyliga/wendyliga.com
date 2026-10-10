@@ -34,7 +34,7 @@
   - Don't stack bold, italic, and underline on the same phrase — pick one emphasis per point.
 
 ## Build, Test, and Development Commands
-- `.hugo-version` is the single Hugo version source for local development and the Linux GitHub Pages workflow.
+- `.hugo-version` is the single Hugo version source for local development and both GitHub Actions workflows (the Pages deploy and the pull-request build).
 - `make setup`: on macOS, install Hugo with Homebrew, initialize the Congo submodule, and verify the installed version.
 - `make check-hugo`: compare the installed Hugo against `.hugo-version` before debugging build or rendering differences. A mismatch warns but does not block, so a Homebrew upgrade cannot strand `make build`; a missing Hugo, or a missing `.hugo-version`, is fatal.
 - `make start`: start the local development server with future posts enabled, default URL `http://localhost:1313`.
@@ -71,6 +71,7 @@
 ## Testing Guidelines
 - There is no separate unit-test suite in this repo; verification is build + manual page checks.
 - Before opening a PR, run `make build` and ensure it exits cleanly.
+- Every pull request runs the `CI / Build site` check from `.github/workflows/ci.yaml`: the same `hugo --gc --minify` as `make build`, on Linux with the Hugo version from `.hugo-version`. It never deploys; `hugo.yaml` deploys on pushes to `main`. Keep the two build jobs in step when changing either.
 - Preview with `make start` and validate changed pages: images load, shortcodes render, and audio embeds play.
 
 ## Commit & Pull Request Guidelines
