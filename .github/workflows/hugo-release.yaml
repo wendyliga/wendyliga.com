@@ -31,6 +31,9 @@ defaults:
 jobs:
   check:
     name: Build with latest Hugo
+    # Only in wendyliga's own repository, so a fork that turns Actions on never
+    # runs this, and a manual run only when wendyliga starts it.
+    if: github.repository_owner == 'wendyliga' && (github.event_name == 'schedule' || github.triggering_actor == 'wendyliga')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     outputs:
@@ -102,6 +105,9 @@ jobs:
   report:
     name: Report
     needs: check
+    # The same guard as the check job, repeated because this job has the
+    # write token.
+    if: github.repository_owner == 'wendyliga' && (github.event_name == 'schedule' || github.triggering_actor == 'wendyliga')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
