@@ -164,7 +164,7 @@
     });
 
     muteButton.addEventListener("click", () => {
-      audio.muted = !audio.muted;
+      audio.muted = true;
     });
 
     const beginScrub = () => {
