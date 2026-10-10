@@ -34,7 +34,8 @@
   - Don't stack bold, italic, and underline on the same phrase — pick one emphasis per point.
 
 ## Build, Test, and Development Commands
-- `.hugo-version` is the single Hugo version source for local development, both GitHub Actions workflows (the Pages deploy and the pull-request build), and the Cloudflare Pages build.
+- `.hugo-version` is the single Hugo version source for local development, the GitHub Actions workflows that build the site (the Pages deploy and the pull-request build), and the Cloudflare Pages build. Nothing bumps it automatically; the `Hugo release check` workflow reports when it falls behind.
+- `.github/workflows/hugo-release.yaml` (`Hugo release check`): Dependabot has no ecosystem that reads `.hugo-version`, so this workflow compares it with the latest `gohugoio/hugo` release every Monday, and on demand from the Actions tab. When a newer release exists it builds the site with that release, using the build steps from `ci.yaml`, and `scripts/hugo-release-report.sh` reports whether the build passed. With Issues enabled on the repository, the report is one tracking issue that later runs update and that is closed once the pin catches up. With Issues disabled, the run fails instead and its summary carries the report, because a failed run is the only thing GitHub notifies about by default. It never edits `.hugo-version`: bump the pin by changing that one line in a pull request, which runs `CI / Build site` with the new version.
 - `scripts/cloudflare-build.sh`: the Cloudflare Pages build command (`bash scripts/cloudflare-build.sh`, output directory `public`). Pages does not read `.hugo-version`, so the script downloads that Hugo release itself instead of relying on a `HUGO_VERSION` variable in the dashboard. Linux only; use `make build` locally.
 - `make setup`: on macOS, install Hugo with Homebrew, initialize the Congo submodule, and verify the installed version.
 - `make check-hugo`: compare the installed Hugo against `.hugo-version` before debugging build or rendering differences. A mismatch warns but does not block, so a Homebrew upgrade cannot strand `make build`; a missing Hugo, or a missing `.hugo-version`, is fatal.
@@ -72,7 +73,7 @@
 ## Testing Guidelines
 - There is no separate unit-test suite in this repo; verification is build + manual page checks.
 - Before opening a PR, run `make build` and ensure it exits cleanly.
-- Every pull request runs the `CI / Build site` check from `.github/workflows/ci.yaml`: the same `hugo --gc --minify` as `make build`, on Linux with the Hugo version from `.hugo-version`. It never deploys; `hugo.yaml` deploys on pushes to `main`. Keep the two build jobs in step when changing either.
+- Every pull request runs the `CI / Build site` check from `.github/workflows/ci.yaml`: the same `hugo --gc --minify` as `make build`, on Linux with the Hugo version from `.hugo-version`. It never deploys; `hugo.yaml` deploys on pushes to `main`. Keep the build steps in `ci.yaml`, `hugo.yaml`, and `hugo-release.yaml` in step when changing any of them.
 - Preview with `make start` and validate changed pages: images load, shortcodes render, and audio embeds play.
 
 ## Commit & Pull Request Guidelines
