@@ -74,6 +74,7 @@
 - Before opening a PR, run `make build` and ensure it exits cleanly.
 - Every pull request runs the `CI / Build site` check from `.github/workflows/ci.yaml`: the same `hugo --gc --minify` as `make build`, on Linux with the Hugo version from `.hugo-version`. It never deploys; `hugo.yaml` deploys on pushes to `main`. Keep the two build jobs in step when changing either.
 - Preview with `make start` and validate changed pages: images load, shortcodes render, and audio embeds play.
+- Cloudflare Pages (project `wendyliga-com`) builds and deploys every pushed commit as a preview, pull-request branches included. Once the `Cloudflare Pages` check passes, the bot comment on the PR links two URLs: `https://<deployment-id>.wendyliga-com.pages.dev` for that exact commit and `https://<branch>.wendyliga-com.pages.dev` for the branch's latest. The deploy takes a few minutes because of the site's size, and each new push starts another one, so wait for the check before opening the preview. Then validate the changed pages there too: it is the real Linux build with every media file uploaded, so it catches what `make start` cannot.
 
 ## Commit & Pull Request Guidelines
 - Follow the repository’s concise commit style seen in history: action-first subjects such as `new story: ...`, `thumbnail: ...`, `update audio: ...`.
