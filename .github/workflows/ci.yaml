@@ -1,5 +1,7 @@
 # Builds the site for every pull request so template, shortcode, and content
-# errors surface before merge. Deployment stays in hugo.yaml.
+# errors surface before merge, checks the result for broken internal links, and
+# lints the workflows and shell scripts. Deployment stays in hugo.yaml.
+# Pull requests from forks are skipped.
 name: CI
 
 on:
@@ -22,6 +24,10 @@ defaults:
 jobs:
   build:
     name: Build site
+    # Branches of this repository only: nothing runs for a pull request from a
+    # fork. A fork can edit this file and drop the condition, so the gate that
+    # holds is the repository setting that makes fork runs wait for approval.
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 10
     # Keep in step with the build job in hugo.yaml, so a green check here means
@@ -61,3 +67,44 @@ jobs:
             hugo-
       - name: Build with Hugo
         run: hugo --gc --minify --cacheDir "${{ runner.temp }}/hugo_cache"
+      # Hugo does not validate plain Markdown links or raw HTML. Locally this
+      # is `make check-links`.
+      - name: Check internal links
+        run: python3 scripts/check-links.py public
+
+  # Locally this is `make lint`.
+  lint:
+    name: Lint
+    # The same guard as the build job.
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    # actionlint is not on the runner image. The checksum is the one published
+    # with the release, for the linux_amd64 archive; change both together.
+    env:
+      ACTIONLINT_VERSION: 1.7.12
+      ACTIONLINT_SHA256: 8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Install actionlint
+        run: |
+          wget -O "${{ runner.temp }}/actionlint.tar.gz" "https://github.com/rhysd/actionlint/releases/download/v${ACTIONLINT_VERSION}/actionlint_${ACTIONLINT_VERSION}_linux_amd64.tar.gz"
+          echo "${ACTIONLINT_SHA256}  ${{ runner.temp }}/actionlint.tar.gz" | sha256sum --check
+          mkdir "${{ runner.temp }}/actionlint"
+          tar -xzf "${{ runner.temp }}/actionlint.tar.gz" --directory "${{ runner.temp }}/actionlint" actionlint
+          echo "${{ runner.temp }}/actionlint" >> "$GITHUB_PATH"
+      # actionlint runs ShellCheck, which the runner image ships, on every run:
+      # block, but skips them silently if it is missing. Printing the version
+      # first turns that into a failure.
+      - name: Lint workflows
+        run: |
+          shellcheck --version
+          actionlint -version
+          actionlint
+      # Runs after a failed workflow lint too, so one run reports both.
+      - name: Lint shell scripts
+        if: ${{ !cancelled() }}
+        run: shellcheck scripts/*.sh
