@@ -1,4 +1,21 @@
 (() => {
+  const rateCookie = "story-audio-rate";
+  // Cycle order, not sort order: a learner's first tap should slow the story.
+  const rates = [1, 0.75, 0.5, 1.5, 1.25];
+
+  const readRate = () => {
+    const cookie = (document.cookie || "")
+      .split("; ")
+      .find((entry) => entry.startsWith(`${rateCookie}=`));
+    const value = cookie ? Number(cookie.slice(rateCookie.length + 1)) : 1;
+
+    return rates.includes(value) ? value : 1;
+  };
+
+  const saveRate = (rate) => {
+    document.cookie = `${rateCookie}=${rate}; Path=/; SameSite=Lax`;
+  };
+
   const formatTime = (seconds) => {
     if (!Number.isFinite(seconds) || seconds < 0) return "--:--";
 
@@ -16,6 +33,10 @@
     const pauseIcon = player.querySelector('[data-audio-icon="pause"]');
     const progress = player.querySelector("[data-audio-progress]");
     const time = player.querySelector("[data-audio-time]");
+    const rateButton = player.querySelector("[data-audio-rate]");
+    const muteButton = player.querySelector("[data-audio-mute]");
+    const volumeIcon = player.querySelector('[data-audio-icon="volume"]');
+    const mutedIcon = player.querySelector('[data-audio-icon="muted"]');
     const sources = Array.from(audio?.querySelectorAll("source") || []);
 
     if (
@@ -24,8 +45,12 @@
       !(playButton instanceof HTMLButtonElement) ||
       !(progress instanceof HTMLInputElement) ||
       !(time instanceof HTMLOutputElement) ||
+      !(rateButton instanceof HTMLButtonElement) ||
+      !(muteButton instanceof HTMLButtonElement) ||
       !(playIcon instanceof SVGElement) ||
-      !(pauseIcon instanceof SVGElement)
+      !(pauseIcon instanceof SVGElement) ||
+      !(volumeIcon instanceof SVGElement) ||
+      !(mutedIcon instanceof SVGElement)
     ) {
       return;
     }
@@ -64,6 +89,9 @@
     };
 
     const updatePlayback = () => {
+      rateButton.disabled = hasError;
+      muteButton.disabled = hasError;
+
       if (hasError) {
         playButton.disabled = true;
         playButton.setAttribute("aria-label", "Audio unavailable");
@@ -79,6 +107,25 @@
       playButton.dataset.state = isPlaying ? "playing" : "paused";
       playIcon.toggleAttribute("hidden", isPlaying);
       pauseIcon.toggleAttribute("hidden", !isPlaying);
+    };
+
+    const updateRate = () => {
+      const label = `${audio.playbackRate}×`;
+      rateButton.textContent = label;
+      rateButton.setAttribute("aria-label", `Playback speed ${label}`);
+    };
+
+    const updateMute = () => {
+      muteButton.setAttribute("aria-label", audio.muted ? "Unmute story" : "Mute story");
+      volumeIcon.toggleAttribute("hidden", audio.muted);
+      mutedIcon.toggleAttribute("hidden", !audio.muted);
+    };
+
+    // The default rate is what the browser falls back to whenever it reloads the
+    // media, so setting only playbackRate could silently snap back to 1×.
+    const setRate = (rate) => {
+      audio.defaultPlaybackRate = rate;
+      audio.playbackRate = rate;
     };
 
     const markUnavailable = () => {
@@ -108,6 +155,16 @@
         if (audio.error) markUnavailable();
         else updatePlayback();
       });
+    });
+
+    rateButton.addEventListener("click", () => {
+      const next = rates[(rates.indexOf(audio.playbackRate) + 1) % rates.length];
+      setRate(next);
+      saveRate(next);
+    });
+
+    muteButton.addEventListener("click", () => {
+      audio.muted = !audio.muted;
     });
 
     const beginScrub = () => {
@@ -146,6 +203,12 @@
     for (const eventName of ["play", "pause", "ended"]) {
       audio.addEventListener(eventName, updatePlayback);
     }
+    audio.addEventListener("ratechange", updateRate);
+    audio.addEventListener("volumechange", updateMute);
+
+    setRate(readRate());
+    updateRate();
+    updateMute();
 
     audio.controls = false;
     audio.hidden = true;

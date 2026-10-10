@@ -26,6 +26,7 @@
         <div class="story-audio__details">
             <div class="story-audio__meta">
                 <span class="story-audio__title">{{ .Get "label" | default "Listen to the story" }}</span>
+                <output class="story-audio__time" data-audio-time>0:00 / --:--</output>
             </div>
             <input
                 class="story-audio__progress"
@@ -39,7 +40,19 @@
             >
             <div class="story-audio__footer">
                 <div class="story-audio__aids" data-audio-aids hidden></div>
-                <output class="story-audio__time" data-audio-time>0:00 / --:--</output>
+                <div class="story-audio__settings">
+                    <button class="story-audio__chip story-audio__rate" type="button" data-audio-rate aria-label="Playback speed 1×">1×</button>
+                    <button class="story-audio__chip story-audio__mute" type="button" data-audio-mute aria-label="Mute story">
+                        <svg class="story-audio__icon" data-audio-icon="volume" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 8.5h2.6l3.75-3.2A1 1 0 0 1 13 6.06v11.88a1 1 0 0 1-1.65.76L7.6 15.5H5a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1Z" />
+                            <path d="M16 9.2a4 4 0 0 1 0 5.6M18.6 6.6a7.6 7.6 0 0 1 0 10.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <svg class="story-audio__icon" data-audio-icon="muted" viewBox="0 0 24 24" aria-hidden="true" hidden>
+                            <path d="M5 8.5h2.6l3.75-3.2A1 1 0 0 1 13 6.06v11.88a1 1 0 0 1-1.65.76L7.6 15.5H5a1 1 0 0 1-1-1v-5a1 1 0 0 1 1-1Z" />
+                            <path d="m16.5 9.5 5 5m0-5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
