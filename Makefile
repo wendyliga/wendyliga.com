@@ -43,3 +43,11 @@ check-links: check-hugo
 		hugo --gc --minify --destination "$$out" && \
 		python3 scripts/check-links.py "$$out"
 .PHONY: check-links
+
+# The Lint job in .github/workflows/ci.yaml. actionlint runs ShellCheck on the
+# workflows' run: blocks, but skips them silently if ShellCheck is missing.
+lint:
+	@command -v actionlint shellcheck >/dev/null || { echo "Run 'brew install actionlint shellcheck' on macOS."; exit 1; }
+	@actionlint
+	@shellcheck scripts/*.sh
+.PHONY: lint
