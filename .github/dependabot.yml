@@ -7,7 +7,7 @@
 
 version: 2
 updates:
-  # Actions used by .github/workflows/hugo.yaml
+  # Actions used by .github/workflows
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
