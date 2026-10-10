@@ -1,0 +1,125 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.64,
+      "hanzi": "重阳节快到了，小明和丽丽决定为爷爷奶奶准备礼物。",
+      "pinyin": "Chóngyángjié kuài dào le, Xiǎomíng hé Lìlì juédìng wèi yéye nǎinai zhǔnbèi lǐwù.",
+      "english": "The Double Ninth Festival was coming up, and Xiaoming and Lili decided to prepare gifts for their grandparents."
+    },
+    {
+      "start": 7.84,
+      "hanzi": "小明说：“我想给爷爷买一盒菊花茶，他每天下午都喝茶。”",
+      "pinyin": "Xiǎomíng shuō: \"Wǒ xiǎng gěi yéye mǎi yī hé júhuāchá, tā měitiān xiàwǔ dōu hē chá.\"",
+      "english": "Xiaoming said, \"I want to buy Grandpa a box of chrysanthemum tea. He drinks tea every afternoon.\""
+    },
+    {
+      "start": 15.2,
+      "hanzi": "丽丽说：“我想给奶奶买一块重阳糕，她喜欢吃甜的东西。”",
+      "pinyin": "Lìlì shuō: \"Wǒ xiǎng gěi nǎinai mǎi yī kuài chóngyánggāo, tā xǐhuan chī tián de dōngxi.\"",
+      "english": "Lili said, \"I want to buy Grandma a piece of Double Ninth cake. She likes to eat sweet things.\""
+    },
+    {
+      "start": 22.08,
+      "hanzi": "他们一起去商店，买了菊花茶和重阳糕。",
+      "pinyin": "Tāmen yīqǐ qù shāngdiàn, mǎi le júhuāchá hé chóngyánggāo.",
+      "english": "They went to the store together and bought chrysanthemum tea and a Double Ninth cake."
+    },
+    {
+      "start": 26.77,
+      "hanzi": "回家以后，他们把礼物放在桌子上。",
+      "pinyin": "Huíjiā yǐhòu, tāmen bǎ lǐwù fàng zài zhuōzi shàng.",
+      "english": "After they got home, they put the gifts on the table."
+    },
+    {
+      "start": 30.85,
+      "hanzi": "奶奶看见礼物，高兴地说：“谢谢你们，你们真懂事。”",
+      "pinyin": "Nǎinai kànjiàn lǐwù, gāoxìng de shuō: \"Xièxie nǐmen, nǐmen zhēn dǒngshì.\"",
+      "english": "Grandma saw the gifts and said happily, \"Thank you. You're so thoughtful.\""
+    },
+    {
+      "start": 36.61,
+      "hanzi": "爷爷也笑着说：“这些礼物我们都很喜欢。”",
+      "pinyin": "Yéye yě xiào zhe shuō: \"Zhèxiē lǐwù wǒmen dōu hěn xǐhuan.\"",
+      "english": "Grandpa also said with a smile, \"We like these gifts very much.\""
+    },
+    {
+      "start": 40.77,
+      "hanzi": "下午，小明和丽丽为爷爷奶奶表演了一首古诗朗诵。",
+      "pinyin": "Xiàwǔ, Xiǎomíng hé Lìlì wèi yéye nǎinai biǎoyǎn le yī shǒu gǔshī lǎngsòng.",
+      "english": "In the afternoon, Xiaoming and Lili performed a classical poem recitation for their grandparents."
+    },
+    {
+      "start": 46.37,
+      "hanzi": "小明站在前面，丽丽站在旁边。",
+      "pinyin": "Xiǎomíng zhàn zài qiánmiàn, Lìlì zhàn zài pángbiān.",
+      "english": "Xiaoming stood in front, and Lili stood next to him."
+    },
+    {
+      "start": 50.4,
+      "hanzi": "他们一起大声地读：“独在异乡为异客，每逢佳节倍思亲。”",
+      "pinyin": "Tāmen yīqǐ dàshēng de dú: \"Dú zài yìxiāng wéi yìkè, měi féng jiājié bèi sī qīn.\"",
+      "english": "They read aloud together: \"Alone in a foreign land, I am a stranger; at every festival I miss my family all the more.\""
+    },
+    {
+      "start": 57.6,
+      "hanzi": "虽然他们有一点紧张，但是读得很认真。",
+      "pinyin": "Suīrán tāmen yǒu yīdiǎn jǐnzhāng, dànshì dú de hěn rènzhēn.",
+      "english": "Although they were a little nervous, they read very carefully."
+    },
+    {
+      "start": 61.76,
+      "hanzi": "爷爷奶奶坐在沙发上，一边听一边笑。",
+      "pinyin": "Yéye nǎinai zuò zài shāfā shàng, yībiān tīng yībiān xiào.",
+      "english": "Grandpa and Grandma sat on the sofa, listening and smiling."
+    },
+    {
+      "start": 66.24,
+      "hanzi": "朗诵完了，奶奶说：“你们读得真好，我很感动。”",
+      "pinyin": "Lǎngsòng wán le, nǎinai shuō: \"Nǐmen dú de zhēn hǎo, wǒ hěn gǎndòng.\"",
+      "english": "After the recitation, Grandma said, \"You read so well. I'm very moved.\""
+    },
+    {
+      "start": 71.72,
+      "hanzi": "爷爷说：“我也很喜欢，你们真是我们的好孩子。”",
+      "pinyin": "Yéye shuō: \"Wǒ yě hěn xǐhuan, nǐmen zhēn shì wǒmen de hǎo háizi.\"",
+      "english": "Grandpa said, \"I like it very much too. You really are our good children.\""
+    },
+    {
+      "start": 77,
+      "hanzi": "然后，一家人一起品尝重阳糕，还喝了菊花茶。",
+      "pinyin": "Ránhòu, yījiā rén yīqǐ pǐncháng chóngyánggāo, hái hē le júhuāchá.",
+      "english": "Then the whole family tasted the Double Ninth cake together and also drank chrysanthemum tea."
+    },
+    {
+      "start": 82.6,
+      "hanzi": "小明给爷爷倒了一杯茶。",
+      "pinyin": "Xiǎomíng gěi yéye dào le yī bēi chá.",
+      "english": "Xiaoming poured Grandpa a cup of tea."
+    },
+    {
+      "start": 85.32,
+      "hanzi": "丽丽给奶奶切了一块糕。",
+      "pinyin": "Lìlì gěi nǎinai qiē le yī kuài gāo.",
+      "english": "Lili cut a slice of cake for Grandma."
+    },
+    {
+      "start": 87.88,
+      "hanzi": "大家坐在一起，聊天、喝茶、吃糕，度过了一个温馨的下午。",
+      "pinyin": "Dàjiā zuò zài yīqǐ, liáotiān, hē chá, chī gāo, dùguò le yī gè wēnxīn de xiàwǔ.",
+      "english": "Everyone sat together, chatting, drinking tea, and eating cake, and spent a cozy afternoon."
+    },
+    {
+      "start": 94.08,
+      "hanzi": "小明说：“我希望每年重阳节都能这样过。”",
+      "pinyin": "Xiǎomíng shuō: \"Wǒ xīwàng měinián Chóngyángjié dōu néng zhèyàng guò.\"",
+      "english": "Xiaoming said, \"I hope we can spend the Double Ninth Festival like this every year.\""
+    },
+    {
+      "start": 99.04,
+      "hanzi": "丽丽说：“我也是，和家人在一起最开心。”",
+      "pinyin": "Lìlì shuō: \"Wǒ yě shì, hé jiārén zài yīqǐ zuì kāixīn.\"",
+      "english": "Lili said, \"Me too. Being with family makes me happiest.\""
+    }
+  ]
+}
