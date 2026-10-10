@@ -1,0 +1,131 @@
+# Watches for new Hugo releases. .hugo-version pins the Hugo that every build
+# uses and Dependabot has no ecosystem that reads it. When a newer release
+# exists, this builds the site with it and reports whether the bump is safe.
+# It never changes .hugo-version: the bump stays a pull request.
+name: Hugo release check
+
+on:
+  # Mondays at 06:23 UTC. Runs scheduled on the hour are the ones GitHub
+  # delays most, so this one is not.
+  schedule:
+    - cron: "23 6 * * 1"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Read-only by default. The report job alone may write issues, and it runs
+# neither Hugo nor the site's templates.
+permissions:
+  contents: read
+
+# One run at a time, so that two runs cannot both open the tracking issue.
+concurrency:
+  group: hugo-release-check
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  check:
+    name: Build with latest Hugo
+    # Only in wendyliga's own repository, so a fork that turns Actions on never
+    # runs this, and a manual run only when wendyliga starts it.
+    if: github.repository_owner == 'wendyliga' && (github.event_name == 'schedule' || github.triggering_actor == 'wendyliga')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      pinned: ${{ steps.versions.outputs.pinned }}
+      latest: ${{ steps.versions.outputs.latest }}
+      outdated: ${{ steps.versions.outputs.outdated }}
+      build: ${{ steps.build.outcome }}
+    # Keep the install, cache, and build steps in step with the build job in
+    # ci.yaml, so a passing build here means the bump passes CI too. The only
+    # difference is that HUGO_VERSION is the latest release, not the pin.
+    env:
+      HUGO_ENVIRONMENT: production
+      TZ: America/Los_Angeles
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+          persist-credentials: false
+      - name: Compare with the latest Hugo release
+        id: versions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test -f .hugo-version || { echo "::error::.hugo-version is missing"; exit 1; }
+          pinned="$(tr -d '[:space:]' < .hugo-version)"
+          test -n "$pinned" || { echo "::error::.hugo-version is empty"; exit 1; }
+          # releases/latest leaves out drafts and pre-releases.
+          latest="$(gh api repos/gohugoio/hugo/releases/latest --jq .tag_name)"
+          latest="${latest#v}"
+          # Both go into a download URL and an issue title: accept x.y.z only.
+          for version in "$pinned" "$latest"; do
+            [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo "::error::Unexpected Hugo version: $version"; exit 1; }
+          done
+          newest="$(printf '%s\n' "$pinned" "$latest" | sort -V | tail -n 1)"
+          if [[ "$pinned" != "$latest" && "$newest" == "$latest" ]]; then outdated=true; else outdated=false; fi
+          echo "Pinned: $pinned. Latest: $latest. Outdated: $outdated."
+          {
+            echo "pinned=$pinned"
+            echo "latest=$latest"
+            echo "outdated=$outdated"
+          } >> "$GITHUB_OUTPUT"
+          echo "HUGO_VERSION=$latest" >> "$GITHUB_ENV"
+      - name: Install Hugo CLI
+        if: steps.versions.outputs.outdated == 'true'
+        run: |
+          wget -O "${{ runner.temp }}/hugo.deb" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i "${{ runner.temp }}/hugo.deb"
+      # Restore only, as in ci.yaml: the build reuses the processed images the
+      # deploy on main saved and never writes a cache of its own.
+      - name: Cache Restore
+        if: steps.versions.outputs.outdated == 'true'
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            ${{ runner.temp }}/hugo_cache
+          key: hugo-${{ github.run_id }}
+          restore-keys:
+            hugo-
+      # A build that fails is a result to report, not a broken workflow, so
+      # the job carries on and hands the outcome to the report job.
+      - name: Build with Hugo
+        id: build
+        if: steps.versions.outputs.outdated == 'true'
+        continue-on-error: true
+        run: hugo --gc --minify --cacheDir "${{ runner.temp }}/hugo_cache"
+
+  report:
+    name: Report
+    needs: check
+    # The same guard as the check job, repeated because this job has the
+    # write token.
+    if: github.repository_owner == 'wendyliga' && (github.event_name == 'schedule' || github.triggering_actor == 'wendyliga')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          sparse-checkout: scripts
+          persist-credentials: false
+      - name: Report the result
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          PINNED: ${{ needs.check.outputs.pinned }}
+          LATEST: ${{ needs.check.outputs.latest }}
+          OUTDATED: ${{ needs.check.outputs.outdated }}
+          BUILD: ${{ needs.check.outputs.build }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: bash scripts/hugo-release-report.sh
