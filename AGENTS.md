@@ -57,8 +57,9 @@
 - The `read-along` `audio` parameter must match an `id` set on the page's `{{< audio >}}` call (the pilot uses `story-audio`). `make build` fails if it does not, because the two are only wired together at runtime and a mismatch would otherwise degrade silently to plain text.
 - The docked mobile player is a read-along affordance: `audio-player.js` only adds `has-story-audio-player` to `<body>` on pages that also contain a `[data-read-along]`. Story pages with a plain `{{< audio >}}` keep the inline card at every width.
 - The `read-along-aids` session cookie stores `both`, `pinyin`, `english`, or `none` with `Path=/`. Remove that cookie when testing first-visit defaults; otherwise reloads should preserve the selected buttons.
-- Test play, pause, seeking, ended state, mouse hover, sentence click, Enter/Space activation, and a long wrapped sentence. The tooltip should follow the active or focused sentence without changing paragraph height.
-- Check desktop and a 390×844 mobile viewport in light and dark appearances. Verify that the player chips wrap, the tooltip stays inside the content column, both aid rows wrap, and neither the component nor page gains horizontal scrolling.
+- The speed chip and mute button belong to the `audio` shortcode, so every story player has them, read-along or not. The `story-audio-rate` session cookie stores `0.5`, `0.75`, `1`, `1.25`, or `1.5` with `Path=/`; remove it when testing first-visit defaults. Mute is deliberately not remembered. There is no volume slider because iOS Safari ignores `audio.volume`.
+- Test play, pause, seeking, ended state, each playback speed, mute, mouse hover, sentence click, Enter/Space activation, and a long wrapped sentence. The highlight must stay on the spoken sentence at every speed. The tooltip should follow the active or focused sentence without changing paragraph height.
+- Check desktop and a 390×844 mobile viewport in light and dark appearances. Verify that the aid and settings chips share one row down to a 320px viewport and wrap below that, the tooltip stays inside the content column, both aid rows wrap, and neither the component nor page gains horizontal scrolling.
 
 ## Coding Style & Naming Conventions
 - Write content in Markdown with YAML front matter (`---`) and lowercase keys.
