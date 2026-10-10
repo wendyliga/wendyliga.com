@@ -35,3 +35,11 @@ start: check-hugo
 build: check-hugo
 	@hugo --gc --minify
 .PHONY: build
+
+# Builds into a fresh directory instead of reusing public/, which keeps pages
+# from earlier builds and so hides links to pages that no longer exist.
+check-links: check-hugo
+	@out="$$(mktemp -d)" && trap 'rm -rf "$$out"' EXIT && \
+		hugo --gc --minify --destination "$$out" && \
+		python3 scripts/check-links.py "$$out"
+.PHONY: check-links

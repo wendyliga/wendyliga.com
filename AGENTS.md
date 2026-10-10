@@ -40,6 +40,7 @@
 - `make check-hugo`: compare the installed Hugo against `.hugo-version` before debugging build or rendering differences. A mismatch warns but does not block, so a Homebrew upgrade cannot strand `make build`; a missing Hugo, or a missing `.hugo-version`, is fatal.
 - `make start`: start the local development server with future posts enabled, default URL `http://localhost:1313`.
 - `make build`: run `hugo --gc --minify`, matching the production build intent and catching template/content errors.
+- `make check-links`: build into a fresh temporary directory and run `scripts/check-links.py` on it. The script verifies that every internal `href`, `src`, and `srcset` in the generated HTML resolves to a file in the output, which Hugo does not do for plain Markdown links or raw HTML. External links and `#fragments` are not checked. Do not run the script on a reused `public/`: pages left over from earlier builds hide broken links.
 - `make update_themes`: update theme submodules to latest remote commits.
 
 ## Website Debugging Workflow
@@ -73,6 +74,7 @@
 - There is no separate unit-test suite in this repo; verification is build + manual page checks.
 - Before opening a PR, run `make build` and ensure it exits cleanly.
 - Every pull request runs the `CI / Build site` check from `.github/workflows/ci.yaml`: the same `hugo --gc --minify` as `make build`, on Linux with the Hugo version from `.hugo-version`. It never deploys; `hugo.yaml` deploys on pushes to `main`. Keep the two build jobs in step when changing either.
+- The `Build site` job then runs `scripts/check-links.py` on its output (`make check-links` locally), so a broken internal link or a missing asset fails the check.
 - Preview with `make start` and validate changed pages: images load, shortcodes render, and audio embeds play.
 - Cloudflare Pages (project `wendyliga-com`) builds and deploys every pushed commit as a preview, pull-request branches included. Once the `Cloudflare Pages` check passes, the bot comment on the PR links two URLs: `https://<deployment-id>.wendyliga-com.pages.dev` for that exact commit and `https://<branch>.wendyliga-com.pages.dev` for the branch's latest. The deploy takes a few minutes because of the site's size, and each new push starts another one, so wait for the check before opening the preview. Then validate the changed pages there too: it is the real Linux build with every media file uploaded, so it catches what `make start` cannot.
 

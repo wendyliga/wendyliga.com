@@ -1,5 +1,6 @@
 # Builds the site for every pull request so template, shortcode, and content
-# errors surface before merge. Deployment stays in hugo.yaml.
+# errors surface before merge, and checks the result for broken internal links.
+# Deployment stays in hugo.yaml.
 name: CI
 
 on:
@@ -60,3 +61,7 @@ jobs:
             hugo-
       - name: Build with Hugo
         run: hugo --gc --minify --cacheDir "${{ runner.temp }}/hugo_cache"
+      # Hugo does not validate plain Markdown links or raw HTML. Locally this
+      # is `make check-links`.
+      - name: Check internal links
+        run: python3 scripts/check-links.py public
