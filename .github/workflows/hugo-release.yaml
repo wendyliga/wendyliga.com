@@ -5,7 +5,8 @@
 name: Hugo release check
 
 on:
-  # Mondays at 06:23 UTC. Not on the hour, when scheduled runs start latest.
+  # Mondays at 06:23 UTC. Runs scheduled on the hour are the ones GitHub
+  # delays most, so this one is not.
   schedule:
     - cron: "23 6 * * 1"
 
