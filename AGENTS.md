@@ -13,7 +13,7 @@
 
 ## Custom UI With Shortcodes
 - Hugo supports custom views and reusable UI through shortcodes in `layouts/shortcodes/`. Prefer existing shortcodes over raw HTML in Markdown when a post needs embedded media, revealable answers, or link cards.
-- `audio`: embeds a page-bundle MP3 with an HTML audio player. Use `src` for the media filename/path relative to the current page bundle, optional `caption`, optional `class`, and optional `preload` (defaults to `metadata`).
+- `audio`: embeds a page-bundle MP3 with an HTML audio player. Use `src` for the media filename/path relative to the current page bundle, optional `caption`, optional `class`, and optional `preload` (defaults to `metadata`). `src` is resolved as a page resource, so `make build` fails if the file is not in the page's media folder.
 - `answers`: creates a collapsible answer block with `<details>`. Use optional `title` for the summary text; the inner Markdown becomes the hidden answer content.
 - `youtube-music`: renders a YouTube/playlist-style card. Use `title`, `image`, and `link`; the shortcode derives and displays the link domain.
 - `link-preview`: renders a generic link preview card. Use `title`, `link`, optional `image`, and optional `description`; the shortcode derives and displays the link domain.
