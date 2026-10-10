@@ -13,7 +13,7 @@
 
 ## Custom UI With Shortcodes
 - Hugo supports custom views and reusable UI through shortcodes in `layouts/shortcodes/`. Prefer existing shortcodes over raw HTML in Markdown when a post needs embedded media, revealable answers, or link cards.
-- `audio`: embeds a page-bundle MP3 with an HTML audio player. Use `src` for the media filename/path relative to the current page bundle, optional `caption`, optional `class`, and optional `preload` (defaults to `metadata`).
+- `audio`: embeds a page-bundle MP3 with an HTML audio player. Use `src` for the media filename/path relative to the current page bundle, optional `caption`, optional `class`, and optional `preload` (defaults to `metadata`). `src` is resolved as a page resource, so `make build` fails if the file is not in the page's media folder.
 - `answers`: creates a collapsible answer block with `<details>`. Use optional `title` for the summary text; the inner Markdown becomes the hidden answer content.
 - `youtube-music`: renders a YouTube/playlist-style card. Use `title`, `image`, and `link`; the shortcode derives and displays the link domain.
 - `link-preview`: renders a generic link preview card. Use `title`, `link`, optional `image`, and optional `description`; the shortcode derives and displays the link domain.
@@ -34,7 +34,8 @@
   - Don't stack bold, italic, and underline on the same phrase — pick one emphasis per point.
 
 ## Build, Test, and Development Commands
-- `.hugo-version` is the single Hugo version source for local development and both GitHub Actions workflows (the Pages deploy and the pull-request build).
+- `.hugo-version` is the single Hugo version source for local development, both GitHub Actions workflows (the Pages deploy and the pull-request build), and the Cloudflare Pages build.
+- `scripts/cloudflare-build.sh`: the Cloudflare Pages build command (`bash scripts/cloudflare-build.sh`, output directory `public`). Pages does not read `.hugo-version`, so the script downloads that Hugo release itself instead of relying on a `HUGO_VERSION` variable in the dashboard. Linux only; use `make build` locally.
 - `make setup`: on macOS, install Hugo with Homebrew, initialize the Congo submodule, and verify the installed version.
 - `make check-hugo`: compare the installed Hugo against `.hugo-version` before debugging build or rendering differences. A mismatch warns but does not block, so a Homebrew upgrade cannot strand `make build`; a missing Hugo, or a missing `.hugo-version`, is fatal.
 - `make start`: start the local development server with future posts enabled, default URL `http://localhost:1313`.
@@ -74,6 +75,7 @@
 - Before opening a PR, run `make build` and ensure it exits cleanly.
 - Every pull request runs the `CI / Build site` check from `.github/workflows/ci.yaml`: the same `hugo --gc --minify` as `make build`, on Linux with the Hugo version from `.hugo-version`. It never deploys; `hugo.yaml` deploys on pushes to `main`. Keep the two build jobs in step when changing either.
 - Preview with `make start` and validate changed pages: images load, shortcodes render, and audio embeds play.
+- Cloudflare Pages (project `wendyliga-com`) builds and deploys every pushed commit as a preview, pull-request branches included. Once the `Cloudflare Pages` check passes, the bot comment on the PR links two URLs: `https://<deployment-id>.wendyliga-com.pages.dev` for that exact commit and `https://<branch>.wendyliga-com.pages.dev` for the branch's latest. The deploy takes a few minutes because of the site's size, and each new push starts another one, so wait for the check before opening the preview. Then validate the changed pages there too: it is the real Linux build with every media file uploaded, so it catches what `make start` cannot.
 
 ## Commit & Pull Request Guidelines
 - Follow the repository’s concise commit style seen in history: action-first subjects such as `new story: ...`, `thumbnail: ...`, `update audio: ...`.

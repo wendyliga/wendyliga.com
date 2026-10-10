@@ -1,5 +1,13 @@
 {{ $src := .Get "src" }}
-{{ $url := printf "%s%s" (path.Dir .Page.RelPermalink) $src | relURL }}
+{{/* Resolve src as a page resource so a story published without its audio file
+     fails the build instead of shipping a player that says "Audio unavailable". */}}
+{{ $filename := strings.TrimPrefix "/" $src }}
+{{ $url := "" }}
+{{ with .Page.Resources.Get $filename }}
+  {{ $url = .RelPermalink }}
+{{ else }}
+  {{ errorf "audio shortcode in %q could not find audio resource %q" .Page.Path $filename }}
+{{ end }}
 
 <figure class="story-audio{{ with .Get "class" }} {{ . }}{{ end }}" data-audio-player>
     <audio{{ with .Get "id" }} id="{{ . }}"{{ end }} controls preload="{{ .Get "preload" | default "metadata" }}">
