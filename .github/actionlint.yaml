@@ -1,0 +1,8 @@
+# https://github.com/rhysd/actionlint/blob/main/docs/config.md
+paths:
+  .github/workflows/hugo.yaml:
+    ignore:
+      # `[[ -f package-lock.json || ... ]] && npm ci || true` is deliberate: the
+      # `|| true` keeps the step green when there is no lockfile. ShellCheck
+      # 0.9.0, the version on the runner image, reports it; 0.11.0 does not.
+      - 'SC2015'
