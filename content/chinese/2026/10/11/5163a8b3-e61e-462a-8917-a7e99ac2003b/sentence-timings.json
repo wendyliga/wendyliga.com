@@ -1,0 +1,179 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.16,
+      "hanzi": "十月十三日是重阳节。",
+      "pinyin": "Shíyuè shísān rì shì Chóngyángjié.",
+      "english": "October 13th is the Double Ninth Festival."
+    },
+    {
+      "start": 4.24,
+      "hanzi": "小明和丽丽陪爷爷奶奶去爬山。",
+      "pinyin": "Xiǎomíng hé Lìlì péi yéye nǎinai qù páshān.",
+      "english": "Xiaoming and Lili accompanied Grandpa and Grandma to climb a mountain."
+    },
+    {
+      "start": 8.64,
+      "hanzi": "山路很长，他们走得很慢。",
+      "pinyin": "Shānlù hěn cháng, tāmen zǒu de hěn màn.",
+      "english": "The mountain path was very long, and they walked very slowly."
+    },
+    {
+      "start": 12.56,
+      "hanzi": "小明走累了，他说：“爷爷，我走不动了，我们休息一下吧。”",
+      "pinyin": "Xiǎomíng zǒu lèi le, tā shuō: \"Yéye, wǒ zǒu bù dòng le, wǒmen xiūxi yīxià ba.\"",
+      "english": "Xiaoming got tired from walking and said, \"Grandpa, I can't walk anymore. Let's rest a bit.\""
+    },
+    {
+      "start": 19.76,
+      "hanzi": "爷爷笑着说：“小明，你想听一个故事吗？”",
+      "pinyin": "Yéye xiào zhe shuō: \"Xiǎomíng, nǐ xiǎng tīng yī gè gùshi ma?\"",
+      "english": "Grandpa smiled and said, \"Xiaoming, do you want to hear a story?\""
+    },
+    {
+      "start": 24,
+      "hanzi": "小明说：“我想听！爷爷快讲吧。”",
+      "pinyin": "Xiǎomíng shuō: \"Wǒ xiǎng tīng! Yéye kuài jiǎng ba.\"",
+      "english": "Xiaoming said, \"I want to hear it! Grandpa, tell it now.\""
+    },
+    {
+      "start": 28.47,
+      "hanzi": "爷爷指着山顶说：“山顶上有一棵老松树。”",
+      "pinyin": "Yéye zhǐ zhe shāndǐng shuō: \"Shāndǐng shàng yǒu yī kē lǎo sōngshù.\"",
+      "english": "Grandpa pointed to the top of the mountain and said, \"There is an old pine tree on the mountaintop.\""
+    },
+    {
+      "start": 33.91,
+      "hanzi": "“那棵老松树已经活了几百年了。”",
+      "pinyin": "\"Nà kē lǎo sōngshù yǐjīng huó le jǐ bǎi nián le.\"",
+      "english": "\"That old pine tree has already lived for several hundred years.\""
+    },
+    {
+      "start": 37.99,
+      "hanzi": "“每年重阳节，很多人都爬到山顶看它。”",
+      "pinyin": "\"Měi nián Chóngyángjié, hěn duō rén dōu pá dào shāndǐng kàn tā.\"",
+      "english": "\"Every year on the Double Ninth Festival, many people climb to the mountaintop to see it.\""
+    },
+    {
+      "start": 42.15,
+      "hanzi": "“听说，能走到老松树旁边的人，会得到健康和快乐。”",
+      "pinyin": "\"Tīngshuō, néng zǒu dào lǎo sōngshù pángbiān de rén, huì dédào jiànkāng hé kuàilè.\"",
+      "english": "\"It is said that people who can make it to the old pine tree will gain health and happiness.\""
+    },
+    {
+      "start": 48.33,
+      "hanzi": "小明听了，眼睛亮了起来。",
+      "pinyin": "Xiǎomíng tīng le, yǎnjīng liàng le qǐlái.",
+      "english": "After hearing this, Xiaoming's eyes lit up."
+    },
+    {
+      "start": 51.77,
+      "hanzi": "他站起来说：“爷爷，我也要去看老松树！”",
+      "pinyin": "Tā zhàn qǐlái shuō: \"Yéye, wǒ yě yào qù kàn lǎo sōngshù!\"",
+      "english": "He stood up and said, \"Grandpa, I want to see the old pine tree too!\""
+    },
+    {
+      "start": 56.41,
+      "hanzi": "他们又往前走。",
+      "pinyin": "Tāmen yòu wǎng qián zǒu.",
+      "english": "They continued walking forward."
+    },
+    {
+      "start": 58.17,
+      "hanzi": "山路两边有很多黄色的花，风很轻。",
+      "pinyin": "Shānlù liǎngbiān yǒu hěn duō huángsè de huā, fēng hěn qīng.",
+      "english": "There were many yellow flowers on both sides of the mountain path, and the wind was gentle."
+    },
+    {
+      "start": 62.89,
+      "hanzi": "丽丽拉着奶奶的手，一步一步地走。",
+      "pinyin": "Lìlì lā zhe nǎinai de shǒu, yī bù yī bù de zǒu.",
+      "english": "Lili held Grandma's hand and walked step by step."
+    },
+    {
+      "start": 66.97,
+      "hanzi": "过了一会儿，他们到了山顶。",
+      "pinyin": "Guò le yīhuìr, tāmen dào le shāndǐng.",
+      "english": "After a while, they reached the mountaintop."
+    },
+    {
+      "start": 70.41,
+      "hanzi": "山顶上很美。",
+      "pinyin": "Shāndǐng shàng hěn měi.",
+      "english": "The top of the mountain was beautiful."
+    },
+    {
+      "start": 72.25,
+      "hanzi": "金色的菊花开了，一片一片的，像小小的太阳。",
+      "pinyin": "Jīnsè de júhuā kāi le, yī piàn yī piàn de, xiàng xiǎo xiǎo de tàiyáng.",
+      "english": "Golden chrysanthemums had bloomed in patches, like little suns."
+    },
+    {
+      "start": 78.73,
+      "hanzi": "小明看见那棵老松树，它又高又大，叶子还是绿的。",
+      "pinyin": "Xiǎomíng kànjiàn nà kē lǎo sōngshù, tā yòu gāo yòu dà, yèzi hái shì lǜ de.",
+      "english": "Xiaoming saw the old pine tree; it was tall and large, and its leaves were still green."
+    },
+    {
+      "start": 85.21,
+      "hanzi": "爷爷说：“小明，你看，你走到了这里，真棒！”",
+      "pinyin": "Yéye shuō: \"Xiǎomíng, nǐ kàn, nǐ zǒu dào le zhèlǐ, zhēn bàng!\"",
+      "english": "Grandpa said, \"Xiaoming, look, you made it up here. Well done!\""
+    },
+    {
+      "start": 90.09,
+      "hanzi": "小明开心地笑了。",
+      "pinyin": "Xiǎomíng kāixīn de xiào le.",
+      "english": "Xiaoming smiled happily."
+    },
+    {
+      "start": 92.49,
+      "hanzi": "奶奶拿出重阳糕，分给大家吃。",
+      "pinyin": "Nǎinai ná chū Chóngyánggāo, fēn gěi dàjiā chī.",
+      "english": "Grandma took out the Double Ninth cake and shared it with everyone."
+    },
+    {
+      "start": 96.13,
+      "hanzi": "重阳糕软软的、糯糯的，甜甜的，很好吃。",
+      "pinyin": "Chóngyánggāo ruǎnruǎn de, nuònuò de, tiántián de, hěn hǎochī.",
+      "english": "The Double Ninth cake was soft, glutinous, and sweet; it was delicious."
+    },
+    {
+      "start": 101.81,
+      "hanzi": "丽丽说：“奶奶，重阳糕真好吃！”",
+      "pinyin": "Lìlì shuō: \"Nǎinai, Chóngyánggāo zhēn hǎochī!\"",
+      "english": "Lili said, \"Grandma, the Double Ninth cake is really delicious!\""
+    },
+    {
+      "start": 105.89,
+      "hanzi": "奶奶说：“好吃就多吃一块。”",
+      "pinyin": "Nǎinai shuō: \"Hǎochī jiù duō chī yī kuài.\"",
+      "english": "Grandma said, \"If it tastes good, have one more piece.\""
+    },
+    {
+      "start": 108.77,
+      "hanzi": "他们坐在松树下，一边吃糕，一边看山。",
+      "pinyin": "Tāmen zuò zài sōngshù xià, yībiān chī gāo, yībiān kàn shān.",
+      "english": "They sat under the pine tree, eating cake and looking at the mountains."
+    },
+    {
+      "start": 113.97,
+      "hanzi": "爷爷说：“全家人在一起登高，就是最幸福的事。”",
+      "pinyin": "Yéye shuō: \"Quán jiā rén zài yīqǐ dēnggāo, jiù shì zuì xìngfú de shì.\"",
+      "english": "Grandpa said, \"The whole family being together and climbing high is the happiest thing.\""
+    },
+    {
+      "start": 119.14,
+      "hanzi": "小明点点头说：“明年重阳节，我们还要一起来爬山！”",
+      "pinyin": "Xiǎomíng diǎn diǎn tóu shuō: \"Míngnián Chóngyángjié, wǒmen hái yào yīqǐ lái páshān!\"",
+      "english": "Xiaoming nodded and said, \"Next year on the Double Ninth Festival, we will come and climb the mountain together again!\""
+    },
+    {
+      "start": 125.78,
+      "hanzi": "大家都笑了。",
+      "pinyin": "Dàjiā dōu xiào le.",
+      "english": "Everyone laughed."
+    }
+  ]
+}
