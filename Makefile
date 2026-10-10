@@ -47,7 +47,7 @@ check-links: check-hugo
 # The Lint job in .github/workflows/ci.yaml. actionlint runs ShellCheck on the
 # workflows' run: blocks, but skips them silently if ShellCheck is missing.
 lint:
-	@command -v actionlint shellcheck >/dev/null || { echo "Run 'brew install actionlint shellcheck' on macOS."; exit 1; }
+	@command -v actionlint >/dev/null && command -v shellcheck >/dev/null || { echo "Run 'brew install actionlint shellcheck' on macOS."; exit 1; }
 	@actionlint
 	@shellcheck scripts/*.sh
 .PHONY: lint
