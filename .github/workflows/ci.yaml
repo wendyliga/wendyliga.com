@@ -47,5 +47,16 @@ jobs:
         run: |
           wget -O "${{ runner.temp }}/hugo.deb" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
           sudo dpkg -i "${{ runner.temp }}/hugo.deb"
+      # Restore only: the deploy on main saves the cache of processed images.
+      # Pull requests reuse it, so only new images are processed, and never
+      # write one of their own.
+      - name: Cache Restore
+        uses: actions/cache/restore@v6
+        with:
+          path: |
+            ${{ runner.temp }}/hugo_cache
+          key: hugo-${{ github.run_id }}
+          restore-keys:
+            hugo-
       - name: Build with Hugo
-        run: hugo --gc --minify
+        run: hugo --gc --minify --cacheDir "${{ runner.temp }}/hugo_cache"
