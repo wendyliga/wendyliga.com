@@ -1,0 +1,137 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.24,
+      "hanzi": "重阳节快到了，小明和丽丽跟着爸爸妈妈去爬山。",
+      "pinyin": "Chóngyángjié kuài dào le, Xiǎomíng hé Lìlì gēnzhe bàba māma qù páshān.",
+      "english": "The Double Ninth Festival was approaching, and Xiaoming and Lili went mountain climbing with their parents."
+    },
+    {
+      "start": 6.96,
+      "hanzi": "那天早上，天气很好，天很蓝，风也很轻。",
+      "pinyin": "Nà tiān zǎoshang, tiānqì hěn hǎo, tiān hěn lán, fēng yě hěn qīng.",
+      "english": "That morning, the weather was very nice, the sky was very blue, and the wind was also very gentle."
+    },
+    {
+      "start": 12.16,
+      "hanzi": "山上的人很多，大家都来爬山看菊花。",
+      "pinyin": "Shān shàng de rén hěn duō, dàjiā dōu lái páshān kàn júhuā.",
+      "english": "There were many people on the mountain; everyone came to climb the mountain and see the chrysanthemums."
+    },
+    {
+      "start": 17.76,
+      "hanzi": "山上的菊花开了，有黄色的、白色的，还有紫色的，非常好看。",
+      "pinyin": "Shān shàng de júhuā kāi le, yǒu huángsè de, báisè de, hái yǒu zǐsè de, fēicháng hǎokàn.",
+      "english": "The chrysanthemums on the mountain had bloomed; there were yellow ones, white ones, and also purple ones, very beautiful."
+    },
+    {
+      "start": 24.93,
+      "hanzi": "小明对丽丽说：“你看，这些菊花多漂亮啊！”",
+      "pinyin": "Xiǎomíng duì Lìlì shuō: “Nǐ kàn, zhèxiē júhuā duō piàoliang a!”",
+      "english": "Xiaoming said to Lili, \"Look, how beautiful these chrysanthemums are!\""
+    },
+    {
+      "start": 30.77,
+      "hanzi": "丽丽笑着说：“是啊，我最喜欢那朵紫色的花。”",
+      "pinyin": "Lìlì xiàozhe shuō: “Shì a, wǒ zuì xǐhuan nà duǒ zǐsè de huā.”",
+      "english": "Lili said with a smile, \"Yes, I like that purple flower the most.\""
+    },
+    {
+      "start": 35.97,
+      "hanzi": "爷爷年纪大了，走路有点儿慢。",
+      "pinyin": "Yéye niánjì dà le, zǒulù yǒudiǎnr màn.",
+      "english": "Grandpa was getting old, and he walked a bit slowly."
+    },
+    {
+      "start": 39.57,
+      "hanzi": "小明说：“爷爷，我扶您走，您慢一点儿。”",
+      "pinyin": "Xiǎomíng shuō: “Yéye, wǒ fú nín zǒu, nín màn yīdiǎnr.”",
+      "english": "Xiaoming said, \"Grandpa, let me help you walk; please take it slow.\""
+    },
+    {
+      "start": 44.17,
+      "hanzi": "丽丽也说：“爷爷，我也扶着您，我们一起慢慢走。”",
+      "pinyin": "Lìlì yě shuō: “Yéye, wǒ yě fúzhe nín, wǒmen yīqǐ mànmàn zǒu.”",
+      "english": "Lili also said, \"Grandpa, I'll also support you; let's walk slowly together.\""
+    },
+    {
+      "start": 50.33,
+      "hanzi": "爷爷高兴地说：“好孩子，谢谢你们。”",
+      "pinyin": "Yéye gāoxìng de shuō: “Hǎo háizi, xièxie nǐmen.”",
+      "english": "Grandpa said happily, \"Good children, thank you.\""
+    },
+    {
+      "start": 55.21,
+      "hanzi": "他们一边走，一边看花，还拍了很多照片。",
+      "pinyin": "Tāmen yībiān zǒu, yībiān kàn huā, hái pāi le hěn duō zhàopiàn.",
+      "english": "They walked while looking at the flowers, and also took many photos."
+    },
+    {
+      "start": 59.77,
+      "hanzi": "到了山顶，全家人找了一个地方坐下来休息。",
+      "pinyin": "Dào le shāndǐng, quánjiārén zhǎo le yī gè dìfang zuò xiàlái xiūxi.",
+      "english": "When they reached the mountaintop, the whole family found a place to sit down and rest."
+    },
+    {
+      "start": 65.13,
+      "hanzi": "妈妈拿出带来的菊花茶和重阳糕。",
+      "pinyin": "Māma ná chū dài lái de júhuā chá hé Chóngyáng gāo.",
+      "english": "Mom took out the chrysanthemum tea and Double Ninth cake she had brought."
+    },
+    {
+      "start": 69.37,
+      "hanzi": "爸爸给大家倒茶，茶很香。",
+      "pinyin": "Bàba gěi dàjiā dào chá, chá hěn xiāng.",
+      "english": "Dad poured tea for everyone, and the tea was very fragrant."
+    },
+    {
+      "start": 73.05,
+      "hanzi": "小明喝了一口茶，说：“真好喝！”",
+      "pinyin": "Xiǎomíng hē le yī kǒu chá, shuō: “Zhēn hǎo hē!”",
+      "english": "Xiaoming took a sip of tea and said, \"It's really delicious!\""
+    },
+    {
+      "start": 77.37,
+      "hanzi": "丽丽说：“我也要喝，我还要吃一块重阳糕。”",
+      "pinyin": "Lìlì shuō: “Wǒ yě yào hē, wǒ hái yào chī yī kuài Chóngyáng gāo.”",
+      "english": "Lili said, \"I want to drink some too, and I also want to eat a piece of Double Ninth cake.\""
+    },
+    {
+      "start": 83.21,
+      "hanzi": "爷爷吃着重阳糕，脸上笑得很开心。",
+      "pinyin": "Yéye chīzhe Chóngyáng gāo, liǎn shàng xiào de hěn kāixīn.",
+      "english": "Grandpa was eating the Double Ninth cake, smiling very happily on his face."
+    },
+    {
+      "start": 87.93,
+      "hanzi": "丽丽拿了一朵小菊花，轻轻地给爷爷戴上。",
+      "pinyin": "Lìlì ná le yī duǒ xiǎo júhuā, qīngqīng de gěi yéye dài shàng.",
+      "english": "Lili picked a small chrysanthemum and gently put it on Grandpa."
+    },
+    {
+      "start": 92.81,
+      "hanzi": "她说：“爷爷，祝您健康长寿，天天开心！”",
+      "pinyin": "Tā shuō: “Yéye, zhù nín jiànkāng chángshòu, tiāntiān kāixīn!”",
+      "english": "She said, \"Grandpa, I wish you health and longevity, and happiness every day!\""
+    },
+    {
+      "start": 98.73,
+      "hanzi": "爷爷笑着说：“谢谢丽丽，爷爷真高兴。”",
+      "pinyin": "Yéye xiàozhe shuō: “Xièxie Lìlì, yéye zhēn gāoxìng.”",
+      "english": "Grandpa said with a smile, \"Thank you, Lili. Grandpa is really happy.\""
+    },
+    {
+      "start": 103.77,
+      "hanzi": "全家人一起笑，山顶上很暖和。",
+      "pinyin": "Quánjiārén yīqǐ xiào, shāndǐng shàng hěn nuǎnhuo.",
+      "english": "The whole family laughed together, and it was very warm on the mountaintop."
+    },
+    {
+      "start": 108.33,
+      "hanzi": "这个重阳节，他们过得很幸福。",
+      "pinyin": "Zhège Chóngyángjié, tāmen guò de hěn xìngfú.",
+      "english": "This Double Ninth Festival, they had a very happy time."
+    }
+  ]
+}
