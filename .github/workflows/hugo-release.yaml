@@ -117,8 +117,10 @@ jobs:
       contents: write
       pull-requests: write
     steps:
+      # Pinned to a commit because this step gets the write token, even with
+      # persist-credentials off; Dependabot keeps the pin current.
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           sparse-checkout: scripts
           persist-credentials: false
