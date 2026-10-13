@@ -1,7 +1,8 @@
 # Watches for new Hugo releases. .hugo-version pins the Hugo that every build
 # uses and Dependabot has no ecosystem that reads it. When a newer release
-# exists, this builds the site with it and reports whether the bump is safe.
-# It never changes .hugo-version: the bump stays a pull request.
+# exists, this builds the site with it and opens, or updates, one pull request
+# that bumps .hugo-version and says whether the build passed. It never commits
+# to the default branch: the bump is merged by hand.
 name: Hugo release check
 
 on:
@@ -13,12 +14,12 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Read-only by default. The report job alone may write issues, and it runs
-# neither Hugo nor the site's templates.
+# Read-only by default. The report job alone may write to the repository and
+# its pull requests, and it runs neither Hugo nor the site's templates.
 permissions:
   contents: read
 
-# One run at a time, so that two runs cannot both open the tracking issue.
+# One run at a time, so that two runs cannot both open the pull request.
 concurrency:
   group: hugo-release-check
   cancel-in-progress: false
@@ -110,12 +111,16 @@ jobs:
     if: github.repository_owner == 'wendyliga' && (github.event_name == 'schedule' || github.triggering_actor == 'wendyliga')
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    # contents: write for the hugo-release-check branch and its one commit,
+    # pull-requests: write to open, update, and close the pull request.
     permissions:
-      contents: read
-      issues: write
+      contents: write
+      pull-requests: write
     steps:
+      # Pinned to a commit because this step gets the write token, even with
+      # persist-credentials off; Dependabot keeps the pin current.
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           sparse-checkout: scripts
           persist-credentials: false

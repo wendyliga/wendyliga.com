@@ -5,7 +5,11 @@
 name: CI
 
 on:
+  # ready_for_review on top of the default types: the Hugo release check opens
+  # its pull request with GITHUB_TOKEN, which starts no workflows, so marking
+  # that draft ready is what runs CI on it.
   pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
 
 # Read-only: this workflow runs code from the pull request and never deploys.
 permissions:
