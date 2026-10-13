@@ -88,3 +88,4 @@
 - Keep commits atomic where possible (content text, thumbnail updates, audio updates can be split while iterating).
 - PRs should include a short summary, the main changed paths, and screenshots when layouts/theme/config changes affect rendering.
 - Link related issues when applicable and call out any submodule updates.
+- `.claude/settings.json` sets `attribution.sessionUrl` to `false`, so Claude Code cloud and Remote Control sessions leave the claude.ai session link out of commits and pull request descriptions. The repository is public, and a session made public later would be readable by anyone who has the link.
