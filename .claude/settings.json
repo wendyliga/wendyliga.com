@@ -1,5 +1,13 @@
 {
   "attribution": {
     "sessionUrl": false
+  },
+  "permissions": {
+    "disableBypassPermissionsMode": "disable",
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
   }
 }
