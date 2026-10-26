@@ -35,9 +35,10 @@ last review. Do not repeat a finding that is already posted.
 
 - Anything a pull request check already fails on: Hugo build errors (the
   `audio` and `read-along` shortcodes validate their files and timings),
-  broken internal links, actionlint and ShellCheck findings. The deploy in
-  `hugo.yaml` and the scheduled `hugo-release.yaml` do not run on pull
-  requests, so do review those
+  broken internal links, actionlint and ShellCheck findings. The scheduled
+  `hugo-release.yaml`, the push-to-`main` steps in `ci.yaml`, and
+  `scripts/cloudflare-build.sh` do not run as pull request checks, so do
+  review those
 - An action, Hugo, or AI model version that looks too new or unknown.
   Versions here are often newer than your training data, and CI proves that
   they exist
@@ -74,8 +75,8 @@ confirm it from the repository, leave it out.
 - A step that is given a repository secret uses an action pinned to a commit
   SHA
 - A change to the Hugo install or build steps is made in `ci.yaml`,
-  `hugo.yaml`, and `hugo-release.yaml` alike, and the Hugo version comes only
-  from `.hugo-version`
+  `hugo-release.yaml`, and `scripts/cloudflare-build.sh` alike, and the Hugo
+  version comes only from `.hugo-version`
 - A changed `themes/congo` pointer or `.hugo-version` is named in the pull
   request description
 - `AGENTS.md` still describes the behavior the pull request changes (Nit)

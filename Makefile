@@ -19,7 +19,7 @@ check-hugo:
 	@hugo version | grep -q "hugo v$(HUGO_VERSION)" || { \
 		echo "WARNING: .hugo-version expects Hugo $(HUGO_VERSION), but found:"; \
 		hugo version; \
-		echo "WARNING: local output may differ from the GitHub Pages build."; \
+		echo "WARNING: local output may differ from the CI and Cloudflare Pages builds."; \
 		echo "WARNING: install $(HUGO_VERSION), or update .hugo-version if the bump is intended."; \
 	}
 .PHONY: check-hugo

@@ -75,8 +75,8 @@ case "${BUILD:-}" in
   failure)
     title="Bump Hugo to $LATEST, which fails to build the site"
     # There is no build with the pinned Hugo to compare against, so point at
-    # the deploy: if that fails too, the new Hugo is not the cause.
-    result="**The site does not build with Hugo $LATEST.** Do not merge until it does. The error is in the \`Build with Hugo\` step of the run linked below. If the [latest deploy]($server/$GH_REPO/actions/workflows/hugo.yaml) is failing as well, the cause is the site and not the new Hugo. Push the fix for the site or the theme to this branch, or to \`$default_branch\`."
+    # CI on the default branch: if that fails too, the new Hugo is not the cause.
+    result="**The site does not build with Hugo $LATEST.** Do not merge until it does. The error is in the \`Build with Hugo\` step of the run linked below. If the [latest CI run on \`$default_branch\`]($server/$GH_REPO/actions/workflows/ci.yaml?query=branch%3A$default_branch) is failing as well, the cause is the site and not the new Hugo. Push the fix for the site or the theme to this branch, or to \`$default_branch\`."
     ;;
   *)
     echo "::error::Unexpected build result passed to the report"
