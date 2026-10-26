@@ -1,6 +1,7 @@
 # Builds the site for every pull request so template, shortcode, and content
 # errors surface before merge, checks the result for broken internal links, and
-# lints the workflows and shell scripts. Deployment stays in hugo.yaml.
+# lints the workflows and shell scripts. Pushes to main run it too, to save the
+# Hugo cache that pull requests reuse. Cloudflare Pages deploys the site.
 # Pull requests from forks are skipped.
 name: CI
 
@@ -10,14 +11,18 @@ on:
   # that draft ready is what runs CI on it.
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches:
+      - main
 
 # Read-only: this workflow runs code from the pull request and never deploys.
 permissions:
   contents: read
 
-# A newer push to the same pull request replaces the build still in progress.
+# A newer push to the same pull request, or to main, replaces the build still
+# in progress.
 concurrency:
-  group: ci-${{ github.event.pull_request.number }}
+  group: ci-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 # Default to bash
@@ -31,10 +36,10 @@ jobs:
     # Branches of this repository only: nothing runs for a pull request from a
     # fork. A fork can edit this file and drop the condition, so the gate that
     # holds is the repository setting that makes fork runs wait for approval.
-    if: github.event.pull_request.head.repo.full_name == github.repository
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    # Keep in step with the build job in hugo.yaml, so a green check here means
+    # Keep in step with scripts/cloudflare-build.sh, so a green check here means
     # the deploy build passes too. Dart Sass is left out: nothing in the site or
     # the theme compiles Sass. hugo-release.yaml copies the install, cache, and
     # build steps from here to try a newer Hugo; change them there too.
@@ -58,10 +63,11 @@ jobs:
         run: |
           wget -O "${{ runner.temp }}/hugo.deb" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
           sudo dpkg -i "${{ runner.temp }}/hugo.deb"
-      # Restore only: the deploy on main saves the cache of processed images.
-      # Pull requests reuse it, so only new images are processed, and never
-      # write one of their own.
+      # Only pushes to main save the cache of processed images. Pull requests
+      # reuse it, so only new images are processed, and never write one of
+      # their own: a pull request's cache is visible to that pull request only.
       - name: Cache Restore
+        id: cache-restore
         uses: actions/cache/restore@v6
         with:
           path: |
@@ -71,6 +77,13 @@ jobs:
             hugo-
       - name: Build with Hugo
         run: hugo --gc --minify --cacheDir "${{ runner.temp }}/hugo_cache"
+      - name: Cache Save
+        if: github.event_name == 'push'
+        uses: actions/cache/save@v6
+        with:
+          path: |
+            ${{ runner.temp }}/hugo_cache
+          key: ${{ steps.cache-restore.outputs.cache-primary-key }}
       # Hugo does not validate plain Markdown links or raw HTML. Locally this
       # is `make check-links`.
       - name: Check internal links
@@ -80,7 +93,7 @@ jobs:
   lint:
     name: Lint
     # The same guard as the build job.
-    if: github.event.pull_request.head.repo.full_name == github.repository
+    if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 5
     # actionlint is not on the runner image. The checksum is the one published
