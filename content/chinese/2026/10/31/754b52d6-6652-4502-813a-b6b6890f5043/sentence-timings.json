@@ -1,0 +1,137 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.32,
+      "hanzi": "立冬前一天，小明和丽丽在家里帮妈妈包饺子。",
+      "pinyin": "Lìdōng qián yī tiān, Xiǎomíng hé Lìlì zài jiā lǐ bāng māma bāo jiǎozi.",
+      "english": "The day before Lidong, Xiaoming and Lili helped Mom make dumplings at home."
+    },
+    {
+      "start": 6.24,
+      "hanzi": "妈妈已经把饺子皮和肉馅都准备好了。",
+      "pinyin": "Māma yǐjīng bǎ jiǎozi pí hé ròuxiàn dōu zhǔnbèi hǎo le.",
+      "english": "Mom had already prepared the dumpling wrappers and meat filling."
+    },
+    {
+      "start": 11.04,
+      "hanzi": "小明洗了手，拿起一张饺子皮，放了一点肉馅。",
+      "pinyin": "Xiǎomíng xǐ le shǒu, ná qǐ yī zhāng jiǎozi pí, fàng le yī diǎn ròuxiàn.",
+      "english": "Xiaoming washed his hands, picked up a dumpling wrapper, and put a little meat filling on it."
+    },
+    {
+      "start": 16.32,
+      "hanzi": "可是他的饺子包得不太好看，丽丽笑着说：“你包的饺子像个小包子！”",
+      "pinyin": "Kěshì tā de jiǎozi bāo de bù tài hǎokàn, Lìlì xiào zhe shuō: \"Nǐ bāo de jiǎozi xiàng gè xiǎo bāozi!\"",
+      "english": "But his dumpling didn't look very nice, and Lili said with a laugh, \"Your dumplings look like little steamed buns!\""
+    },
+    {
+      "start": 24.06,
+      "hanzi": "小明不好意思地说：“我第一次包，还不太会。”",
+      "pinyin": "Xiǎomíng bù hǎoyìsi de shuō: \"Wǒ dì yī cì bāo, hái bù tài huì.\"",
+      "english": "Xiaoming said sheepishly, \"This is my first time making them, and I'm not very good at it yet.\""
+    },
+    {
+      "start": 29.26,
+      "hanzi": "妈妈笑着说：“没关系，多包几个就会了。”",
+      "pinyin": "Māma xiào zhe shuō: \"Méi guānxi, duō bāo jǐ gè jiù huì le.\"",
+      "english": "Mom said with a smile, \"It doesn't matter. Make a few more and you'll get the hang of it.\""
+    },
+    {
+      "start": 33.82,
+      "hanzi": "丽丽包得又快又好，她还教小明怎么把饺子边捏紧。",
+      "pinyin": "Lìlì bāo de yòu kuài yòu hǎo, tā hái jiāo Xiǎomíng zěnme bǎ jiǎozi biān niē jǐn.",
+      "english": "Lili made them quickly and well, and she also taught Xiaoming how to pinch the edges of the dumplings tightly."
+    },
+    {
+      "start": 40.54,
+      "hanzi": "包完饺子后，妈妈做了热汤，厨房里都是暖和的味道。",
+      "pinyin": "Bāo wán jiǎozi hòu, māma zuò le rè tāng, chúfáng lǐ dōu shì nuǎnhuo de wèidào.",
+      "english": "After they finished wrapping the dumplings, Mom made hot soup, and the kitchen was filled with warm smells."
+    },
+    {
+      "start": 46.69,
+      "hanzi": "爸爸回来了，一家人坐在桌子旁边准备吃饭。",
+      "pinyin": "Bàba huí lái le, yī jiā rén zuò zài zhuōzi pángbiān zhǔnbèi chīfàn.",
+      "english": "Dad came home, and the whole family sat at the table, ready to eat."
+    },
+    {
+      "start": 52.05,
+      "hanzi": "爸爸对小明和丽丽说：“明天就是立冬了，立冬是冬天的开始。吃饺子可以保暖，所以立冬前我们包饺子吃。”",
+      "pinyin": "Bàba duì Xiǎomíng hé Lìlì shuō: \"Míngtiān jiù shì Lìdōng le, Lìdōng shì dōngtiān de kāishǐ. Chī jiǎozi kěyǐ bǎonuǎn, suǒyǐ Lìdōng qián wǒmen bāo jiǎozi chī.\"",
+      "english": "Dad said to Xiaoming and Lili, \"Tomorrow is Lidong, the beginning of winter. Eating dumplings can keep you warm, so we make and eat dumplings before Lidong.\""
+    },
+    {
+      "start": 64.45,
+      "hanzi": "小明问：“爸爸，那冬天我们还应该做什么呢？”",
+      "pinyin": "Xiǎomíng wèn: \"Bàba, nà dōngtiān wǒmen hái yīnggāi zuò shénme ne?\"",
+      "english": "Xiaoming asked, \"Dad, what else should we do in winter then?\""
+    },
+    {
+      "start": 69.51,
+      "hanzi": "爸爸说：“冬天要多喝热汤，还要穿暖和的衣服，这样身体才会好。”",
+      "pinyin": "Bàba shuō: \"Dōngtiān yào duō hē rè tāng, hái yào chuān nuǎnhuo de yīfu, zhèyàng shēntǐ cái huì hǎo.\"",
+      "english": "Dad said, \"In winter, you should drink more hot soup and wear warm clothes, so that your bodies will stay healthy.\""
+    },
+    {
+      "start": 77.67,
+      "hanzi": "丽丽说：“我最喜欢喝热汤了，冬天我要每天喝一碗！”",
+      "pinyin": "Lìlì shuō: \"Wǒ zuì xǐhuan hē rè tāng le, dōngtiān wǒ yào měi tiān hē yī wǎn!\"",
+      "english": "Lili said, \"I like hot soup the most. In winter, I want to drink a bowl every day!\""
+    },
+    {
+      "start": 84.07,
+      "hanzi": "小明也说：“我也要穿妈妈织的毛衣，一定很暖和。”",
+      "pinyin": "Xiǎomíng yě shuō: \"Wǒ yě yào chuān māma zhī de máoyī, yīdìng hěn nuǎnhuo.\"",
+      "english": "Xiaoming also said, \"I also want to wear the sweater Mom knitted. It must be very warm.\""
+    },
+    {
+      "start": 89.82,
+      "hanzi": "饺子煮好了，妈妈把热乎乎的饺子端到桌子上。",
+      "pinyin": "Jiǎozi zhǔ hǎo le, māma bǎ rèhūhū de jiǎozi duān dào zhuōzi shàng.",
+      "english": "The dumplings were cooked, and Mom brought the steaming dumplings to the table."
+    },
+    {
+      "start": 95.66,
+      "hanzi": "一家人一边吃饺子，一边喝热汤，说说笑笑，心里都很开心。",
+      "pinyin": "Yī jiā rén yībiān chī jiǎozi, yībiān hē rè tāng, shuōshuōxiàoxiào, xīn lǐ dōu hěn kāixīn.",
+      "english": "The family ate dumplings and drank hot soup, chatting and laughing, and everyone felt very happy."
+    },
+    {
+      "start": 103.1,
+      "hanzi": "小明吃了一个饺子，高兴地说：“我觉得冬天也很温暖！”",
+      "pinyin": "Xiǎomíng chī le yī gè jiǎozi, gāoxìng de shuō: \"Wǒ juéde dōngtiān yě hěn wēnnuǎn!\"",
+      "english": "Xiaoming ate a dumpling and said happily, \"I think winter is also very warm!\""
+    },
+    {
+      "start": 109.42,
+      "hanzi": "丽丽点点头，说：“对，和家人在一起，冬天也不冷。”",
+      "pinyin": "Lìlì diǎndiǎn tóu, shuō: \"Duì, hé jiārén zài yīqǐ, dōngtiān yě bù lěng.\"",
+      "english": "Lili nodded and said, \"Right. When we're with family, winter isn't cold.\""
+    },
+    {
+      "start": 115.24,
+      "hanzi": "吃完饭后，小明和丽丽帮妈妈洗碗，爸爸准备了热水。",
+      "pinyin": "Chī wán fàn hòu, Xiǎomíng hé Lìlì bāng māma xǐ wǎn, bàba zhǔnbèi le rè shuǐ.",
+      "english": "After dinner, Xiaoming and Lili helped Mom wash the dishes, and Dad prepared hot water."
+    },
+    {
+      "start": 120.76,
+      "hanzi": "外面的风很大，可是家里又暖和又幸福。",
+      "pinyin": "Wàimiàn de fēng hěn dà, kěshì jiā lǐ yòu nuǎnhuo yòu xìngfú.",
+      "english": "The wind outside was strong, but the house was warm and filled with happiness."
+    },
+    {
+      "start": 126.04,
+      "hanzi": "他们一起计划着：冬天要常常喝热汤，多穿衣服，还要多运动。",
+      "pinyin": "Tāmen yīqǐ jìhuà zhe: dōngtiān yào chángcháng hē rè tāng, duō chuān yīfu, hái yào duō yùndòng.",
+      "english": "Together they planned: in winter, they would often drink hot soup, wear more clothes, and exercise more."
+    },
+    {
+      "start": 133.72,
+      "hanzi": "这个立冬前的晚上，一家人过得特别开心。",
+      "pinyin": "Zhège Lìdōng qián de wǎnshang, yī jiā rén guò de tèbié kāixīn.",
+      "english": "On this evening before Lidong, the family had a particularly happy time."
+    }
+  ]
+}
