@@ -1,0 +1,179 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.16,
+      "hanzi": "重阳节快到了，小明和丽丽去爷爷家玩。",
+      "pinyin": "Chóngyángjié kuài dào le, Xiǎomíng hé Lìlì qù yéye jiā wán.",
+      "english": "The Double Ninth Festival was approaching, and Xiaoming and Lili went to their grandpa's house to play."
+    },
+    {
+      "start": 7.76,
+      "hanzi": "爷爷正在厨房里准备做重阳糕。",
+      "pinyin": "Yéye zhèngzài chúfáng lǐ zhǔnbèi zuò Chóngyánggāo.",
+      "english": "Grandpa was in the kitchen getting ready to make Double Ninth cake."
+    },
+    {
+      "start": 13.12,
+      "hanzi": "丽丽问爷爷：“爷爷，重阳糕是什么味道的？”",
+      "pinyin": "Lìlì wèn yéye: \"Yéye, Chóngyánggāo shì shénme wèidào de?\"",
+      "english": "Lili asked Grandpa, \"Grandpa, what does Double Ninth cake taste like?\""
+    },
+    {
+      "start": 19.04,
+      "hanzi": "爷爷笑着说：“重阳糕甜甜的，里面还有红枣和核桃呢。”",
+      "pinyin": "Yéye xiào zhe shuō: \"Chóngyánggāo tián tián de, lǐmiàn hái yǒu hóngzǎo hé hétáo ne.\"",
+      "english": "Grandpa said with a smile, \"Double Ninth cake is sweet, and it also has red dates and walnuts inside.\""
+    },
+    {
+      "start": 25.79,
+      "hanzi": "小明和丽丽都很想吃，爷爷说：“你们想不想跟我一起做？”",
+      "pinyin": "Xiǎomíng hé Lìlì dōu hěn xiǎng chī, yéye shuō: \"Nǐmen xiǎng bù xiǎng gēn wǒ yīqǐ zuò?\"",
+      "english": "Xiaoming and Lili both really wanted to eat it, and Grandpa said, \"Do you want to make it with me?\""
+    },
+    {
+      "start": 32.51,
+      "hanzi": "两个孩子高兴地说：“好呀，好呀！”",
+      "pinyin": "Liǎng gè háizi gāoxìng de shuō: \"Hǎo ya, hǎo ya!\"",
+      "english": "The two children said happily, \"Yes, yes!\""
+    },
+    {
+      "start": 37.95,
+      "hanzi": "爷爷先拿出糯米粉，放在一个大碗里。",
+      "pinyin": "Yéye xiān ná chū nuòmǐfěn, fàng zài yī gè dà wǎn lǐ.",
+      "english": "Grandpa first took out glutinous rice flour and put it in a big bowl."
+    },
+    {
+      "start": 42.59,
+      "hanzi": "他让小明和丽丽慢慢地加水，然后用筷子搅拌。",
+      "pinyin": "Tā ràng Xiǎomíng hé Lìlì màn man de jiā shuǐ, ránhòu yòng kuàizi jiǎobàn.",
+      "english": "He asked Xiaoming and Lili to slowly add water, then stir with chopsticks."
+    },
+    {
+      "start": 47.95,
+      "hanzi": "丽丽问：“爷爷，水要加多少？”",
+      "pinyin": "Lìlì wèn: \"Yéye, shuǐ yào jiā duōshǎo?\"",
+      "english": "Lili asked, \"Grandpa, how much water should we add?\""
+    },
+    {
+      "start": 51.78,
+      "hanzi": "爷爷说：“一点点加，面不要太湿，也不要太干。”",
+      "pinyin": "Yéye shuō: \"Yī diǎn diǎn jiā, miàn bùyào tài shī, yě bùyào tài gān.\"",
+      "english": "Grandpa said, \"Add it little by little. The dough shouldn't be too wet or too dry.\""
+    },
+    {
+      "start": 58.1,
+      "hanzi": "小明搅了一会儿，手有点累，但是他还是很认真。",
+      "pinyin": "Xiǎomíng jiǎo le yīhuìr, shǒu yǒudiǎn lèi, dànshì tā háishì hěn rènzhēn.",
+      "english": "Xiaoming stirred for a while and his hand got a little tired, but he remained very serious and careful."
+    },
+    {
+      "start": 63.7,
+      "hanzi": "爷爷笑了：“小明做得不错！”",
+      "pinyin": "Yéye xiào le: \"Xiǎomíng zuò de bùcuò!\"",
+      "english": "Grandpa smiled and said, \"Xiaoming did a good job!\""
+    },
+    {
+      "start": 67.38,
+      "hanzi": "然后爷爷把红枣和核桃切碎，放在糯米粉里，再放一些糖。",
+      "pinyin": "Ránhòu yéye bǎ hóngzǎo hé hétáo qiē suì, fàng zài nuòmǐfěn lǐ, zài fàng yīxiē táng.",
+      "english": "Then Grandpa chopped up the red dates and walnuts, put them into the glutinous rice flour, and added some sugar."
+    },
+    {
+      "start": 74.07,
+      "hanzi": "小明说：“爷爷，我喜欢吃甜的，可以多放点糖吗？”",
+      "pinyin": "Xiǎomíng shuō: \"Yéye, wǒ xǐhuan chī tián de, kěyǐ duō fàng diǎn táng ma?\"",
+      "english": "Xiaoming said, \"Grandpa, I like sweet things. Can we add a little more sugar?\""
+    },
+    {
+      "start": 81.03,
+      "hanzi": "爷爷说：“可以，但是不要太甜，对身体不好。”",
+      "pinyin": "Yéye shuō: \"Kěyǐ, dànshì bùyào tài tián, duì shēntǐ bù hǎo.\"",
+      "english": "Grandpa said, \"We can, but it shouldn't be too sweet. Too much sugar is not good for your health.\""
+    },
+    {
+      "start": 87.35,
+      "hanzi": "丽丽把米粉放进一个小蒸笼里，轻轻地压平。",
+      "pinyin": "Lìlì bǎ mǐfěn fàng jìn yī gè xiǎo zhēnglóng lǐ, qīngqīng de yā píng.",
+      "english": "Lili put the rice flour mixture into a small steamer and gently pressed it flat."
+    },
+    {
+      "start": 92.47,
+      "hanzi": "爷爷把蒸笼放在锅上蒸。",
+      "pinyin": "Yéye bǎ zhēnglóng fàng zài guō shàng zhēng.",
+      "english": "Grandpa placed the steamer on the pot to steam."
+    },
+    {
+      "start": 95.67,
+      "hanzi": "过了二十分钟，厨房里飘出了香味。",
+      "pinyin": "Guò le èrshí fēnzhōng, chúfáng lǐ piāo chū le xiāngwèi.",
+      "english": "After twenty minutes, a delicious smell drifted out of the kitchen."
+    },
+    {
+      "start": 100.25,
+      "hanzi": "小明闻到后，口水都要流出来了。",
+      "pinyin": "Xiǎomíng wén dào hòu, kǒushuǐ dōu yào liú chūlái le.",
+      "english": "When Xiaoming smelled it, his mouth was about to water."
+    },
+    {
+      "start": 104.33,
+      "hanzi": "丽丽说：“好香啊！一定很好吃！”",
+      "pinyin": "Lìlì shuō: \"Hǎo xiāng a! Yīdìng hěn hǎochī!\"",
+      "english": "Lili said, \"It smells so good! It must be delicious!\""
+    },
+    {
+      "start": 109.05,
+      "hanzi": "爷爷把蒸笼拿下来，一块漂亮的重阳糕做好了。",
+      "pinyin": "Yéye bǎ zhēnglóng ná xiàlái, yī kuài piàoliang de Chóngyánggāo zuò hǎo le.",
+      "english": "Grandpa took down the steamer, and a beautiful Double Ninth cake was ready."
+    },
+    {
+      "start": 114.01,
+      "hanzi": "小明和丽丽看着糕，都很高兴。",
+      "pinyin": "Xiǎomíng hé Lìlì kàn zhe gāo, dōu hěn gāoxìng.",
+      "english": "Xiaoming and Lili looked at the cake and were both very happy."
+    },
+    {
+      "start": 117.93,
+      "hanzi": "爷爷说：“这块糕，你们想自己吃，还是送给别人？”",
+      "pinyin": "Yéye shuō: \"Zhè kuài gāo, nǐmen xiǎng zìjǐ chī, háishì sòng gěi biérén?\"",
+      "english": "Grandpa said, \"For this cake, do you want to eat it yourselves or give it to someone else?\""
+    },
+    {
+      "start": 124.09,
+      "hanzi": "丽丽想了想，说：“我们家隔壁的李奶奶一个人住，她一定很喜欢吃重阳糕。”",
+      "pinyin": "Lìlì xiǎng le xiǎng, shuō: \"Wǒmen jiā gébì de Lǐ nǎinai yī gè rén zhù, tā yīdìng hěn xǐhuan chī Chóngyánggāo.\"",
+      "english": "Lili thought for a moment and said, \"Grandma Li next door lives alone. She would definitely enjoy eating Double Ninth cake.\""
+    },
+    {
+      "start": 132.81,
+      "hanzi": "小明点点头：“对！我们给李奶奶送过去吧。”",
+      "pinyin": "Xiǎomíng diǎn diǎn tóu: \"Duì! Wǒmen gěi Lǐ nǎinai sòng guòqù ba.\"",
+      "english": "Xiaoming nodded and said, \"Right! Let's bring it over to Grandma Li.\""
+    },
+    {
+      "start": 138.25,
+      "hanzi": "爷爷非常高兴：“真是好孩子！”",
+      "pinyin": "Yéye fēicháng gāoxìng: \"Zhēnshi hǎo háizi!\"",
+      "english": "Grandpa was very happy and said, \"What good children you are!\""
+    },
+    {
+      "start": 141.37,
+      "hanzi": "小明和丽丽小心地把重阳糕放在盘子里，送给隔壁的李奶奶。",
+      "pinyin": "Xiǎomíng hé Lìlì xiǎoxīn de bǎ Chóngyánggāo fàng zài pánzi lǐ, sòng gěi gébì de Lǐ nǎinai.",
+      "english": "Xiaoming and Lili carefully placed the Double Ninth cake on a plate and gave it to Grandma Li next door."
+    },
+    {
+      "start": 148.2,
+      "hanzi": "李奶奶打开门，看到糕，笑着说：“谢谢你们！你们真是懂事的好孩子！”",
+      "pinyin": "Lǐ nǎinai dǎkāi mén, kàn dào gāo, xiào zhe shuō: \"Xièxie nǐmen! Nǐmen zhēnshi dǒngshì de hǎo háizi!\"",
+      "english": "Grandma Li opened the door, saw the cake, and said with a smile, \"Thank you! You are such thoughtful and well-behaved children!\""
+    },
+    {
+      "start": 157.24,
+      "hanzi": "小明和丽丽听了，心里甜甜的。",
+      "pinyin": "Xiǎomíng hé Lìlì tīng le, xīnlǐ tián tián de.",
+      "english": "When Xiaoming and Lili heard this, they felt warm and happy inside."
+    }
+  ]
+}
