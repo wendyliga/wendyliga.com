@@ -1,0 +1,143 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.16,
+      "hanzi": "立冬这天，小明和丽丽帮奶奶腌白菜。",
+      "pinyin": "Lìdōng zhè tiān, Xiǎomíng hé Lìlì bāng nǎinai yān báicài.",
+      "english": "On the day of Start of Winter, Xiaoming and Lili helped Grandma pickle Chinese cabbage."
+    },
+    {
+      "start": 5.04,
+      "hanzi": "天气很冷，但是院子里有很多白菜。",
+      "pinyin": "Tiānqì hěn lěng, dànshì yuànzi lǐ yǒu hěn duō báicài.",
+      "english": "The weather was very cold, but there were many cabbages in the yard."
+    },
+    {
+      "start": 9.76,
+      "hanzi": "小明问丽丽：“奶奶说今天要腌白菜，你知道怎么做吗？”",
+      "pinyin": "Xiǎomíng wèn Lìlì: \"Nǎinai shuō jīntiān yào yān báicài, nǐ zhīdào zěnme zuò ma?\"",
+      "english": "Xiaoming asked Lili, \"Grandma said today we're going to pickle cabbage; do you know how to do it?\""
+    },
+    {
+      "start": 16.32,
+      "hanzi": "丽丽说：“我也不太清楚，我们问奶奶吧。”",
+      "pinyin": "Lìlì shuō: \"Wǒ yě bú tài qīngchu, wǒmen wèn nǎinai ba.\"",
+      "english": "Lili said, \"I'm not sure either; let's ask Grandma.\""
+    },
+    {
+      "start": 21.44,
+      "hanzi": "他们走进屋子，奶奶正在洗菜。",
+      "pinyin": "Tāmen zǒu jìn wūzi, nǎinai zhèngzài xǐ cài.",
+      "english": "They walked into the house, and Grandma was washing vegetables."
+    },
+    {
+      "start": 25.34,
+      "hanzi": "小明说：“奶奶，您能教我们腌白菜吗？”",
+      "pinyin": "Xiǎomíng shuō: \"Nǎinai, nín néng jiāo wǒmen yān báicài ma?\"",
+      "english": "Xiaoming said, \"Grandma, can you teach us how to pickle cabbage?\""
+    },
+    {
+      "start": 30.3,
+      "hanzi": "奶奶笑着回答：“当然可以，我们先去洗手吧。”",
+      "pinyin": "Nǎinai xiàozhe huídá: \"Dāngrán kěyǐ, wǒmen xiān qù xǐ shǒu ba.\"",
+      "english": "Grandma smiled and replied, \"Of course. Let's go wash our hands first.\""
+    },
+    {
+      "start": 35.66,
+      "hanzi": "他们洗好手，奶奶把白菜洗干净，切成两半。",
+      "pinyin": "Tāmen xǐ hǎo shǒu, nǎinai bǎ báicài xǐ gānjìng, qiē chéng liǎng bàn.",
+      "english": "After they washed their hands, Grandma washed the cabbage clean and cut it in half."
+    },
+    {
+      "start": 40.62,
+      "hanzi": "丽丽拿来一个大罐子。",
+      "pinyin": "Lìlì ná lái yí gè dà guànzi.",
+      "english": "Lili brought over a big jar."
+    },
+    {
+      "start": 42.94,
+      "hanzi": "奶奶说：“先在罐子里放一层盐，再放一层白菜。”",
+      "pinyin": "Nǎinai shuō: \"Xiān zài guànzi lǐ fàng yì céng yán, zài fàng yì céng báicài.\"",
+      "english": "Grandma said, \"First put a layer of salt in the jar, then a layer of cabbage.\""
+    },
+    {
+      "start": 48.72,
+      "hanzi": "小明和丽丽一起放盐和白菜。",
+      "pinyin": "Xiǎomíng hé Lìlì yìqǐ fàng yán hé báicài.",
+      "english": "Xiaoming and Lili together put in salt and cabbage."
+    },
+    {
+      "start": 52.08,
+      "hanzi": "奶奶说：“要用力压一压，这样菜会出很多水。”",
+      "pinyin": "Nǎinai shuō: \"Yào yòng lì yā yì yā, zhèyàng cài huì chū hěn duō shuǐ.\"",
+      "english": "Grandma said, \"Press it firmly; this way the cabbage will release a lot of water.\""
+    },
+    {
+      "start": 57.76,
+      "hanzi": "他们用手压白菜。手很凉，但是他们很高兴。",
+      "pinyin": "Tāmen yòng shǒu yā báicài. Shǒu hěn liáng, dànshì tāmen hěn gāoxìng.",
+      "english": "They pressed the cabbage with their hands. Their hands were very cold, but they were very happy."
+    },
+    {
+      "start": 62.88,
+      "hanzi": "丽丽说：“奶奶，水真的出来了！”",
+      "pinyin": "Lìlì shuō: \"Nǎinai, shuǐ zhēn de chūlái le!\"",
+      "english": "Lili said, \"Grandma, the water really came out!\""
+    },
+    {
+      "start": 66.56,
+      "hanzi": "奶奶说：“很好。现在把罐子盖好，放在阴凉的地方。”",
+      "pinyin": "Nǎinai shuō: \"Hěn hǎo. Xiànzài bǎ guànzi gài hǎo, fàng zài yīnliáng de dìfang.\"",
+      "english": "Grandma said, \"Very good. Now cover the jar and put it in a cool, shady place.\""
+    },
+    {
+      "start": 72.47,
+      "hanzi": "奶奶又说：“过二十天，酸菜就可以吃了。”",
+      "pinyin": "Nǎinai yòu shuō: \"Guò èrshí tiān, suāncài jiù kěyǐ chī le.\"",
+      "english": "Grandma also said, \"In twenty days, the pickled cabbage will be ready to eat.\""
+    },
+    {
+      "start": 77.27,
+      "hanzi": "小明问：“为什么酸菜会变酸？”",
+      "pinyin": "Xiǎomíng wèn: \"Wèishénme suāncài huì biàn suān?\"",
+      "english": "Xiaoming asked, \"Why does pickled cabbage turn sour?\""
+    },
+    {
+      "start": 80.63,
+      "hanzi": "奶奶说：“因为盐和白菜在一起，经过一些时间，菜就会变酸。这是冬天储存食物的好方法。”",
+      "pinyin": "Nǎinai shuō: \"Yīnwèi yán hé báicài zài yìqǐ, jīngguò yìxiē shíjiān, cài jiù huì biàn suān. Zhè shì dōngtiān chǔcún shíwù de hǎo fāngfǎ.\"",
+      "english": "Grandma said, \"Because salt and cabbage are put together, after some time the cabbage will turn sour. This is a good way to store food in winter.\""
+    },
+    {
+      "start": 91.21,
+      "hanzi": "丽丽说：“我希望冬天快点到，我想吃我们做的酸菜。”",
+      "pinyin": "Lìlì shuō: \"Wǒ xīwàng dōngtiān kuài diǎn dào, wǒ xiǎng chī wǒmen zuò de suāncài.\"",
+      "english": "Lili said, \"I hope winter comes soon; I want to eat the pickled cabbage we made.\""
+    },
+    {
+      "start": 97.13,
+      "hanzi": "小明也说：“我也是。自己做的酸菜一定很好吃。”",
+      "pinyin": "Xiǎomíng yě shuō: \"Wǒ yě shì. Zìjǐ zuò de suāncài yídìng hěn hǎochī.\"",
+      "english": "Xiaoming also said, \"Me too. Pickled cabbage made by ourselves must be very delicious.\""
+    },
+    {
+      "start": 102.73,
+      "hanzi": "冬天来了，他们打开罐子，酸菜做好了。",
+      "pinyin": "Dōngtiān lái le, tāmen dǎkāi guànzi, suāncài zuò hǎo le.",
+      "english": "Winter came, they opened the jar, and the pickled cabbage was ready."
+    },
+    {
+      "start": 107.77,
+      "hanzi": "全家人一起吃酸菜，小明和丽丽觉得特别香。",
+      "pinyin": "Quánjiā rén yìqǐ chī suāncài, Xiǎomíng hé Lìlì juéde tèbié xiāng.",
+      "english": "The whole family ate the pickled cabbage together, and Xiaoming and Lili found it especially delicious."
+    },
+    {
+      "start": 113,
+      "hanzi": "他们学会了冬天储存食物的方法。",
+      "pinyin": "Tāmen xuéhuì le dōngtiān chǔcún shíwù de fāngfǎ.",
+      "english": "They learned a way to store food in winter."
+    }
+  ]
+}
