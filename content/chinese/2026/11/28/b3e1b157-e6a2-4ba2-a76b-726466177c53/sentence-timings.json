@@ -1,0 +1,131 @@
+{
+  "version": 2,
+  "sentences": [
+    {
+      "start": 0.32,
+      "hanzi": "大雪快到了，天气越来越冷。",
+      "pinyin": "Dàxuě kuài dào le, tiānqì yuè lái yuè lěng.",
+      "english": "Major Snow is almost here, and the weather is getting colder and colder."
+    },
+    {
+      "start": 6.8,
+      "hanzi": "早上，小明和丽丽去爷爷家。",
+      "pinyin": "Zǎoshang, Xiǎomíng hé Lìlì qù yéye jiā.",
+      "english": "In the morning, Xiaoming and Lili went to their grandpa's house."
+    },
+    {
+      "start": 11.04,
+      "hanzi": "爷爷正在准备腌腊肉。",
+      "pinyin": "Yéye zhèngzài zhǔnbèi yān làròu.",
+      "english": "Grandpa was getting ready to make cured meat."
+    },
+    {
+      "start": 13.84,
+      "hanzi": "小明说：“爷爷，我来帮您切肉。”",
+      "pinyin": "Xiǎomíng shuō: \"Yéye, wǒ lái bāng nín qiē ròu.\"",
+      "english": "Xiaoming said, \"Grandpa, let me help you cut the meat.\""
+    },
+    {
+      "start": 18,
+      "hanzi": "丽丽也说：“我也来帮忙，我们一起做。”",
+      "pinyin": "Lìlì yě shuō: \"Wǒ yě lái bāngmáng, wǒmen yīqǐ zuò.\"",
+      "english": "Lili also said, \"I'll help too, let's do it together.\""
+    },
+    {
+      "start": 22.56,
+      "hanzi": "爷爷笑着说：“好，你们真懂事。”",
+      "pinyin": "Yéye xiàozhe shuō: \"Hǎo, nǐmen zhēn dǒngshì.\"",
+      "english": "Grandpa smiled and said, \"Good, you're so thoughtful.\""
+    },
+    {
+      "start": 26.65,
+      "hanzi": "他们先洗肉，再放盐和调料。",
+      "pinyin": "Tāmen xiān xǐ ròu, zài fàng yán hé tiáoliào.",
+      "english": "They first washed the meat, then added salt and seasonings."
+    },
+    {
+      "start": 30.57,
+      "hanzi": "小明问：“爷爷，为什么要腌肉？”",
+      "pinyin": "Xiǎomíng wèn: \"Yéye, wèishénme yào yān ròu?\"",
+      "english": "Xiaoming asked, \"Grandpa, why do we need to cure the meat?\""
+    },
+    {
+      "start": 34.25,
+      "hanzi": "爷爷说：“大雪前后腌肉，味道好，也能放很久。”",
+      "pinyin": "Yéye shuō: \"Dàxuě qiánhòu yān ròu, wèidào hǎo, yě néng fàng hěn jiǔ.\"",
+      "english": "Grandpa said, \"Curing meat around Major Snow makes it taste better and last longer.\""
+    },
+    {
+      "start": 40.25,
+      "hanzi": "丽丽说：“我明白了，这是冬天的方法。”",
+      "pinyin": "Lìlì shuō: \"Wǒ míngbai le, zhè shì dōngtiān de fāngfǎ.\"",
+      "english": "Lili said, \"I understand now; this is a winter method.\""
+    },
+    {
+      "start": 44.17,
+      "hanzi": "这时候，妈妈从厨房走出来。",
+      "pinyin": "Zhè shíhou, māma cóng chúfáng zǒu chūlái.",
+      "english": "Just then, Mom came out of the kitchen."
+    },
+    {
+      "start": 47.61,
+      "hanzi": "她煮了热腾腾的红枣姜茶。",
+      "pinyin": "Tā zhǔ le rè téngténg de hóngzǎo jiāng chá.",
+      "english": "She made steaming hot red date ginger tea."
+    },
+    {
+      "start": 51.54,
+      "hanzi": "妈妈对大家说：“茶好了，快来喝吧。”",
+      "pinyin": "Māma duì dàjiā shuō: \"Chá hǎo le, kuài lái hē ba.\"",
+      "english": "Mom said to everyone, \"The tea is ready, come and drink it.\""
+    },
+    {
+      "start": 55.7,
+      "hanzi": "爸爸说：“大雪时节，要多吃温热食物，注意保暖。”",
+      "pinyin": "Bàba shuō: \"Dàxuě shíjié, yào duō chī wēnrè shíwù, zhùyì bǎonuǎn.\"",
+      "english": "Dad said, \"During Major Snow, we should eat more warm foods and keep warm.\""
+    },
+    {
+      "start": 61.46,
+      "hanzi": "小明喝了一口姜茶，说：“真好喝，身体暖和了。”",
+      "pinyin": "Xiǎomíng hē le yī kǒu jiāng chá, shuō: \"Zhēn hǎo hē, shēntǐ nuǎnhuo le.\"",
+      "english": "Xiaoming took a sip of ginger tea and said, \"It's really good; I feel warm now.\""
+    },
+    {
+      "start": 66.98,
+      "hanzi": "丽丽也说：“红枣甜甜的，我喜欢。”",
+      "pinyin": "Lìlì yě shuō: \"Hóngzǎo tiántián de, wǒ xǐhuān.\"",
+      "english": "Lili also said, \"The red dates are sweet; I like them.\""
+    },
+    {
+      "start": 70.66,
+      "hanzi": "一家人坐在一起喝茶，心里很温暖。",
+      "pinyin": "Yī jiā rén zuò zài yīqǐ hē chá, xīnli hěn wēnnuǎn.",
+      "english": "The family sat together drinking tea, feeling very warm inside."
+    },
+    {
+      "start": 74.96,
+      "hanzi": "他们看着窗外，盼望着第一场雪。",
+      "pinyin": "Tāmen kàn zhe chuāng wài, pànwàng zhe dì yī cháng xuě.",
+      "english": "They looked out the window, looking forward to the first snow."
+    },
+    {
+      "start": 78.72,
+      "hanzi": "爷爷说：“雪快来了，今年一定很好。”",
+      "pinyin": "Yéye shuō: \"Xuě kuài lái le, jīnnián yīdìng hěn hǎo.\"",
+      "english": "Grandpa said, \"The snow is coming soon; this year is sure to be good.\""
+    },
+    {
+      "start": 83.28,
+      "hanzi": "大家都笑了。",
+      "pinyin": "Dàjiā dōu xiào le.",
+      "english": "Everyone laughed."
+    },
+    {
+      "start": 85.12,
+      "hanzi": "这个冬天，虽然冷，但是一家人的爱让家很温暖。",
+      "pinyin": "Zhège dōngtiān, suīrán lěng, dànshì yī jiā rén de ài ràng jiā hěn wēnnuǎn.",
+      "english": "This winter, although it is cold, the family's love makes home very warm."
+    }
+  ]
+}
